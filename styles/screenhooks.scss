@@ -1,0 +1,55 @@
+/* SINGLE SCREEN SIZES */
+@mixin xs-only {
+  @media screen and (max-width: ($breakpoint-xs - 1)) {
+    @content;
+  }
+}
+@mixin sm-only {
+  @media screen and (min-width: $breakpoint-xs) and (max-width: ($breakpoint-sm - 1)) {
+    @content;
+  }
+}
+@mixin md-only {
+  @media screen and (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)) {
+    @content;
+  }
+}
+@mixin lg-only {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+/* ONLY VISIBLE ON SAID SCREEN OR LARGER */
+@mixin sm-and-above {
+  @media screen and (min-width: $breakpoint-xs) {
+    @content;
+  }
+}
+@mixin md-and-above {
+  @media screen and (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+@mixin lg-and-above {
+  @include lg-only {
+    @content;
+  }
+}
+
+/* ONLY VISIBLE ON SAID SCREEN AND BELOW */
+@mixin sm-and-below {
+  @media screen and (max-width: ($breakpoint-sm - 1)) {
+    @content;
+  }
+}
+@mixin md-and-below {
+  @media screen and (max-width: ($breakpoint-md - 1)) {
+    @content;
+  }
+}
+@mixin lg-and-below {
+  @media screen and (max-width: ($breakpoint-lg - 1)) {
+    @content;
+  }
+}
