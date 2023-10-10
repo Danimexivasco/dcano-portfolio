@@ -1,0 +1,13 @@
+import React from "react"
+
+
+const Header = () => {
+  return (
+    <header>
+      <h2>Logo</h2>
+      <nav>Navigation</nav>
+    </header>
+  )
+};
+
+export default Header;
