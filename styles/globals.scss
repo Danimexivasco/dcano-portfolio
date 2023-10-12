@@ -1,3 +1,6 @@
+@import "../styles/variables";
+@import "../styles/screenhooks";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +11,17 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+header, main, footer {
+  padding: 0 $spacing-2;
+  @include sm-and-above {
+    padding: 0 $spacing-6;
+  }
+}
+
+main {
+  min-height: calc(100vh - $header-min-height - $footer-min-height);
 }
 
 a {
