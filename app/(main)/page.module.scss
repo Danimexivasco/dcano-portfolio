@@ -1,6 +1,6 @@
 @import "../../styles/_variables.module.scss";
 
-.main {
-  min-height: calc(100vh - $header-min-height - $footer-min-height);
-  padding: 0 $spacing-2;
-}
+// .main {
+//   min-height: calc(100vh - (2 * $header-footer-min-height));
+//   padding: 0 $spacing-2;
+// }

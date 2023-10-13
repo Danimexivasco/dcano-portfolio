@@ -1,9 +1,8 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
-import useWindowSize from "@/hooks/useWindowSize";
-import styles from "./styles.module.scss"
 import variables from "../../styles/_variables.module.scss"
+import useWindowSize from "@/hooks/useWindowSize";
 import useScrollPosition from "@/hooks/useScrollPosition";
 import { combine } from "@/helpers/combine";
 import { getNumberFromPx } from "@/helpers/getNumberFromPx";
@@ -27,10 +26,10 @@ const Header = () => {
   }
 
   return isClient ? (
-    <header className={combine(styles.header, (scrollDirection === "up" && scrollY > 0) && "sticky")}>
+    <header className={combine((scrollDirection === "up" && scrollY > 0) && "sticky")}>
       {renderHeader()}
     </header>
-  ) : (<header className={styles.header}></header>)
+  ) : (<header></header>)
 };
 
 export default Header;
