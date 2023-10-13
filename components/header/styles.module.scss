@@ -1,7 +1,9 @@
-@import "../../styles/variables";
+@import "../../styles/_variables.module.scss";
 
 .header {
   min-height: 75px;
   background-color: $blue;
   color: $white;
+  display: flex;
+  align-items: center;
 }

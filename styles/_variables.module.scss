@@ -26,3 +26,7 @@ $spacing-10: 80px;
 // Values
 $header-min-height: 75px; 
 $footer-min-height: 75px; 
+
+:export {
+  breakpointXs: $breakpoint-xs
+}
