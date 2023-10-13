@@ -1,4 +1,4 @@
-@import "../styles/variables";
+@import "../styles/_variables.module.scss";
 @import "../styles/screenhooks";
 
 * {
@@ -10,7 +10,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 header, main, footer {
@@ -19,9 +18,32 @@ header, main, footer {
     padding: 0 $spacing-6;
   }
 }
-
+header {
+  transition: all ease 0.3;
+  &.sticky {
+    position: sticky;
+    top: 0;
+    @include sm-and-above {
+      background: rgba($blue, 0.90);
+      box-shadow: 0 4px 30px rgba($black, 0.1);
+      backdrop-filter: blur(4.9px);
+      -webkit-backdrop-filter: blur(4.9px)
+    }
+  }
+  @include sm-and-above {
+    @media (hover: hover) {
+      &:hover {
+        background: $blue;
+        box-shadow: none;
+        backdrop-filter: none;
+      }
+    }
+  }
+  
+}
 main {
   min-height: calc(100vh - $header-min-height - $footer-min-height);
+  height: 1900px;
 }
 
 a {
