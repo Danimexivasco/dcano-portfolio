@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   },
   description: "Welcome to Daniel Cano's Portfolio!",
   alternates: {
-    canonical: "/",
-    // languages: {
-    //   "en-US": "/en-US",
-    //   "es-ES": "/es-ES",
-    // },
+    canonical: "https:dcano.dev/",
+    languages: {
+      "en-US": "https:dcano.dev/en",
+      "es-ES": "https:dcano.dev/es",
+    },
   },
   // openGraph: {
   //   images: "/og-image.png",
