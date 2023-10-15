@@ -1,9 +1,12 @@
 // Colors
-$black: #0F0F0F;
-$blue: #14213D;
-$orange: #FCA311;
-$platinum: #E5E5E5;
+$black: #222222;
 $white: #FFFFFF;
+$blue: #3581B8;
+$orange: #FCA311;
+$platinum: #DCE0D9;
+$green: #519872;
+
+$blackRGB: 34, 34, 34;
 
 // Breakpoints
 $breakpoint-xs: 576px;
@@ -24,8 +27,7 @@ $spacing-9: 70px;
 $spacing-10: 80px;
 
 // Values
-$header-min-height: 75px; 
-$footer-min-height: 75px; 
+$header-footer-min-height: 75px; 
 
 :export {
   breakpointXs: $breakpoint-xs

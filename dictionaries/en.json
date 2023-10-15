@@ -1,0 +1,12 @@
+{
+  "home": {
+    "headline": "Home",
+    "metadata": {
+      "title": "Home"
+    }
+  },
+  "notFound": {
+    "headline": "Not found",
+    "cta": "Return Home"
+  }
+}

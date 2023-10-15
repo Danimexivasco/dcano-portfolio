@@ -1,0 +1,12 @@
+{
+  "home": {
+    "headline": "Página principal",
+    "metadata": {
+      "title": "Inicio"
+    }
+  },
+  "notFound": {
+    "headline": "Vaya, estamos perdidos!",
+    "cta": "LLévame de vuelta a casa"
+  }
+}
