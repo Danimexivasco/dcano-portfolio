@@ -1,0 +1,13 @@
+@import "../../../styles/variables.module";
+
+.desktopHeader {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    gap: $spacing-2;
+  }
+}

@@ -8,8 +8,9 @@ import { combine } from "@/helpers/combine";
 import { getNumberFromPx } from "@/helpers/getNumberFromPx";
 import DesktopHeader from "./desktop/index";
 import MobileHeader from "./mobile/index";
+import { HeaderProps } from "@/types";
 
-const Header = () => {
+const Header = ({ dictionary, locale }: HeaderProps) => {
   const [ isClient, setIsClient ] = useState(false)
 
   useEffect(() => {
@@ -22,7 +23,7 @@ const Header = () => {
 
   const renderHeader = () => {
     if (isMobile) return <MobileHeader />
-    return <DesktopHeader />
+    return <DesktopHeader dictionary={dictionary} locale={locale} />
   }
 
   return isClient ? (

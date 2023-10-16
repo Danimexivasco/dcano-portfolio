@@ -4,3 +4,13 @@ export const LOCALES_MAP = {
   "en-US": "en",
   "es-ES": "es"
 }
+export const NAVIGATION = [
+  {
+    slug: "/",
+    page: "home"
+  },
+  {
+    slug: "/about",
+    page: "about"
+  },
+]
