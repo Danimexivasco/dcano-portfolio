@@ -4,7 +4,15 @@ export interface NextParamsProp {
   }
 }
 
-export type DictionaryKey = string
+type Locales = "en" | "es"
+
+export interface HeaderProps {
+  dictionary: Dictionary,
+  locale: Locales
+}
+
+export type DictionaryKey = Locales
+
 export interface DictionaryItem {
   [key: DictionaryKey]: string
 }
@@ -13,3 +21,7 @@ export interface DictionaryObject {
 }
 
 export type Dictionary = Record<DictionaryKey, Dictionary>
+
+export interface DictionaryProp {
+  [key: DictionaryKey]: Dictionary
+}

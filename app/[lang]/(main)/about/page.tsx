@@ -1,13 +1,16 @@
-import { Metadata } from "next";
 import React from "react"
+import { Dictionary, NextParamsProp } from "@/types";
+import { getDictionary } from "../../dictionaries";
 
-export const metadata: Metadata = {
-  title: "About",
+export const generateMetadata = async ({ params }: NextParamsProp) => {
+  const dict: Dictionary = await getDictionary(params.lang)
+  return { title: dict.about.metadata.title };
 }
 
-const About = ({}) => {
+const About = async ({ params: { lang } }: NextParamsProp) => {
+  const dict: Dictionary = await getDictionary(lang)
   return (
-    <h1>About</h1>
+    <h1>{dict.about.headline}</h1>
   )
 };
 

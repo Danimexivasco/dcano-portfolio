@@ -1,5 +1,4 @@
 import { Dictionary, NextParamsProp } from "@/types";
-import { Metadata } from "next"
 import { getDictionary } from "../dictionaries"
 
 export const generateMetadata = async ({ params }: NextParamsProp) => {
@@ -7,7 +6,7 @@ export const generateMetadata = async ({ params }: NextParamsProp) => {
   return { title: dict.home.metadata.title };
 }
 
-const Home: React.FC<NextParamsProp> = async ({ params: { lang } }) => {
+const Home = async ({ params: { lang } }: NextParamsProp) => {
   const dict: Dictionary = await getDictionary(lang)
 
   return (
