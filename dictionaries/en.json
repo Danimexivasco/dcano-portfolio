@@ -5,6 +5,12 @@
       "title": "Home"
     }
   },
+  "about": {
+    "headline": "About me",
+    "metadata": {
+      "title": "About Me"
+    }
+  },
   "notFound": {
     "headline": "Not found",
     "cta": "Return Home"

@@ -5,6 +5,12 @@
       "title": "Inicio"
     }
   },
+  "about": {
+    "headline": "Sobre mi",
+    "metadata": {
+      "title": "Sobre mi"
+    }
+  },
   "notFound": {
     "headline": "Vaya, estamos perdidos!",
     "cta": "LLévame de vuelta a casa"
