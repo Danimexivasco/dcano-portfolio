@@ -1,0 +1,11 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+
+.container {
+  padding: 0 $spacing-2;
+  max-width: 1200px;
+  @include sm-and-above {
+    padding: 0 $spacing-6;
+    margin: 0 auto;
+  }
+}
