@@ -1,0 +1,34 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+
+.header {
+  min-height: $header-footer-min-height;
+  background-color: var(--header-footer-bg, $black);
+  color: var(--text-color, $white);
+  display: flex;
+  align-items: center;
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  &.sticky {
+    position: sticky;
+    top: 0;
+    @include sm-and-above {
+      background-color: var(--header-sticky-bg);
+      box-shadow: 0 4px 30px rgba(var(--header-sticky-bg), 0.1);
+      backdrop-filter: blur(4.9px);
+      -webkit-backdrop-filter: blur(4.9px)
+    }
+  }
+  @include sm-and-above {
+    @media (hover: hover) {
+      &:hover {
+        background: var(--header-footer-bg, $black);
+        box-shadow: none;
+        backdrop-filter: none;
+      }
+    }
+  }
+}

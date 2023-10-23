@@ -12,49 +12,8 @@ body {
   max-width: 100vw;
 }
 
-header, main, footer {
-  padding: 0 $spacing-2;
-  @include sm-and-above {
-    padding: 0 $spacing-6;
-  }
-}
-
 main {
   min-height: calc(100vh - (2 * $header-footer-min-height));
-  padding: $spacing-3 $spacing-2;
-  @include sm-and-above {
-    padding: $spacing-3 $spacing-6;
-  }
-}
-
-header, footer {
-  min-height: $header-footer-min-height;
-  background-color: var(--header-footer-bg, $black);
-  color: var(--text-color, $white);
-  display: flex;
-  align-items: center;
-}
-
-header {
-  &.sticky {
-    position: sticky;
-    top: 0;
-    @include sm-and-above {
-      background-color: var(--header-sticky-bg);
-      box-shadow: 0 4px 30px rgba(var(--header-sticky-bg), 0.1);
-      backdrop-filter: blur(4.9px);
-      -webkit-backdrop-filter: blur(4.9px)
-    }
-  }
-  @include sm-and-above {
-    @media (hover: hover) {
-      &:hover {
-        background: var(--header-footer-bg, $black);
-        box-shadow: none;
-        backdrop-filter: none;
-      }
-    }
-  }
 }
 
 a {
@@ -69,7 +28,7 @@ a {
 	--header-footer-bg: #{$black};
   --header-footer-bg-rgb: #{$blackRGB};
   --header-sticky-bg: rgba(var(--header-footer-bg-rgb), 0.85);
-  --text-color: #{$white}
+  --text-color: #{$white};
 	
 	/* Asks browser to behave in dark mode */
 	color-scheme: dark;

@@ -1,0 +1,14 @@
+@import "../../styles/variables.module";
+
+.footer {
+  min-height: $header-footer-min-height;
+  background-color: var(--header-footer-bg, $black);
+  color: var(--text-color, $white);
+  display: flex;
+  align-items: center;
+  .footerContainer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+}

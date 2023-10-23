@@ -9,6 +9,8 @@ import { getNumberFromPx } from "@/helpers/getNumberFromPx";
 import DesktopHeader from "./desktop/index";
 import MobileHeader from "./mobile/index";
 import { HeaderProps } from "@/types";
+import Container from "../container";
+import styles from "./styles.module.scss";
 
 const Header = ({ dictionary, locale }: HeaderProps) => {
   const [ isClient, setIsClient ] = useState(false)
@@ -27,8 +29,10 @@ const Header = ({ dictionary, locale }: HeaderProps) => {
   }
 
   return isClient ? (
-    <header className={combine((scrollDirection === "up" && scrollY > 0) && "sticky")}>
-      {renderHeader()}
+    <header className={combine(styles.header, (scrollDirection === "up" && scrollY > 0) && "sticky")}>
+      <Container className={styles.headerContainer}>
+        {renderHeader()}
+      </Container>
     </header>
   ) : (<header></header>)
 };
