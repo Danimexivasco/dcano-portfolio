@@ -1,0 +1,27 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+
+.separator {
+  height: $spacing-5;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  @include sm-and-above {
+    height: $spacing-10;
+  }
+  &.top {
+    &.topLeft {
+      background-image: linear-gradient(to bottom left, $black, $black 49%, $white 50%, $white);
+    }
+    &.bottomLeft {
+      background-image: linear-gradient(to bottom right,$black, $black 49%, $white 50%, $white);
+    }
+  }
+  &.bottom {
+    &.topLeft {
+      background-image: linear-gradient(to bottom left, $white, $white 49%, $black 50%, $black);
+    }
+    &.bottomLeft {
+      background-image: linear-gradient(to bottom right,$white, $white 49%, $black 50%, $black);
+    }
+  }
+}
