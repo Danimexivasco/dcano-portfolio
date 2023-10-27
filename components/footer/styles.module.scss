@@ -2,13 +2,24 @@
 
 .footer {
   min-height: $header-footer-min-height;
-  background-color: var(--header-footer-bg, $black);
+  background-color: var(--background-contrast, $black);
   color: var(--text-color, $white);
   display: flex;
   align-items: center;
   .footerContainer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex: 1;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 30px;
+      height: 30px;
+      filter: invert(1)
+    }
   }
 }
