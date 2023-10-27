@@ -1,5 +1,6 @@
 @import "../styles/_variables.module.scss";
 @import "../styles/screenhooks";
+@import "../styles/text";
 
 * {
   box-sizing: border-box;
@@ -20,24 +21,25 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 :root {
   --header-footer-height: 75px;
 }
 
+// TODO: Add color switch
 :root[data-theme='dark'] {
-	--header-footer-bg: #{$black};
   --header-footer-bg-rgb: #{$blackRGB};
   --header-sticky-bg: rgba(var(--header-footer-bg-rgb), 0.85);
   --text-color: #{$white};
+  --background-contrast: #{$black};
 	
 	/* Asks browser to behave in dark mode */
 	color-scheme: dark;
 } 
 
 :root[data-theme='light'] {
-	--header-footer-bg: #{$black};
   --header-footer-bg-rgb: #{$blackRGB};
   --header-sticky-bg: rgba(var(--header-footer-bg-rgb), 0.85);
-  --text-color: #{$white}
+  --text-color: #{$white};
 }
 

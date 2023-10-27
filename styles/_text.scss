@@ -1,0 +1,35 @@
+h1 {
+  font-size: clamp(38px, 3vw, 42px);
+  line-height: 1.29em;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+h2 {
+  font-size: clamp(30px, 2.5vw, 34px);
+  line-height: 1.29em;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+h3 {
+  font-size: clamp(23px, 2vw, 26px);
+  line-height: 1.29em;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+h4 {
+  font-size: clamp(20px, 1.5vw, 21px);
+  line-height: 1.29em;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+p, span {
+  font-size: 18px;
+  line-height: 1.29em;
+  letter-spacing: 0;
+}
+button {
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: 0;
+  font-weight: 600;
+}
