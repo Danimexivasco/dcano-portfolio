@@ -1,7 +1,9 @@
+import localFont from "next/font/local"
 import LinkedinIcon from "/public/icons/linkedin.svg"
 import GithubIcon from "/public/icons/github.svg"
 import GitlabIcon from "/public/icons/gitlab.svg"
 import DevIcon from "/public/icons/dev.svg"
+import { RandomColorMap } from "@/types"
 
 export const LOCALES = [ "en-US", "es-ES" ]
 export const DEFAULT_LOCALE = "en-US"
@@ -42,3 +44,33 @@ export const SOCIALS = [
     href: "https://dev.to/danimexivasco"
   },
 ]
+
+export const RINGBEARER_FONT = localFont({
+  src: [
+    {
+      path: "../public/fonts/ringbearer/Ringbearer.woff",
+      weight: "400",
+      style: "normal"
+    },
+    {
+      path: "../public/fonts/ringbearer/Ringbearer.woff",
+      weight: "400",
+      style: "normal"
+    },
+    {
+      path: "../public/fonts/ringbearer/Ringbearer.woff2",
+      weight: "400",
+      style: "normal"
+    },
+  ],
+  display: "swap",
+})
+
+export const RANDOM_COLOR_OPTIONS = [ "orange", "blue", "green", "red" ]
+
+export const RANDOM_COLOR_MAP: RandomColorMap = {
+  orange: "252, 163, 17",
+  blue: "53, 129, 184",
+  green: "81, 152, 114",
+  red: "182, 72, 62"
+}

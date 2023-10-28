@@ -5,9 +5,73 @@
   flex: 1;
   justify-content: space-between;
   align-items: center;
+  .logo {
+    font-family: var(--font-ringBearer);
+  }
+  .rightSide {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
   ul {
     list-style: none;
     display: flex;
     gap: $spacing-2;
+  }
+  .navItem {
+    font-size: clamp(20px, 1.5vw, 21px);
+    line-height: 1.29em;
+    letter-spacing: 0;
+    font-weight: 400;
+    @media(hover:hover) {
+      &:hover {
+        color: rgb(var(--random-rgb-color));
+      }
+    }
+    &.active {
+      color: rgb(var(--random-rgb-color));
+    }
+  }
+  .languageSelector {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @media(hover:hover) {
+      &:hover {
+        .dropdown {
+          height: 40px;
+        }
+      }
+      > * {
+        cursor: pointer;
+      }
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .langContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dropdown {
+    height: 0;
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    padding: 0 $spacing-3;
+    width: fit-content;
+    background: rgba($white, 0.2);
+    box-shadow: 0 4px 30px rgba($white, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    white-space: nowrap;
+    img {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

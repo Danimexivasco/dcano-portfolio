@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.2",
+    "hamburger-react": "^2.5.0",
     "negotiator": "^0.6.3",
     "next": "13.5.4",
     "react": "^18",

@@ -3,10 +3,23 @@
 
 .header {
   min-height: $header-footer-min-height;
-  background-color: var(--header-footer-bg, $black);
+  background-color: var(--background-contrast, $black);
   color: var(--text-color, $white);
   display: flex;
   align-items: center;
+  &.red {
+    border-bottom: 4px solid $red;
+  }
+  &.orange {
+    border-bottom: 4px solid $orange;
+  }
+  &.green {
+    border-bottom: 4px solid $green;
+  }
+  &.blue {
+    border-bottom: 4px solid $blue;
+  }
+
   .headerContainer {
     display: flex;
     align-items: center;
@@ -25,7 +38,7 @@
   @include sm-and-above {
     @media (hover: hover) {
       &:hover {
-        background: var(--header-footer-bg, $black);
+        background: var(--background-contrast, $black);
         box-shadow: none;
         backdrop-filter: none;
       }
