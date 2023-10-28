@@ -1,6 +1,8 @@
 {
   "home": {
-    "headline": "Página principal",
+    "headline": "Daniel Cano",
+    "subHeadline": "## I craft digital experiences: *Front-end* alchemist at your service",
+    "text": "Web development enthusiast with great goals and objectives, and the same motivation and discipline to carry them out. Constant learning and improvement driven by great curiosity.",
     "metadata": {
       "title": "Inicio"
     }
@@ -11,8 +13,17 @@
       "title": "Sobre mi"
     }
   },
+  "projects": {
+    "headline": "Proyectos",
+    "metadata": {
+      "title": "Proyectos"
+    }
+  },
   "notFound": {
     "headline": "Vaya, estamos perdidos!",
     "cta": "LLévame de vuelta a casa"
+  },
+  "footer": {
+    "text": "Hecho con 💙 por *@danimexivasco*"
   }
 }

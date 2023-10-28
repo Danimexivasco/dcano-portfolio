@@ -1,0 +1,112 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+@import "../../styles/typed";
+
+.hero {
+  background-color: $black;
+  color: $white;
+  padding: $spacing-6 0;
+  @include sm-and-above {
+    padding: $spacing-12 0;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: clamp(50px, 8vw, 120px);
+    @include lg-and-above {
+      grid-template-columns: 1.75fr 1fr;
+    }
+  }
+  .typed {
+    display: block;
+    font-family: monospace;
+    font-size: 75%;
+    width: 100%;
+    margin-bottom: $spacing-2;
+    > .placeholder {
+      font-size: 22px;
+      display: block;
+      appearance: none;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      pointer-events: none;
+      &.en {
+        @include typed(
+          "Hello, my name is",
+          "Speak friend and enter",
+          1.2,
+          (
+            caret-width: 15px,
+            caret-space: 1px
+          )
+        );
+        @include sm-and-above {
+          @include typed(
+            "Hello, my name is",
+            "const speakFriendAndEnter = () => mellon",
+            1.2,
+            (
+              caret-width: 15px,
+              caret-space: 1px
+            )
+          );
+        }
+      }
+      &.es {
+        @include typed(
+          "Hola, mi nombre es",
+          "Dí amigo, y entra",
+          1.2,
+          (
+            caret-width: 15px,
+            caret-space: 1px
+          )
+        );
+        @include sm-and-above {
+          @include typed(
+            "Hola, mi nombre es",
+            "const diAmigoYEntra = () => mellon",
+            1.2,
+            (
+              caret-width: 15px,
+              caret-space: 1px
+            )
+          );
+        }
+      }
+    }
+  }
+  .headline {
+    margin-bottom: $spacing-1;
+  }
+  .subHeadline {
+    margin-bottom: $spacing-4;
+    em {
+      color: rgb(var(--random-rgb-color));
+    }
+  }
+  .shadowContainer {
+    filter: drop-shadow(7px 0px 6px rgba(var(--random-rgb-color), 0.3));
+    padding: 20px 0;
+  }
+  .imgContainer {
+    display: grid;
+    place-items: center;
+  }
+  .hexagon {
+    width: clamp(250px, 65vw, 320px);
+    height: clamp(250px, 65vw, 350px);
+    background-color: #424242;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+}

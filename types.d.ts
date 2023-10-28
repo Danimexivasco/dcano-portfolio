@@ -4,24 +4,26 @@ export interface NextParamsProp {
   }
 }
 
-type Locales = "en" | "es"
+export type Locales = "en" | "es"
 
 export interface HeaderProps {
   dictionary: Dictionary,
   locale: Locales
 }
 
-export type DictionaryKey = Locales
-
 export interface DictionaryItem {
-  [key: DictionaryKey]: string
+  [key: Locales]: string
 }
 export interface DictionaryObject {
-  [key: DictionaryKey]: DictionaryItem
+  [key: Locales]: DictionaryItem
 }
 
-export type Dictionary = Record<DictionaryKey, Dictionary>
+export type Dictionary = Record<Locales, Dictionary>
 
 export interface DictionaryProp {
-  [key: DictionaryKey]: Dictionary
+  [key: Locales]: Dictionary
+}
+
+export interface RandomColorMap {
+  [key: string | null]: string;
 }
