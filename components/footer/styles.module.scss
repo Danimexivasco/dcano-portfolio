@@ -12,14 +12,9 @@
     justify-content: space-between;
     flex: 1;
   }
-  .socials {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    img {
-      width: 30px;
-      height: 30px;
-      filter: invert(1)
+  .text {
+    em {
+      color: rgb(var(--random-rgb-color, $whiteRGB))
     }
   }
 }

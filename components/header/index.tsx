@@ -22,6 +22,7 @@ const Header = ({ dictionary, locale }: HeaderProps) => {
     setIsClient(true)
     if (randomColor) {
       document.documentElement.style.setProperty("--random-rgb-color", RANDOM_COLOR_MAP[ randomColor ]);
+      sessionStorage.setItem("random-color", randomColor)
     }
   }, [ randomColor ])
 

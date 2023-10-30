@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    transition: transform .2s ease;
+    @media(hover:hover) {
+      &:hover {
+        transform: scale(1.2);
+        &.red {
+          filter: invert(36%) sepia(70%) saturate(1442%) hue-rotate(335deg) brightness(77%) contrast(80%);
+        }
+        &.orange {
+          filter: invert(69%) sepia(53%) saturate(2582%) hue-rotate(352deg) brightness(104%) contrast(98%);
+        }
+        &.green {
+          filter: invert(59%) sepia(25%) saturate(680%) hue-rotate(95deg) brightness(86%) contrast(83%);
+        }
+        &.blue {
+          filter: invert(42%) sepia(98%) saturate(351%) hue-rotate(162deg) brightness(89%) contrast(91%);
+        }
+      }
+    }
+  }
+}

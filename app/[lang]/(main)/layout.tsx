@@ -18,7 +18,7 @@ const MainLayout = async ({ children, params: { lang } }: MainLayoutProps) => {
       <main>
         {children}
       </main>
-      <Footer />
+      <Footer dictionary={dict}/>
     </>
   )
 }

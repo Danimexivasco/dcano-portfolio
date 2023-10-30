@@ -2,7 +2,7 @@
 @import "../../styles/screenhooks";
 
 .container {
-  padding: 0 $spacing-2;
+  padding: 0 $spacing-3;
   max-width: 1200px;
   @include sm-and-above {
     padding: 0 $spacing-6;
