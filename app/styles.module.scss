@@ -21,5 +21,9 @@
 
   .card {
     width: clamp(350px, 100%, 500px);
+    text-align: center;
+  }
+  .cta {
+    margin-top: $spacing-4;
   }
 }
