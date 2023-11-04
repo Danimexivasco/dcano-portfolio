@@ -13,8 +13,9 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    gap: clamp(50px, 8vw, 120px);
+    gap: clamp(25px, 8vw, 120px);
     @include lg-and-above {
+      gap: clamp(50px, 8vw, 120px);
       grid-template-columns: 1.75fr 1fr;
     }
   }
@@ -39,7 +40,7 @@
           "Speak friend and enter",
           1.2,
           (
-            caret-width: 15px,
+            caret-width: 12px,
             caret-space: 1px
           )
         );
@@ -49,7 +50,7 @@
             "const speakFriendAndEnter = () => mellon",
             1.2,
             (
-              caret-width: 15px,
+              caret-width: 12px,
               caret-space: 1px
             )
           );
@@ -61,7 +62,7 @@
           "Dí amigo, y entra",
           1.2,
           (
-            caret-width: 15px,
+            caret-width: 12px,
             caret-space: 1px
           )
         );
@@ -71,7 +72,7 @@
             "const diAmigoYEntra = () => mellon",
             1.2,
             (
-              caret-width: 15px,
+              caret-width: 12px,
               caret-space: 1px
             )
           );

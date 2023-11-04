@@ -1,9 +1,9 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
-import { SOCIALS } from "@/utils/constants";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/link";
+import { SOCIALS } from "@/utils/constants";
 import styles from "./styles.module.scss";
 
 

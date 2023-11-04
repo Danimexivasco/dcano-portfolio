@@ -1,0 +1,26 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+
+.technologies {
+  padding: $spacing-8 0;
+  @include sm-and-above {
+    text-align: center;
+  }
+  .title {
+    text-transform: uppercase;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: $spacing-5;
+    gap: 15px;
+    @include sm-and-above {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  .hidden {
+    opacity: 0;
+  }
+}

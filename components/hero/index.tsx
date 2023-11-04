@@ -43,6 +43,7 @@ const Hero = ({ headline, subHeadline, text, img, isHome, locale }: HeroProps) =
                   alt={img.altText}
                   width={300}
                   height={300}
+                  priority
                   className={styles.img}
                 />
               </div>

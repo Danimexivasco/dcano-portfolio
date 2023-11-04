@@ -1,0 +1,88 @@
+@import "../../../styles/variables.module";
+@import "../../../styles/screenhooks";
+
+.container {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  padding: 10px 10px 10px 50px;
+  @media(hover:hover) {
+    &:hover {
+      cursor: pointer;
+      &:after {
+        background-size: 100% 100%;
+      }
+    }
+  }
+  @include md-and-above {
+    padding: 10px 65px;
+    width: 50%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 5px solid rgb(var(--random-rgb-color, $blackRGB));
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 1;
+    background-image: radial-gradient(circle at center, rgb(var(--random-rgb-color, $blackRGB)) 60%, transparent 60%);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 0%;
+    transition: background-size .3s;
+  }
+  &:before {
+    @include sm-and-below {
+      left: 8px;
+      width: 43px;
+    }
+  }
+  &.active {
+    &:after {
+      background-size: 100% 100%;
+    }
+  }
+}
+.content {
+  padding: 20px 30px;
+  background: rgba(var(--random-rgb-color, $blackRGB), 0.2);
+  border-radius: 16px;
+  box-shadow: 4px 4px 8px rgba(var(--random-rgb-color, $blackRGB), 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(var(--random-rgb-color, $blackRGB), 0.2);
+  position: relative;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.year {
+  margin-bottom: calc($spacing-1/2);
+}
+.headline {
+  border-bottom: 1px solid rgb(var(--random-rgb-color, $blackRGB));
+  padding-bottom: $spacing-1;
+  &.link {
+    transition: color .2s ease;
+    @media(hover: hover) {
+      &:hover {
+        color: rgb(var(--random-rgb-color, $blackRGB));
+      }
+    }
+  }
+}
+.subHeadline {
+  margin-top: 1rem;
+}
+.fromTo {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.duration {
+  font-style: italic;
+}

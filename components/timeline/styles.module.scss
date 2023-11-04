@@ -1,0 +1,73 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+
+.timelineContainer {
+  padding: $spacing-5 0;
+  .headline {
+    margin-bottom: $spacing-4;
+    @include md-and-above {
+      text-align: center;
+    }
+  }
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: $black;
+      border-radius: 50px;
+      top: 0;
+      bottom: 0;
+      left: 10px;
+      margin-left: -3px;
+      @include md-and-above {
+        left: 50%;
+      }
+    }
+  }
+
+  .left {
+    left: 0;
+    &:before {
+      right: 0;
+    }
+  }
+  .right {
+    left: 0%;
+    @include md-and-above {
+      left: 50%;
+    }
+    &:before {
+      left: 8px;
+      @include md-and-above {
+        width: 0;
+      }
+    }
+    &:after {
+      left: -16px;
+    }
+  }
+  .left, .right {
+    &:before {
+      content: " ";
+      height: 2px;
+      background-color: rgb(var(--random-rgb-color, $blackRGB));
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      width: 43px;
+      @include md-and-above {
+        width: 65px;
+      }
+    }
+    &:after {
+      @include sm-and-below {
+        left: -7px;
+      }
+    }
+  }
+}
