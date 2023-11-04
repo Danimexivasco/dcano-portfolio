@@ -17,9 +17,8 @@ main {
   min-height: calc(100vh - (2 * $header-footer-min-height));
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+p {
+  margin: 1rem 0;
 }
 
 :root {
@@ -29,7 +28,7 @@ a {
 // TODO: Add color switch
 :root[data-theme='dark'] {
   --header-footer-bg-rgb: #{$blackRGB};
-  --header-sticky-bg: rgba(var(--header-footer-bg-rgb), 0.85);
+  --header-sticky-bg: rgba(var(--header-footer-bg-rgb, $blackRGB), 0.85);
   --text-color: #{$white};
   --background-contrast: #{$black};
 	
