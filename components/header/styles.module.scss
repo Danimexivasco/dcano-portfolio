@@ -7,6 +7,7 @@
   color: var(--text-color, $white);
   display: flex;
   align-items: center;
+  transition: all 0.4s ease;
   &.red {
     border-bottom: 4px solid $red;
   }
@@ -28,19 +29,42 @@
   &.sticky {
     position: sticky;
     top: 0;
+    z-index: 99;
     @include sm-and-above {
-      background-color: var(--header-sticky-bg);
+      background-color: rgba($black, 0.8);
       box-shadow: 0 4px 30px rgba(var(--header-sticky-bg), 0.1);
       backdrop-filter: blur(4.9px);
-      -webkit-backdrop-filter: blur(4.9px)
+      -webkit-backdrop-filter: blur(4.9px);
+      &.red {
+        border-bottom: 4px solid rgba($red, 0.8);
+      }
+      &.orange {
+        border-bottom: 4px solid rgba($orange, 0.8);
+      }
+      &.green {
+        border-bottom: 4px solid rgba($green, 0.8);
+      }
+      &.blue {
+        border-bottom: 4px solid rgba($blue, 0.8);
+      }
     }
   }
   @include sm-and-above {
     @media (hover: hover) {
       &:hover {
         background: var(--background-contrast, $black);
-        box-shadow: none;
-        backdrop-filter: none;
+        &.red {
+          border-bottom: 4px solid $red;
+        }
+        &.orange {
+          border-bottom: 4px solid $orange;
+        }
+        &.green {
+          border-bottom: 4px solid $green;
+        }
+        &.blue {
+          border-bottom: 4px solid $blue;
+        }
       }
     }
   }

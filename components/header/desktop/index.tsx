@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "next/link";
 import { usePathname } from "next/navigation"
 import { HeaderProps } from "@/types";
 import { NAVIGATION, RINGBEARER_FONT } from "@/utils/constants";
@@ -7,6 +6,7 @@ import { combine } from "@/helpers/combine";
 import { checkUrl } from "@/helpers/checkUrl";
 import { getLocalizedUrl } from "@/helpers/getlocalizedUrl";
 import { renderSpainLangOption, renderUsaLangOption } from "@/helpers/renderFlags";
+import Link from "@/components/link";
 import styles from "./styles.module.scss"
 
 const DesktopHeader = ({ dictionary, locale }: HeaderProps) => {
@@ -38,9 +38,13 @@ const DesktopHeader = ({ dictionary, locale }: HeaderProps) => {
             <div className={styles.langContainer}>{renderSpainLangOption()}</div>
           }
           {locale === "en" ?
-            <Link href={localizedUrl || "/"} className={combine(styles.langContainer, styles.dropdown )}>{renderSpainLangOption()}</Link>
+            <Link href={localizedUrl || "/"} className={combine(styles.langContainer, styles.dropdown )}>
+              {renderSpainLangOption()}
+            </Link>
             :
-            <Link href={localizedUrl || "/"} className={combine(styles.langContainer, styles.dropdown )}>{renderUsaLangOption()}</Link>
+            <Link href={localizedUrl || "/"} className={combine(styles.langContainer, styles.dropdown )}>
+              {renderUsaLangOption()}
+            </Link>
           }
         </div>
       </div>

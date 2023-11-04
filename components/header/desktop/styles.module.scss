@@ -23,6 +23,7 @@
     line-height: 1.29em;
     letter-spacing: 0;
     font-weight: 400;
+    transition: color .15s ease;
     @media(hover:hover) {
       &:hover {
         color: rgb(var(--random-rgb-color));
@@ -40,6 +41,9 @@
       &:hover {
         .dropdown {
           height: 40px;
+          span, img {
+            opacity: 1;
+          }
         }
       }
       > * {
@@ -72,6 +76,10 @@
     img {
       width: 24px;
       height: 24px;
+    }
+    span, img {
+      transition: opacity 0.2s ease;
+      opacity: 0;
     }
   }
 }

@@ -36,7 +36,7 @@ const Header = ({ dictionary, locale }: HeaderProps) => {
   }
 
   return isClient ? (
-    <header className={combine(styles.header, (scrollDirection === "up" && scrollY > 0) && "sticky", randomColor && styles[ randomColor ])}>
+    <header className={combine(styles.header, (scrollDirection === "up" && scrollY > 0) && styles.sticky, randomColor && styles[ randomColor ])}>
       <Container className={styles.headerContainer}>
         {renderHeader()}
       </Container>

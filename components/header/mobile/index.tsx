@@ -1,16 +1,16 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
-import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Fade as Hamburger } from "hamburger-react";
 import { HeaderProps } from "@/types";
-import styles from "./styles.module.scss"
 import { NAVIGATION, RINGBEARER_FONT } from "@/utils/constants";
 import { combine } from "@/helpers/combine";
 import { checkUrl } from "@/helpers/checkUrl";
-import { usePathname } from "next/navigation";
 import { renderSpainLangOption, renderUsaLangOption } from "@/helpers/renderFlags";
 import { getLocalizedUrl } from "@/helpers/getlocalizedUrl";
+import Link from "@/components/link";
+import styles from "./styles.module.scss"
 
 
 const MobileHeader = ({ dictionary, locale }: HeaderProps) => {
