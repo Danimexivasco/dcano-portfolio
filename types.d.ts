@@ -11,19 +11,19 @@ export interface HeaderProps {
   locale: Locales
 }
 
+export interface DicitionaryNode {
+  [key: string]: string
+}
+
 export interface DictionaryItem {
-  [key: Locales]: string
-}
-export interface DictionaryObject {
-  [key: Locales]: DictionaryItem
+  [key: string]: string | DicitionaryNode | ReactNode
 }
 
-export type Dictionary = Record<Locales, Dictionary>
-
-export interface DictionaryProp {
-  [key: Locales]: Dictionary
-}
+export type Dictionary = Record<string, DictionaryItem>
 
 export interface RandomColorMap {
   [key: string | null]: string;
+}
+export interface TechnologyItem {
+  [key: string]: string;
 }

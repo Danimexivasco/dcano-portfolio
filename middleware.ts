@@ -1,11 +1,11 @@
 import { match } from "@formatjs/intl-localematcher"
-import Negotiator from "negotiator"
+import Negotiator, { Headers } from "negotiator"
 import { NextRequest } from "next/server"
 import { getCleanLocale } from "./helpers/getLocale"
 import { DEFAULT_LOCALE, LOCALES } from "./utils/constants"
 
 const getLocale = (request: NextRequest) => {
-  const headers = { "accept-language": request.headers.get("accept-language") }
+  const headers: Headers = { "accept-language": request.headers.get("accept-language") ?? "" };
   const languages = new Negotiator({ headers })?.languages()
   return match(languages, LOCALES, DEFAULT_LOCALE)
 }
