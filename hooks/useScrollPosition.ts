@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 
 export interface ScrollState {
-  lastScrollTop: number,
-  scrollY: number,
-  scrollDirection: "down" | "up" | "",
+  lastScrollTop: number
+  scrollY: number
+  scrollDirection: "down" | "up" | ""
 }
 
 export const useScrollPosition = () => {

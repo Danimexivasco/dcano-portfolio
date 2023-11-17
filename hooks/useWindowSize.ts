@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 
 export interface WindowSize {
-  width: number | undefined,
+  width: number | undefined
   height: number | undefined
 }
 
