@@ -1,57 +1,104 @@
 import React from "react"
-import { Locales } from "@/types";
-import styles from "./styles.module.scss"
-import Container from "../container";
 import Image from "next/image";
-import Separator from "../separator";
-import { combine } from "@/helpers/combine";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Markdown from "react-markdown";
+import { StaticImageData } from "next/dist/shared/lib/get-img-props";
+import { Locales } from "@/types";
+import { combine } from "@/helpers/combine";
+import Container from "../container";
+import Separator from "../separator";
+import Link from "../link";
+import styles from "./styles.module.scss"
 
 export interface HeroProps {
-  headline: string,
-  subHeadline: string,
-  text: string,
-  img: {
-    src: StaticImport,
-    altText: string
-  },
-  isHome: boolean,
-  locale: Locales
+  headline?: string
+  subHeadline?: string
+  text?: string
+  img?: {
+    src: StaticImageData
+    srcLight?: StaticImageData
+    alt: string
+  }
+  isHome?: boolean
+  isProjectDetail?: boolean
+  locale?: Locales
+  cuttedShapeStartPoint?: "topLeft" | "bottomLeft"
+  squareImg?: boolean
+  projectCtaHref?: string
+  projectCtaText?: string
+  isPersonalProject?: boolean
 }
 
-const Hero = ({ headline, subHeadline, text, img, isHome, locale }: HeroProps) => {
+
+const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint, isProjectDetail, locale = "en", squareImg, projectCtaHref, projectCtaText, isPersonalProject }: HeroProps) => {
+  const isThisPortfolio = projectCtaHref === "/"
   return (
     <>
-      <section className={styles.hero}>
+      <section className={combine(styles.hero, (!img || isProjectDetail) && styles.withoutImg)}>
         <Container className={styles.container}>
-          <div className={styles.content}>
-            {isHome &&
-              <div className={styles.typed}>
-                <p className={combine(styles.placeholder, styles[ locale ])}></p>
+          {!isProjectDetail ? (
+            <>
+              <div>
+                {isHome &&
+                <div className={styles.typed}>
+                  <p className={combine(styles.placeholder, styles[ locale ])}></p>
+                </div>
+                }
+                <h1 className={styles.headline}>{headline}</h1>
+                {subHeadline &&
+                  <Markdown className={styles.subHeadline}>{subHeadline}</Markdown>
+                }
+                {text &&
+                  <Markdown className={styles.text}>{text}</Markdown>
+                }
               </div>
-            }
-            <h1 className={styles.headline}>{headline}</h1>
-            <Markdown className={styles.subHeadline}>{subHeadline}</Markdown>
-            <p>{text}</p>
-          </div>
-          <div className={styles.imgContainer}>
-            <div className={styles.shadowContainer}>
-              <div className={styles.hexagon}>
+              {(img && !isProjectDetail) &&
+              <div className={styles.imgContainer}>
+                <div className={styles.shadowContainer}>
+                  <div className={styles.hexagon}>
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      width={300}
+                      height={300}
+                      priority
+                      className={styles.img}
+                    />
+                  </div>
+                </div>
+              </div>
+              }
+            </>
+          ) : (
+            <div className={styles.projectDetail}>
+              {isPersonalProject ? (
+                <h1 className={styles.headline}>{headline}</h1>
+              ) : (
+                img &&
                 <Image
-                  src={img.src}
-                  alt={img.altText}
+                  src={img.srcLight || img.src}
+                  alt={img.alt}
                   width={300}
                   height={300}
                   priority
-                  className={styles.img}
+                  className={combine(styles.img, squareImg && styles.square)}
                 />
-              </div>
+              )}
+              {projectCtaHref && projectCtaText &&
+              isThisPortfolio ? (
+                  <Link href={projectCtaHref} asButton className={styles.projectCta}>{projectCtaText}</Link>
+                ) : (
+                  <Link href={projectCtaHref} asButton className={styles.projectCta} external>{projectCtaText} &#10697;</Link>
+                )
+              }
             </div>
-          </div>
+          )}
         </Container>
       </section>
-      <Separator startPoint="bottomLeft" filledPart="top"/>
+      {cuttedShapeStartPoint === "topLeft" ? (
+        <Separator startPoint="topLeft" filledPart="top"/>
+      ) : (
+        <Separator startPoint="bottomLeft" filledPart="top"/>
+      )}
     </>
   )
 };

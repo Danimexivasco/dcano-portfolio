@@ -9,6 +9,15 @@
   @include sm-and-above {
     padding: $spacing-12 0;
   }
+  &.withoutImg {
+    @include sm-and-above {
+      text-align: center;
+      padding: $spacing-12 0 $spacing-8 0;
+    }
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -47,7 +56,7 @@
         @include sm-and-above {
           @include typed(
             "Hello, my name is",
-            "const speakFriendAndEnter = () => mellon",
+            "const speakFriendAndEnter = () => \"mellon\"",
             1.2,
             (
               caret-width: 12px,
@@ -69,7 +78,7 @@
         @include sm-and-above {
           @include typed(
             "Hola, mi nombre es",
-            "const diAmigoYEntra = () => mellon",
+            "const diAmigoYEntra = () => \"mellon\"",
             1.2,
             (
               caret-width: 12px,
@@ -82,11 +91,35 @@
   }
   .headline {
     margin-bottom: $spacing-1;
+    text-transform: uppercase;
+  }
+  .projectDetail {
+    display: grid;
+    justify-items: center;
+    .img {
+      width: clamp(280px, 30vw, 400px);
+      &.square {
+        max-height: 17vh;
+        width: fit-content;
+      }
+    }
+  }
+  .projectCta {
+    margin-top: $spacing-5;
   }
   .subHeadline {
     margin-bottom: $spacing-4;
     em {
       color: rgb(var(--random-rgb-color));
+    }
+  }
+  .text {
+    strong {
+      transition: color 0.3s ease;
+      color: rgb(var(--random-rgb-color, $whiteRGB));
+      @include sm-and-above {
+        color: unset;
+      }
     }
   }
   .shadowContainer {
@@ -109,5 +142,12 @@
     height: 100%;
     object-fit: cover;
     object-position: left;
+  }
+  @media(hover:hover) {
+    &:hover {
+      strong {
+        color: rgb(var(--random-rgb-color, $whiteRGB));
+      }
+    }
   }
 }
