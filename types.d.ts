@@ -37,3 +37,13 @@ export interface QuoteItem {
   author: string
   source?: string
 }
+
+export interface NavigationItem {
+  slug: string
+  page: string
+}
+export interface SocialItem {
+  alt: string
+  icon: StaticImageData
+  href: string
+}
