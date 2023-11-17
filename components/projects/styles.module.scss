@@ -1,0 +1,50 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+
+.headline, .text {
+  @include sm-and-above {
+    text-align: center;
+  }
+}
+.text * {
+  margin-bottom: $spacing-6;
+}
+.projectsContainer {
+  padding-top: $spacing-6;
+  padding-bottom: $spacing-6;
+  &.dark {
+    background-color: $black;
+    color: $white;
+  }
+  strong {
+    transition: color 0.3s ease;
+    color: rgb(var(--random-rgb-color, $blackRGB));
+    @include sm-and-above {
+      font-size: 18px;
+      color: unset;
+    }
+  }
+  @media (hover:hover) {
+    &:hover {
+      strong {
+        color: rgb(var(--random-rgb-color, $blackRGB));
+      }
+    }
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-6;
+  @include sm-and-above {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $spacing-8 $spacing-6;
+  }
+}
+.to404 {
+  margin-top: $spacing-6;
+  margin-bottom: $spacing-6;
+  @include sm-and-above {
+    text-align: center;
+  }
+}
