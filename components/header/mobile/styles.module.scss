@@ -30,7 +30,9 @@
   }
   .navItem {
     padding-bottom: $spacing-6;
-    font-size: 30px;
+    * {
+      font-size: 30px;
+    }
     &.active {
       color: rgb(var(--random-rgb-color));
     }

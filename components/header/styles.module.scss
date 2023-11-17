@@ -8,6 +8,9 @@
   display: flex;
   align-items: center;
   transition: all 0.4s ease;
+  position: sticky;
+  top: -75px;
+  z-index: 99;
   &.red {
     border-bottom: 4px solid $red;
   }
@@ -26,10 +29,8 @@
     align-items: center;
     flex: 1;
   }
-  &.sticky {
-    position: sticky;
+  &.inScroll {
     top: 0;
-    z-index: 99;
     @include sm-and-above {
       background-color: rgba($black, 0.8);
       box-shadow: 0 4px 30px rgba(var(--header-sticky-bg), 0.1);

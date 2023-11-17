@@ -16,7 +16,7 @@ import { RANDOM_COLOR_MAP, RANDOM_COLOR_OPTIONS } from "@/utils/constants";
 
 const Header = ({ dictionary, locale }: HeaderProps) => {
   const [ isClient, setIsClient ] = useState(false)
-  const [ randomColor, setRandomColor ] = useState(() => getRandomValue(RANDOM_COLOR_OPTIONS))
+  const [ randomColor, setRandomColor ] = useState(() => getRandomValue(RANDOM_COLOR_OPTIONS) as string)
 
   useEffect(() => {
     setIsClient(true)
@@ -36,7 +36,10 @@ const Header = ({ dictionary, locale }: HeaderProps) => {
   }
 
   return isClient ? (
-    <header className={combine(styles.header, (scrollDirection === "up" && scrollY > 0) && styles.sticky, randomColor && styles[ randomColor ])}>
+    <header className={combine(styles.header,
+      (scrollDirection === "up" && scrollY > 0) && styles.inScroll,
+      randomColor && styles[ randomColor ]
+    )}>
       <Container className={styles.headerContainer}>
         {renderHeader()}
       </Container>
