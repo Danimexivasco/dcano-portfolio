@@ -5,7 +5,7 @@ import { combine } from "@/helpers/combine";
 import styles from "./styles.module.scss"
 
 export interface TagProps {
-  item: TechnologyItem,
+  item: TechnologyItem
   className?: string
 }
 

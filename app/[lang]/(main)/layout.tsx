@@ -4,7 +4,7 @@ import { Dictionary, Locales } from "@/types"
 import { getDictionary } from "../dictionaries"
 
 export interface MainLayoutProps {
-  children: React.ReactNode,
+  children: React.ReactNode
   params: {
     lang: Locales
   }

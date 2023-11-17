@@ -3,7 +3,7 @@ import styles from "./styles.module.scss"
 import { combine } from "@/helpers/combine";
 
 export interface SeparatorProps {
-  startPoint: "topLeft" | "bottomLeft",
+  startPoint: "topLeft" | "bottomLeft"
   filledPart: "top" | "bottom"
 }
 
