@@ -12,4 +12,12 @@ const dictionaries: Dictionaries = {
   es: () => import("../../dictionaries/es.json").then((module) => module.default),
 }
  
-export const getDictionary = async (locale: string) => dictionaries[ locale ]()
+export const getDictionary = async (locale: string) => {
+  const dictionaryLoader = dictionaries[locale];
+
+  if (dictionaryLoader) {
+    return dictionaryLoader();
+  } else {
+    throw new Error(`Dictionary loader for ${locale} not found`);
+  }
+}

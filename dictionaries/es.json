@@ -1,27 +1,50 @@
 {
   "home": {
     "headline": "Daniel Cano",
-    "subHeadline": "## I craft digital experiences: *Front-end* alchemist at your service",
-    "text": "Web development enthusiast with great goals and objectives, and the same motivation and discipline to carry them out. Constant learning and improvement driven by great curiosity.",
+    "subHeadline": "## Elaboro experiencias digitales: Alquimista *Front-end* a tu servicio",
+    "technologiesHeadline": "Tecnologías",
+    "technologiesText": "En mi día a día acostumbro a trabajar con **Jamstack** (Gatsby + Contentful), **React**, y como full-stack también con **Node.js/Express**. A continuación puedes echar un vistazo a algunas de las tecnologías que he utilizado en los últimos años",
+    "bannerText": "¿Quieres echar un vistazo a mi curriculum? Adelante!",
+    "timelineHeadline": "Mi camino profesional",
+    "timelineText": "Graduado en **marketing** y pulido como desarrollador **front-end**, este ha sido mi camino",
     "metadata": {
-      "title": "Inicio"
+      "title": "Inicio",
+      "description": "Bienvenido a mi portfolio! Me llamo Daniel y soy un entusiasta del desarrollo web con grandes metas y objetivos, y la misma motivación y disciplina para llevarlos a cabo. Aprendizaje y superación constantes impulsados por una gran curiosidad."
     }
   },
   "about": {
     "headline": "Sobre mi",
+    "subHeadline": "Soy un amante de la **historia**, la **astronomía**, la **naturaleza** y los viajes en furgoneta con mi **perro** (Basajaun), con quien me encanta viajar y **descubrir** nuevos lugares. Desde los 21 he estado moviendome por diferentes zonas geograficas y profesionales lo cual me ha llevado a saber adaptarme a diferentes escenarios y situaciones. Si tuviera que definirme lo haría como una persona **alegre** a la que le gusta ir por la vida con una **sonrisa** y tomarse las cosas con **humor**.",
+    "text": "Soy un desarrollador apasionado de la historia, la astronomía y amante de la naturaleza. Desde los 21 años he estado moviéndome en diferentes zonas geográficas y ámbitos profesionales, lo cual me ha servido para saber desenvolverme en diferentes ámbitos y situaciones",
     "metadata": {
-      "title": "Sobre mi"
+      "title": "Sobre mi",
+      "description": "Soy un amante de la historia, la astronomía, la naturaleza y los viajes en furgoneta con mi perro (Basajaun), con quien me encanta viajar y descubrir nuevos lugares. Desde los 21 he estado moviendome por diferentes zonas geograficas y profesionales lo cual me ha llevado a saber adaptarme a diferentes escenarios y situaciones. Si tuviera que definirme lo haría como una persona alegre a la que le gusta ir por la vida con una sonrisa y tomarse las cosas con humor."
     }
   },
   "projects": {
     "headline": "Proyectos",
+    "workProjectsHeadline": "Proyectos Profesionales",
+    "workProjectsText": "En mi carrera he trabajado principalmente como desarrollador **front-end** usando Jamstack (Gatsby + Contentful) o simplemente **React**, esto lo he combinado con **Sass** para los estilos y con **Cypress** para el testing (lo cual puede llevar tiempo, pero a la larga se acaba agradeciendo). También he trabajado como full-stack usando **Node.js/Express** para el back-end y vanilla **JS/Handlebars** para el front-end, compilandolo todo con **Gulp**. Finalmente también he trabajado con **Webflow**, algunas apps de **React Native** asi cómo **PWAs**",
+    "personalProjectsHeadline": "Proyectos Personales",
+    "personalProjectsText": "Aparte de las tecnologías que utilizo en mi día a día también me gusta aprovechar y utilizar otras con las que estoy menos habituado, como podrían ser **Next.js** o **GSAP**. De la misma forma me gusta seguir en el principio **KISS** así como centrarme en el performance de mis creaciones",
+    "seeMore": "Descubrir",
+    "404Text": "Ahora y para terminar, deseas ver una bella imagen del quinteto de Stephan (grupo de 5 galaxias) tomada por el JWST y una frase celebre?",
+    "404Cta": "Sí, por favor",
     "metadata": {
-      "title": "Proyectos"
+      "title": "Proyectos",
+      "description": "En mi carrera he trabajado principalmente como desarrollador front-end usando Jamstack (Gatsby + Contentful) o simplemente React, esto lo he combinado con Sass para los estilos y con Cypress para el testing (lo cual puede llevar tiempo, pero a la larga se acaba agradeciendo). También he trabajado como full-stack usando Node.js/Express para el back-end y vanilla JS/Handlebars para el front-end, compilandolo todo con Gulp. Finalmente también he trabajado con Webflow, algunas apps de React Native asi cómo PWAs"
     }
   },
+  "projectDetail": {
+    "projectCtaText": "Visitar Web",
+    "aboutTheCompanyHeadline": "Sobre la empresa",
+    "aboutTheProjectHeadline": "El proyecto",
+    "technologiesHeadline": "Tecnologías usadas en el proyecto",
+    "videoError": "Tu navegador no soporta el vídeo HTML.",
+    "backToProjectsCtaText": "Volver a todos los proyectos"
+  },
   "notFound": {
-    "headline": "Vaya, estamos perdidos!",
-    "cta": "LLévame de vuelta a casa"
+    "cta": "LLévame de vuelta a casa 🚀"
   },
   "footer": {
     "text": "Hecho con 💙 por *@danimexivasco*"
