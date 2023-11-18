@@ -1,0 +1,62 @@
+@import "../../styles/variables.module";
+@import "../../styles/screenhooks";
+
+.projectDetailContainer {
+  margin-top: $spacing-6;
+  margin-bottom: $spacing-6;
+  .text {
+    margin-bottom: $spacing-8;
+    @include sm-and-above {
+      line-height: 1.5em;
+    }
+    strong {
+      transition: color 0.3s ease;
+      color: rgb(var(--random-rgb-color, $blackRGB));
+      @include sm-and-above {
+        font-size: 18px;
+        color: unset;
+      }
+    }
+  }
+  @media (hover:hover) {
+    &:hover {
+      strong {
+        color: rgb(var(--random-rgb-color, $blackRGB));
+      }
+    }
+  }
+  .list {
+    ul {
+      margin-top: .5rem;
+      padding-left: $spacing-4;
+    }
+  }
+  .technologiesModule {
+    padding: 0;
+    [class*="container"] {
+      padding: 0;
+      justify-content: flex-start;
+    }
+    [class*="title"] {
+      text-align: left;
+      text-transform: none;
+    }
+    margin-bottom: $spacing-8;
+  }
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: $spacing-4;
+    margin-bottom: $spacing-8;
+    overflow: hidden;
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .video {
+    width: 100%;
+    margin-bottom: $spacing-8;
+  }
+}
