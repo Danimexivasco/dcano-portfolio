@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Ubuntu } from "next/font/google"
 import "@/styles/globals.scss"
 
-const inter = Inter({ subsets: [ "latin" ] })
+const ubuntu = Ubuntu({ subsets: [ "latin" ], weight: [ "400", "700" ] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dcano.dev"),
   title: {
     template: "%s | Dcano Dev",
-    default: "Home", // a default is required when creating a template
+    default: "Home",
   },
   description: "Welcome to Daniel Cano's Portfolio!",
   alternates: {
@@ -18,9 +18,7 @@ export const metadata: Metadata = {
       "es-ES": "https:dcano.dev/es",
     },
   },
-  // openGraph: {
-  //   images: "/og-image.png",
-  // },
+  themeColor: "#222222",
 }
 
 export default function RootLayout({
@@ -30,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={ubuntu.className}>
         {children}
       </body>
     </html>
