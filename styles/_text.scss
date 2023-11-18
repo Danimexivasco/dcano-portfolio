@@ -28,13 +28,17 @@ h5 {
   letter-spacing: 0;
   font-weight: 400;
 }
-p, span {
-  font-size: 16px;
-  line-height: 1.29em;
+p, span, li {
   letter-spacing: 0;
+  line-height: 1.5em;
+  font-size: 18px;
+  @include sm-and-above {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
 }
 button {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.25em;
   letter-spacing: 0;
   font-weight: 600;
