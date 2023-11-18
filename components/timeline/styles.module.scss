@@ -3,10 +3,20 @@
 
 .timelineContainer {
   padding: $spacing-5 0;
-  .headline {
-    margin-bottom: $spacing-4;
+  .headline, .text {
     @include md-and-above {
       text-align: center;
+    }
+  }
+  .text {
+    margin-bottom: $spacing-4;
+    strong {
+      transition: color 0.3s ease;
+      color: rgb(var(--random-rgb-color, $blackRGB));
+      @include sm-and-above {
+        font-size: 18px;
+        color: unset;
+      }
     }
   }
   .timeline {
@@ -44,10 +54,11 @@
       left: 8px;
       @include md-and-above {
         width: 0;
+        left: 0;
       }
     }
     &:after {
-      left: -16px;
+      left: -17px;
     }
   }
   .left, .right {
@@ -67,6 +78,13 @@
     &:after {
       @include sm-and-below {
         left: -7px;
+      }
+    }
+  }
+  @media (hover:hover) {
+    &:hover {
+      strong {
+        color: rgb(var(--random-rgb-color, $blackRGB));
       }
     }
   }

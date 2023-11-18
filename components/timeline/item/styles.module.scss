@@ -69,6 +69,9 @@
   padding-bottom: $spacing-1;
   &.link {
     transition: color .2s ease;
+    a {
+      font-size: inherit;
+    }
     @media(hover: hover) {
       &:hover {
         color: rgb(var(--random-rgb-color, $blackRGB));
