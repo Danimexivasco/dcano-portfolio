@@ -422,14 +422,14 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
     {
       headline: "Corona Warn App",
       url: "https://www.coronawarn.app/",
-      aboutTheProjectText: "The Corona-Warn-App by the **German government** is a COVID-19 contact-tracing app designed to notify users if they have been in close proximity to someone who later tests positive for the virus. It aims to enhance public health efforts by quickly identifying and alerting individuals at risk of infection.\n #### Key points:\n * Based on technologies with a **decentralized approach**\n * **E2E testing** purposes the project relies on **Cypress**\n * **Transparency** is key to both protect the app's end-users and to encourage adoption." ,
+      aboutTheProjectText: "The Corona-Warn-App by the **German government** is a COVID-19 contact-tracing app designed to notify users if they have been in close proximity to someone who later tests positive for the virus. It aims to enhance public health efforts by quickly identifying and alerting individuals at risk of infection.\n #### Key points:\n * Based on technologies with a **decentralized approach**\n * **E2E testing** purposes the project relies on **Cypress**\n * **Transparency** is key to both protect the app's end-users and to encourage adoption.",
       companyColor: "#54b3e1",
       image: {
         src: icons.CwaLogoIcon,
         alt: "cwa-logo",
       },
       detailPagePath: "/cwa",
-      technologies: ["Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery"],
+      technologies: [ "Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery" ],
     },
     {
       headline: "iF Design",
@@ -443,7 +443,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         isSquare: true
       },
       detailPagePath: "/if-design",
-      technologies: ["React", "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "Vimcar",
@@ -456,7 +456,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "vimcar-logo",
       },
       detailPagePath: "/vimcar",
-      technologies: ["HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Express", "Contentful", "Nodejs", "Handlebars", "Azure DevOps", "Zapier", "Jenkins", "Gulp", "jQuery", "Webflow" ],
+      technologies: [ "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Express", "Contentful", "Nodejs", "Handlebars", "Azure DevOps", "Zapier", "Jenkins", "Gulp", "jQuery", "Webflow" ],
     },
     {
       headline: "Avrios",
@@ -483,7 +483,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "frient-logo",
       },
       detailPagePath: "/frient",
-      technologies: ["React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "Bahlsen",
@@ -498,7 +498,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "bahlsen-logo",
       },
       detailPagePath: "/bahlsen",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "Peacebuilding Forum (PBF)",
@@ -513,7 +513,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         isSquare: true
       },
       detailPagePath: "/pbf",
-      technologies: ["React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "Secovisa",
@@ -537,7 +537,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         },
       ],
       detailPagePath: "/secovisa",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
     },
     {
       headline: "TeleData",
@@ -561,7 +561,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         },
       ],
       detailPagePath: "/teledata",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Bootstrap", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Bootstrap", "Azure DevOps" ],
     },
     {
       headline: "Vier",
@@ -575,7 +575,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "vier-logo",
       },
       detailPagePath: "/vier",
-      technologies: ["React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "VetZ",
@@ -587,23 +587,23 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         src: icons.VetzLogoIcon,
         alt: "vetz-logo",
       },
-      projectVideoURL: "https://res.cloudinary.com/dqdlxl38d/video/upload/v1700133060/vetz_apple_like_scroll_animation.mp4",
+      projectVideoURL: "https://res.cloudinary.com/dxvqa4ck2/video/upload/v1700313128/vetz-apple-like-scroll-animation.mp4",
       detailPagePath: "/vetz",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Contentful", "Git", "Sass", "Azure DevOps", "Tailwind CSS", "GSAP" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Contentful", "Git", "Sass", "Azure DevOps", "Tailwind CSS", "GSAP" ],
     },
   ],
   es: [
     {
       headline: "Corona Warn App",
       url: "https://www.coronawarn.app/",
-      aboutTheProjectText: "La aplicación Corona-Warn-App del **gobierno alemán** es una aplicación de rastreo de contactos de COVID-19 diseñada para notificar a los usuarios si han estado cerca de alguien que más tarde dé positivo en las pruebas del virus. Su objetivo es mejorar los esfuerzos de la salud pública identificando y alertando rápidamente a las personas en riesgo de infección.\n #### Puntos clave:\n * Basada en tecnologías con un enfoque **descentralizado**\n * **E2E testing** a través de **Cypress**\n * **La transparencia** es clave tanto para proteger a los usuarios finales de la aplicación como para fomentar su adopción." ,
+      aboutTheProjectText: "La aplicación Corona-Warn-App del **gobierno alemán** es una aplicación de rastreo de contactos de COVID-19 diseñada para notificar a los usuarios si han estado cerca de alguien que más tarde dé positivo en las pruebas del virus. Su objetivo es mejorar los esfuerzos de la salud pública identificando y alertando rápidamente a las personas en riesgo de infección.\n #### Puntos clave:\n * Basada en tecnologías con un enfoque **descentralizado**\n * **E2E testing** a través de **Cypress**\n * **La transparencia** es clave tanto para proteger a los usuarios finales de la aplicación como para fomentar su adopción.",
       companyColor: "#54b3e1",
       image: {
         src: icons.CwaLogoIcon,
         alt: "cwa-logo",
       },
       detailPagePath: "/cwa",
-      technologies: ["Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery"],
+      technologies: [ "Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery" ],
     },
     {
       headline: "iF Design",
@@ -617,7 +617,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         isSquare: true
       },
       detailPagePath: "/if-design",
-      technologies: ["React", "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "Vimcar",
@@ -630,7 +630,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "vimcar-logo",
       },
       detailPagePath: "/vimcar",
-      technologies: ["HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Express", "Contentful", "Nodejs", "Handlebars", "Azure DevOps", "Zapier", "Jenkins", "Gulp", "jQuery", "Webflow" ],
+      technologies: [ "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Express", "Contentful", "Nodejs", "Handlebars", "Azure DevOps", "Zapier", "Jenkins", "Gulp", "jQuery", "Webflow" ],
     },
     {
       headline: "Avrios",
@@ -657,7 +657,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "frient-logo",
       },
       detailPagePath: "/frient",
-      technologies: ["React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "Bahlsen",
@@ -672,7 +672,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "bahlsen-logo",
       },
       detailPagePath: "/bahlsen",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "Peacebuilding Forum (PBF)",
@@ -687,7 +687,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         isSquare: true
       },
       detailPagePath: "/pbf",
-      technologies: ["React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "Secovisa",
@@ -711,7 +711,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         },
       ],
       detailPagePath: "/secovisa",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
     },
     {
       headline: "TeleData",
@@ -735,7 +735,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         },
       ],
       detailPagePath: "/teledata",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Bootstrap", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Bootstrap", "Azure DevOps" ],
     },
     {
       headline: "Vier",
@@ -749,7 +749,7 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         alt: "vier-logo",
       },
       detailPagePath: "/vier",
-      technologies: ["React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "VetZ",
@@ -761,9 +761,9 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
         src: icons.VetzLogoIcon,
         alt: "vetz-logo",
       },
-      projectVideoURL: "https://res.cloudinary.com/dqdlxl38d/video/upload/v1700133060/vetz_apple_like_scroll_animation.mp4",
+      projectVideoURL: "https://res.cloudinary.com/dxvqa4ck2/video/upload/v1700313128/vetz-apple-like-scroll-animation.mp4",
       detailPagePath: "/vetz",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Contentful", "Git", "Sass", "Azure DevOps", "Tailwind CSS", "GSAP" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Contentful", "Git", "Sass", "Azure DevOps", "Tailwind CSS", "GSAP" ],
     },
   ],
 }
@@ -782,7 +782,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
         alt: "portfoliov2-screenshot",
       },
       detailPagePath: "/portfolioV2",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "GSAP", "Cypress", "Typescript" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "GSAP", "Cypress", "Typescript" ],
       isPersonalProject: true
     },
     {
@@ -795,7 +795,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
         alt: "city-game-screenshot",
       },
       detailPagePath: "/city-game",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "Api" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "Api" ],
       isPersonalProject: true
     },
     {
@@ -808,7 +808,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
         alt: "portfoliov1-screenshot",
       },
       detailPagePath: "/portfolioV1",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Gatsby", "Strapi" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Gatsby", "Strapi" ],
       isPersonalProject: true
     },
   ],
@@ -825,7 +825,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
         alt: "portfoliov2-screenshot",
       },
       detailPagePath: "/portfolioV2",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "GSAP", "Cypress", "Typescript" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "GSAP", "Cypress", "Typescript" ],
       isPersonalProject: true
     },
     {
@@ -838,7 +838,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
         alt: "city-game-screenshot",
       },
       detailPagePath: "/city-game",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "Api" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "Api" ],
       isPersonalProject: true
     },
     {
@@ -851,7 +851,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
         alt: "portfoliov1-screenshot",
       },
       detailPagePath: "/portfolioV1",
-      technologies: ["React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Gatsby", "Strapi" ],
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Gatsby", "Strapi" ],
       isPersonalProject: true
     },
   ],
@@ -922,21 +922,21 @@ export const CVLinks: Record<string, Array<BannerCta>> = {
   en: [
     {
       text: "English Resumee",
-      href: "https://res.cloudinary.com/dqdlxl38d/image/upload/v1699911057/Daniel_Cano_EN_c0b6kg.pdf"
+      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-EN-CV.pdf"
     },
     {
       text: "Spanish Resumee",
-      href: "https://res.cloudinary.com/dqdlxl38d/image/upload/v1699911057/Daniel_Cano_EN_c0b6kg.pdf"
+      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-ES-CV.pdf"
     }
   ],
   es: [
     {
       text: "Curriculum en Español",
-      href: "https://res.cloudinary.com/dqdlxl38d/image/upload/v1699911057/Daniel_Cano_EN_c0b6kg.pdf"
+      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-ES-CV.pdf"
     },
     {
       text: "Curriculum en Inglés",
-      href: "https://res.cloudinary.com/dqdlxl38d/image/upload/v1699911057/Daniel_Cano_EN_c0b6kg.pdf"
+      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-EN-CV.pdf"
     }
   ]
 }

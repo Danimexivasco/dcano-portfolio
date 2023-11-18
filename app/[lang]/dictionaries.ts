@@ -13,7 +13,7 @@ const dictionaries: Dictionaries = {
 }
  
 export const getDictionary = async (locale: string) => {
-  const dictionaryLoader = dictionaries[locale];
+  const dictionaryLoader = dictionaries[ locale ];
 
   if (dictionaryLoader) {
     return dictionaryLoader();
