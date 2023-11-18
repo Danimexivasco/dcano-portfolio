@@ -15,11 +15,11 @@ const Socials = () => {
   
   return (
     <div className={styles.socials}>
-      {SOCIALS?.map(({ altText, icon, href }) => (
-        <Link key={altText} href={href}>
+      {SOCIALS?.map(({ alt, icon, href }) => (
+        <Link key={alt} href={href} external>
           <Image
             src={icon}
-            alt={altText}
+            alt={alt}
             className={randomColor && styles[ randomColor ]}
           />
         </Link>
