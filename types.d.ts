@@ -16,6 +16,12 @@ export interface HeaderProps {
   locale: Locales
 }
 
+export interface MobileHeaderProps extends HeaderProps {
+  isOpen: boolean
+  setIsOpen: Dispatch<SetStateAction<boolean>>
+  handleMenu: () => void
+}
+
 export interface DicitionaryNode {
   [key: string]: string
 }

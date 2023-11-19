@@ -27,6 +27,10 @@ const ProjectDetail = ({ lang, project, dict }: ProjectDetailProps) => {
   const [ projectTechnologies, setProjectTechnologies ] = useState<Array<TechnologyItem>>([])
 
   useEffect(() => {
+    window?.scrollTo(0, 0); // Fix for Next.js link bug opening pages scrolled to the middle
+  }, [])
+
+  useEffect(() => {
     if (project && lang) {
       const targetProject = PROJECT_ITEMS[ lang ].concat(PERSONAL_PROJECT_ITEMS[ lang ]).find(el => el.detailPagePath === `/${project}`)
       if (!targetProject) {

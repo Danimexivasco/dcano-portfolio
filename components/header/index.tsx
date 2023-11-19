@@ -17,6 +17,21 @@ import { RANDOM_COLOR_MAP, RANDOM_COLOR_OPTIONS } from "@/utils/constants";
 const Header = ({ dictionary, locale }: HeaderProps) => {
   const [ isClient, setIsClient ] = useState(false)
   const [ randomColor, setRandomColor ] = useState(() => getRandomValue(RANDOM_COLOR_OPTIONS) as string)
+  const [ isOpen, setIsOpen ] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (isOpen && document) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "visible";
+    }
+  }, [ isOpen ])
+
+  const handleMenu = () => {
+    if (isOpen) {
+      setIsOpen(false)
+    }
+  }
 
   useEffect(() => {
     setIsClient(true)
@@ -31,13 +46,13 @@ const Header = ({ dictionary, locale }: HeaderProps) => {
   const isMobile = width && width < getNumberFromPx(variables.breakpointXs)
 
   const renderHeader = () => {
-    if (isMobile) return <MobileHeader dictionary={dictionary} locale={locale} />
+    if (isMobile) return <MobileHeader dictionary={dictionary} locale={locale} isOpen={isOpen} setIsOpen={setIsOpen} handleMenu={handleMenu}/>
     return <DesktopHeader dictionary={dictionary} locale={locale} />
   }
 
   return isClient ? (
     <header className={combine(styles.header,
-      (scrollDirection === "up" && scrollY > 0) && styles.inScroll,
+      (scrollDirection === "up" && scrollY > 0 || isOpen) && styles.inScroll,
       randomColor && styles[ randomColor ]
     )}>
       <Container className={styles.headerContainer}>

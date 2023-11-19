@@ -1,9 +1,9 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { usePathname } from "next/navigation";
 import { Fade as Hamburger } from "hamburger-react";
-import { HeaderProps } from "@/types";
+import { MobileHeaderProps } from "@/types";
 import { NAVIGATION, RINGBEARER_FONT } from "@/utils/constants";
 import { combine } from "@/helpers/combine";
 import { checkUrl } from "@/helpers/checkUrl";
@@ -13,24 +13,9 @@ import Link from "@/components/link";
 import styles from "./styles.module.scss"
 
 
-const MobileHeader = ({ dictionary, locale }: HeaderProps) => {
-  const [ isOpen, setIsOpen ] = useState(false)
+const MobileHeader = ({ dictionary, locale, isOpen, setIsOpen, handleMenu }: MobileHeaderProps) => {
   const pathname = usePathname()
   const localizedUrl = getLocalizedUrl(locale, pathname)
-
-  useEffect(() => {
-    if (isOpen && document) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "visible";
-    }
-  }, [ isOpen ])
-
-  const handleMenu = () => {
-    if (isOpen) {
-      setIsOpen(false)
-    }
-  }
 
   return (
     <>
