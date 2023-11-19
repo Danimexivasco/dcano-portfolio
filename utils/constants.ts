@@ -800,7 +800,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
     },
     {
       headline: "My first portfolio",
-      url: "https://awesome-bohr-f950bd.netlify.app/en/juego-ciudades/",
+      url: "https://awesome-bohr-f950bd.netlify.app/",
       aboutTheProjectText: `This was my first portfolio, done near 4 years ago now... and looking back to it there are a lot of things that I will in a different way today, but this is also the great part, because it means that I **evolved as a developer** ❤️  
       The project was done with **Gatsby**, **Strapi** as CMS and using **Sass** for the styling. There you will be able to see some of my first projects (and as I have seen some external APIs are not longer working, see "React Node Send" and "Song Lyrics Finder")`,
       image: {
@@ -843,7 +843,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
     },
     {
       headline: "Mi primer portfolio",
-      url: "https://awesome-bohr-f950bd.netlify.app/en/juego-ciudades/",
+      url: "https://awesome-bohr-f950bd.netlify.app/",
       aboutTheProjectText: `Este fue mi primer portfolio, hecho hace cerca de 4 años... y mirándolo ahora, hay muchas cosas que haría de manera diferente, pero sin embargo está es a su vez la parte que me encanta, porque significa que **evolucioné como desarrollador** ❤️.  
       El proyecto se realizó con **Gatsby**, **Strapi** como CMS y usando **Sass** para los estilos. Allí podrás ver algunos de mis primeros proyectos (por lo que he visto, tras tantos años, algunas APIs externas ya no funcionan, como por ejemplo en los proyectos de "React Node Send" y el buscador de letras).`,
       image: {
