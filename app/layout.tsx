@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     },
   },
   themeColor: "#222222",
+  keywords: [ "Dcano Dev", "Dcano", "front-end", "full-stack", "developer", "React", "Jamstack" ],
+  openGraph: {
+    images: [ "https://dcano.dev/opengraph-image.jpeg" ]
+  }
 }
 
 export default function RootLayout({
