@@ -5,23 +5,23 @@ import "@/styles/globals.scss"
 const ubuntu = Ubuntu({ subsets: [ "latin" ], weight: [ "400", "700" ] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dcano.dev"),
+  metadataBase: new URL("https://www.dcano.dev"),
   title: {
     template: "%s | Dcano Dev",
     default: "Home",
   },
   description: "Welcome to Daniel Cano's Portfolio!",
   alternates: {
-    canonical: "https:dcano.dev/",
+    canonical: "https://www.dcano.dev/",
     languages: {
-      "en-US": "https:dcano.dev/en",
-      "es-ES": "https:dcano.dev/es",
+      "en-US": "https://www.dcano.dev/en",
+      "es-ES": "https://www.dcano.dev/es",
     },
   },
   themeColor: "#222222",
   keywords: [ "Dcano Dev", "Dcano", "front-end", "full-stack", "developer", "React", "Jamstack" ],
   openGraph: {
-    images: [ "https://dcano.dev/opengraph-image.jpeg" ]
+    images: [ "https://www.dcano.dev/opengraph-image.jpeg" ]
   }
 }
 
