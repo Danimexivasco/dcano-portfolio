@@ -1,3 +1,5 @@
+[![Code Validation Pipeline](https://github.com/Danimexivasco/dcano-portfolio/actions/workflows/pipeline.yml/badge.svg)](https://github.com/Danimexivasco/dcano-portfolio/actions/workflows/pipeline.yml)
+
 # Dcano Portfolio
 
 First of all, thanks for getting here!  😍 And now, let me tell you the story of my portfolio...
