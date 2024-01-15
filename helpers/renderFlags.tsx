@@ -8,6 +8,7 @@ export const renderSpainLangOption = () => (
     <Image
       src={SpainFlag}
       alt="spain-flag"
+      data-cy="spain-flag"
     />
   </>
 )
@@ -16,7 +17,8 @@ export const renderUsaLangOption = () => (
     <span>EN</span>
     <Image
       src={UsaFlag}
-      alt="spain-flag"
+      alt="usa-flag"
+      data-cy="usa-flag"
     />
   </>
 )

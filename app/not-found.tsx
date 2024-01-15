@@ -11,7 +11,7 @@ import Card from "@/components/card";
 import Link from "@/components/link";
 import styles from "./styles.module.scss"
 import { getRandomValue } from "@/helpers/getRandomValue";
-import { QUOTES_404 } from "@/utils/constants";
+import { LOCALES_MAP, QUOTES_404 } from "@/utils/constants";
 
 export const metadata: Metadata = {
   title: "404",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const NotFound = async () => {
   const headersList = headers()
   const lang = getLocaleFromHeaders(headersList)
-  const dict: Dictionary = await getDictionary(lang)
+  const dict: Dictionary = await getDictionary(LOCALES_MAP[ lang ] || "en")
   const quote = getRandomValue(QUOTES_404[ lang ]) as QuoteItem
   
   return (

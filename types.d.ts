@@ -1,6 +1,8 @@
 
 export type Locales = "en" | "es"
 
+export type LocalesMap = Record<string, string>
+
 export type Dictionary = Record<string, DictionaryItem>
 
 export type NullishTypes = boolean | undefined | null | 0
