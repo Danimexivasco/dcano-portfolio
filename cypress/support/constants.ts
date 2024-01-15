@@ -1,1 +1,1 @@
-export const pageUrls = [ "/" ]
+export const pageUrls = [ "/", "/en/about", "/es/about", "/en/projects", "/es/projects" ]

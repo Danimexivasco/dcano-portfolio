@@ -24,28 +24,29 @@ const DesktopHeader = ({ dictionary, locale }: HeaderProps) => {
               const isActive = checkUrl(navItem.slug, pathname)
               return (
                 <li key={navItem.slug} className={combine(styles.navItem, isActive && styles.active)}>
-                  <Link href={`/${locale}${navItem.slug}`}>{dictionary[ navItem.page ]?.metadata.title}</Link>
+                  <Link
+                    href={`/${locale}${navItem.slug}`}
+                    data-cy="desktop-nav-item"
+                  >
+                    {dictionary[ navItem.page ]?.metadata.title}
+                  </Link>
                 </li>
               )
             }
             )}
           </ul>
         </nav>
-        <div className={styles.languageSelector}>
-          {locale === "en" ?
-            <div className={styles.langContainer}>{renderUsaLangOption()}</div>
-            :
-            <div className={styles.langContainer}>{renderSpainLangOption()}</div>
-          }
-          {locale === "en" ?
-            <Link href={localizedUrl || "/"} className={combine(styles.langContainer, styles.dropdown )}>
-              {renderSpainLangOption()}
-            </Link>
-            :
-            <Link href={localizedUrl || "/"} className={combine(styles.langContainer, styles.dropdown )}>
-              {renderUsaLangOption()}
-            </Link>
-          }
+        <div className={styles.languageSelector} data-cy="language-selector">
+          <div className={styles.langContainer}>
+            {locale === "en" ? renderUsaLangOption() : renderSpainLangOption()}
+          </div>
+          <Link
+            href={localizedUrl || "/"}
+            className={combine(styles.langContainer, styles.dropdown)}
+            data-cy="language-dropdown"
+          >
+            {locale === "en" ? renderSpainLangOption() : renderUsaLangOption()}
+          </Link>
         </div>
       </div>
     </div>

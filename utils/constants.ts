@@ -1,5 +1,5 @@
 import localFont from "next/font/local"
-import { NavigationItem, QuoteItem, RandomColorMap, SocialItem } from "@/types"
+import { LocalesMap, NavigationItem, QuoteItem, RandomColorMap, SocialItem } from "@/types"
 import { TimelineItemStructure } from "@/components/timeline/item"
 import { HistoryItemStructure } from "@/components/history/item"
 import { ProjectItemStructure } from "@/components/projects/item"
@@ -20,7 +20,7 @@ import { BannerCta } from "@/components/banner"
 
 export const LOCALES = [ "en-US", "es-ES" ]
 export const DEFAULT_LOCALE = "en-US"
-export const LOCALES_MAP = {
+export const LOCALES_MAP: LocalesMap = {
   "en-US": "en",
   "es-ES": "es"
 }

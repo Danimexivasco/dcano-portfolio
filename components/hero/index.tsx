@@ -37,7 +37,7 @@ const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint,
         <Container className={styles.container}>
           {!isProjectDetail ? (
             <>
-              <div>
+              <div data-cy="hero-text-content">
                 {isHome &&
                 <div className={styles.typed}>
                   <p className={combine(styles.placeholder, styles[ locale ])}></p>
@@ -45,7 +45,7 @@ const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint,
                 }
                 <h1 className={styles.headline}>{headline}</h1>
                 {subHeadline &&
-                  <Markdown className={styles.subHeadline}>{subHeadline}</Markdown>
+                  <Markdown className={combine(styles.subHeadline, "cy-sub-headline")}>{subHeadline}</Markdown>
                 }
                 {text &&
                   <Markdown className={styles.text}>{text}</Markdown>

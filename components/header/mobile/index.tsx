@@ -25,14 +25,14 @@ const MobileHeader = ({ dictionary, locale, isOpen, setIsOpen, handleMenu }: Mob
         </Link>
         <Hamburger toggled={isOpen} onToggle={setIsOpen} />
       </div>
-      <section className={combine(styles.mobileMenu, isOpen && styles.opened)}>
+      <section className={combine(styles.mobileMenu, isOpen && styles.opened)} data-cy="mobile-menu">
         <nav>
           <ul>
             {NAVIGATION.map(navItem => {
               const isActive = checkUrl(navItem.slug, pathname)
               return (
                 <li key={navItem.slug} className={combine(styles.navItem, isActive && styles.active)}>
-                  <Link href={`/${locale}${navItem.slug}`} onClick={handleMenu}>{dictionary[ navItem.page ]?.metadata.title}</Link>
+                  <Link href={`/${locale}${navItem.slug}`} onClick={handleMenu} data-cy="mobile-nav-item">{dictionary[ navItem.page ]?.metadata.title}</Link>
                 </li>
               )
             }
@@ -40,11 +40,12 @@ const MobileHeader = ({ dictionary, locale, isOpen, setIsOpen, handleMenu }: Mob
           </ul>
         </nav>
         <div className={styles.langSelector}>
-          {locale === "en" ?
-            <Link href={localizedUrl || "/"} >{renderSpainLangOption()}</Link>
-            :
-            <Link href={localizedUrl || "/"} >{renderUsaLangOption()}</Link>
-          }
+          <Link
+            href={localizedUrl || "/"}
+            data-cy="mobile-language-selector"
+          >
+            {locale === "en" ? renderSpainLangOption() : renderUsaLangOption()}
+          </Link>
         </div>
       </section>
     </>

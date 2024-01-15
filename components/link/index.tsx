@@ -16,7 +16,7 @@ export interface LinkProps {
 }
 
 
-const Link = ({ href, asButton, centered, external, onClick = () => {}, className, children }: LinkProps) => {
+const Link = ({ href, asButton, centered, external, onClick = () => {}, className, children, ...props }: LinkProps) => {
   return external ? (
     <a
       href={href}
@@ -31,6 +31,7 @@ const Link = ({ href, asButton, centered, external, onClick = () => {}, classNam
       href={href ? href : "/"}
       onClick={onClick}
       className={combine(styles.link, asButton && styles.asButton, centered && styles.centered, className)}
+      {...props}
     >
       {children}
     </NextLink>
