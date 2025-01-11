@@ -90,8 +90,16 @@ export const RANDOM_COLOR_MAP: RandomColorMap = {
 
 export const TECHNOLOGIES = [
   {
+    name: "Typescript",
+    icon: icons.TsIcon
+  },
+  {
     name: "React",
     icon: icons.ReactIcon
+  },
+  {
+    name: "Javascript",
+    icon: icons.JsIcon
   },
   {
     name: "HTML 5",
@@ -102,15 +110,23 @@ export const TECHNOLOGIES = [
     icon: icons.Css3Icon
   },
   {
-    name: "Javascript",
-    icon: icons.JsIcon
+    name: "Sass",
+    icon: icons.SassIcon
+  },
+  {
+    name: "Tailwind CSS",
+    icon: icons.TailwindCssIcon
   },
   {
     name: "Git",
     icon: icons.GitIcon
   },
   {
-    name: "Api",
+    name: "Next.js",
+    icon: icons.NextIcon
+  },
+  {
+    name: "API",
     icon: icons.ApiIcon
   },
   {
@@ -118,32 +134,12 @@ export const TECHNOLOGIES = [
     icon: icons.CypressIcon
   },
   {
-    name: "Gatsby",
-    icon: icons.GatsbyIcon
+    name: "Playwright",
+    icon: icons.PlaywrightIcon
   },
   {
-    name: "Next.js",
-    icon: icons.NextIcon
-  },
-  {
-    name: "Sass",
-    icon: icons.SassIcon
-  },
-  {
-    name: "Typescript",
-    icon: icons.TsIcon
-  },
-  {
-    name: "Bootstrap",
-    icon: icons.BootstrapIcon
-  },
-  {
-    name: "Contentful",
-    icon: icons.ContentfulIcon
-  },
-  {
-    name: "GraphQL",
-    icon: icons.GraphQLIcon
+    name: "Vitest",
+    icon: icons.VitestIcon
   },
   {
     name: "Nodejs",
@@ -154,8 +150,28 @@ export const TECHNOLOGIES = [
     icon: icons.ExpressIcon
   },
   {
+    name: "Astro",
+    icon: icons.AstroIcon
+  },
+  {
+    name: "ESLint",
+    icon: icons.EslintIcon
+  },
+  {
     name: "Firebase",
     icon: icons.FirebaseIcon
+  },
+  {
+    name: "Contentful",
+    icon: icons.ContentfulIcon
+  },
+  {
+    name: "GraphQL",
+    icon: icons.GraphQLIcon
+  },
+  {
+    name: "Gatsby",
+    icon: icons.GatsbyIcon
   },
   {
     name: "GSAP",
@@ -170,12 +186,12 @@ export const TECHNOLOGIES = [
     icon: icons.HandlebarsIcon
   },
   {
-    name: "Tailwind CSS",
-    icon: icons.TailwindCssIcon
-  },
-  {
     name: "jQuery",
     icon: icons.JqueryIcon
+  },
+  {
+    name: "Bootstrap",
+    icon: icons.BootstrapIcon
   },
   {
     name: "MongoDB",
@@ -188,10 +204,6 @@ export const TECHNOLOGIES = [
   {
     name: "Strapi",
     icon: icons.StrapiIcon
-  },
-  {
-    name: "Tests",
-    icon: icons.TestsIcon
   },
   {
     name: "Zapier",
@@ -214,33 +226,12 @@ export const TECHNOLOGIES = [
 export const TIMELINE_ITEMS: Record<string, Array<TimelineItemStructure>> = {
   en: [
     {
-      year: 2011,
-      headline: "University of the Basque Country (UPV / EHU)",
-      subHeadline: "Degree in Business Administration and Management",
-      fromTo: "sept 2011 - may 2015",
-      duration: "(3 years and 9 months)"
-    },
-    {
-      year: 2014,
-      headline: "Universidad Modelo of Merida, Mexico",
-      subHeadline: "Erasmus +, End Of Degree Project",
-      fromTo: "aug 2014 - aug 2015",
-      duration: "(1 year)"
-    },
-    {
-      year: 2015,
-      headline: "Arpen SPR de RL de CV",
-      url: "https://arpen.mx/",
-      subHeadline: "Sales Department Manager (Organic Stevia)",
-      fromTo: "aug 2015 - apr 2016",
-      duration: "(9 months)"
-    },
-    {
-      year: 2018,
-      headline: "IES Plaiaundi BHI",
-      subHeadline: "Higher degree in Web Application Development",
-      fromTo: "sept 2018 - may 2020",
-      duration: "(1 year and 9 months)"
+      year: 2020,
+      headline: "Digital Cuisine",
+      url: "https://www.cuisine.digital/",
+      subHeadline: "Front-end / Full-stack developer",
+      fromTo: "oct 2020 - now",
+      duration: "(3 years and 1 month)"
     },
     {
       year: 2019,
@@ -251,43 +242,43 @@ export const TIMELINE_ITEMS: Record<string, Array<TimelineItemStructure>> = {
       duration: "(1 year)"
     },
     {
-      year: 2020,
-      headline: "Digital Cuisine",
-      url: "https://www.cuisine.digital/",
-      subHeadline: "Front-end / Full-stack developer",
-      fromTo: "oct 2020 - now",
-      duration: "(3 years and 1 month)"
-    },
-  ],
-  es: [
-    {
-      year: 2011,
-      headline: "Universidad Púbica del País Vasco (UPV / EHU)",
-      subHeadline: "Grado en Administración y Dirección de Empresas",
-      fromTo: "sept 2011 - may 2015",
-      duration: "(3 años y 9 meses)"
-    },
-    {
-      year: 2014,
-      headline: "Universidad Modelo de Mérida, México",
-      subHeadline: "Erasmus +, TFG",
-      fromTo: "ago 2014 - ago 2015",
-      duration: "(1 año)"
+      year: 2018,
+      headline: "IES Plaiaundi BHI",
+      subHeadline: "Higher degree in Web Application Development",
+      fromTo: "sept 2018 - may 2020",
+      duration: "(1 year and 9 months)"
     },
     {
       year: 2015,
       headline: "Arpen SPR de RL de CV",
       url: "https://arpen.mx/",
-      subHeadline: "Encargado del Departamento de Ventas (Stevia órganica)",
-      fromTo: "ago 2015 - abr 2016",
-      duration: "(9 meses)"
+      subHeadline: "Sales Department Manager (Organic Stevia)",
+      fromTo: "aug 2015 - apr 2016",
+      duration: "(9 months)"
     },
     {
-      year: 2018,
-      headline: "IES Plaiaundi BHI",
-      subHeadline: "Grado superior en desarrollo de aplicaciones web",
-      fromTo: "sept 2018 - may 2020",
-      duration: "(1 año y 9 meses)"
+      year: 2014,
+      headline: "Universidad Modelo of Merida, Mexico",
+      subHeadline: "Erasmus +, End Of Degree Project",
+      fromTo: "aug 2014 - aug 2015",
+      duration: "(1 year)"
+    },
+    {
+      year: 2011,
+      headline: "University of the Basque Country (UPV / EHU)",
+      subHeadline: "Degree in Business Administration and Management",
+      fromTo: "sept 2011 - may 2015",
+      duration: "(3 years and 9 months)"
+    }
+  ],
+  es: [
+    {
+      year: 2020,
+      headline: "Digital Cuisine",
+      url: "https://www.cuisine.digital/",
+      subHeadline: "Desarrollador Front-end / Full-stack",
+      fromTo: "oct 2020 - actualidad",
+      duration: "(3 años y 1 mes)"
     },
     {
       year: 2019,
@@ -298,13 +289,34 @@ export const TIMELINE_ITEMS: Record<string, Array<TimelineItemStructure>> = {
       duration: "(1 año)"
     },
     {
-      year: 2020,
-      headline: "Digital Cuisine",
-      url: "https://www.cuisine.digital/",
-      subHeadline: "Desarrollador Front-end / Full-stack",
-      fromTo: "oct 2020 - actualidad",
-      duration: "(3 años y 1 mes)"
+      year: 2018,
+      headline: "IES Plaiaundi BHI",
+      subHeadline: "Grado superior en desarrollo de aplicaciones web",
+      fromTo: "sept 2018 - may 2020",
+      duration: "(1 año y 9 meses)"
     },
+    {
+      year: 2015,
+      headline: "Arpen SPR de RL de CV",
+      url: "https://arpen.mx/",
+      subHeadline: "Encargado del Departamento de Ventas (Stevia órganica)",
+      fromTo: "ago 2015 - abr 2016",
+      duration: "(9 meses)"
+    },
+    {
+      year: 2014,
+      headline: "Universidad Modelo de Mérida, México",
+      subHeadline: "Erasmus +, TFG",
+      fromTo: "ago 2014 - ago 2015",
+      duration: "(1 año)"
+    },
+    {
+      year: 2011,
+      headline: "Universidad Púbica del País Vasco (UPV / EHU)",
+      subHeadline: "Grado en Administración y Dirección de Empresas",
+      fromTo: "sept 2011 - may 2015",
+      duration: "(3 años y 9 meses)"
+    }
   ]
 }
 
@@ -922,21 +934,21 @@ export const CVLinks: Record<string, Array<BannerCta>> = {
   en: [
     {
       text: "English Resumee",
-      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-EN-CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_EN_CV.pdf"
     },
     {
       text: "Spanish Resumee",
-      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-ES-CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_ES_CV.pdf"
     }
   ],
   es: [
     {
       text: "Curriculum en Español",
-      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-ES-CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_ES_CV.pdf"
     },
     {
       text: "Curriculum en Inglés",
-      href: "https://res.cloudinary.com/dxvqa4ck2/image/upload/v1700312837/Daniel-Cano-EN-CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_EN_CV.pdf"
     }
   ]
 }
