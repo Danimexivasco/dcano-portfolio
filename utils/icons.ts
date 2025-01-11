@@ -32,6 +32,10 @@ import TestsIcon from "/public/icons/tests.svg"
 import TsIcon from "/public/icons/ts.svg"
 import ZapierIcon from "/public/icons/zapier.svg"
 import WebflowIcon from "/public/icons/webflow.svg"
+import AstroIcon from "/public/icons/astro.svg"
+import PlaywrightIcon from "/public/icons/playwright.svg"
+import VitestIcon from "/public/icons/vitest.svg"
+import EslintIcon from "/public/icons/eslint.svg"
 import CwaLogoIcon from "/public/icons/cwa_logo.svg"
 import IfLogoIcon from "/public/icons/if_logo.svg"
 import VimcarLogoIcon from "/public/icons/vimcar_logo.svg"
@@ -83,6 +87,10 @@ export const icons = {
   TsIcon,
   ZapierIcon,
   WebflowIcon,
+  AstroIcon,
+  PlaywrightIcon,
+  EslintIcon,
+  VitestIcon,
   CwaLogoIcon,
   IfLogoIcon,
   VimcarLogoIcon,
