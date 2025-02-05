@@ -130,6 +130,10 @@ export const TECHNOLOGIES = [
     icon: icons.ApiIcon
   },
   {
+    name: "React Testing Library",
+    icon: icons.ReactTestingLibraryIcon
+  },
+  {
     name: "Cypress",
     icon: icons.CypressIcon
   },
@@ -930,25 +934,26 @@ export const QUOTES_404: Record<string, Array<QuoteItem>> = {
   ]
 }
 
+// TODO: Remove version number from URLs
 export const CVLinks: Record<string, Array<BannerCta>> = {
   en: [
     {
       text: "English Resumee",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_EN_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_EN_CV.pdf"
     },
     {
       text: "Spanish Resumee",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_ES_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_ES_CV.pdf"
     }
   ],
   es: [
     {
       text: "Curriculum en Español",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_ES_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_ES_CV.pdf"
     },
     {
       text: "Curriculum en Inglés",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/Daniel_Cano_Bernal_EN_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_EN_CV.pdf"
     }
   ]
 }

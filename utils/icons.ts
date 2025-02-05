@@ -34,6 +34,7 @@ import ZapierIcon from "/public/icons/zapier.svg"
 import WebflowIcon from "/public/icons/webflow.svg"
 import AstroIcon from "/public/icons/astro.svg"
 import PlaywrightIcon from "/public/icons/playwright.svg"
+import ReactTestingLibraryIcon from "/public/icons/react_testing_library.svg"
 import VitestIcon from "/public/icons/vitest.svg"
 import EslintIcon from "/public/icons/eslint.svg"
 import CwaLogoIcon from "/public/icons/cwa_logo.svg"
@@ -91,6 +92,7 @@ export const icons = {
   PlaywrightIcon,
   EslintIcon,
   VitestIcon,
+  ReactTestingLibraryIcon,
   CwaLogoIcon,
   IfLogoIcon,
   VimcarLogoIcon,
