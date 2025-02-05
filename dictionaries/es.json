@@ -23,15 +23,15 @@
   "projects": {
     "headline": "Proyectos",
     "workProjectsHeadline": "Proyectos Profesionales",
-    "workProjectsText": "En mi carrera he trabajado principalmente como desarrollador **front-end** usando Jamstack (Gatsby + Contentful) o simplemente **React**, esto lo he combinado con **Sass** para los estilos y con **Cypress** para el testing (lo cual puede llevar tiempo, pero a la larga se acaba agradeciendo). También he trabajado como full-stack usando **Node.js/Express** para el back-end y vanilla **JS/Handlebars** para el front-end, compilandolo todo con **Gulp**. Finalmente también he trabajado con **Webflow**, algunas apps de **React Native** asi cómo **PWAs**",
+    "workProjectsText": "En mi carrera he trabajado principalmente como desarrollador **front-end** usando Jamstack o simplemente **React**, esto lo he combinado con **Sass** para los estilos y con **Cypress** para el testing. También he trabajado como full-stack usando **Node.js/Express** para el back-end y vanilla **JS/Handlebars** para el front-end, compilandolo todo con **Gulp**. Finalmente también he trabajado con **Webflow**, algunas apps de **React Native** asi cómo **PWAs**",
     "personalProjectsHeadline": "Proyectos Personales",
-    "personalProjectsText": "Aparte de las tecnologías que utilizo en mi día a día también me gusta aprovechar y utilizar otras con las que estoy menos habituado, como podrían ser **Next.js** o **GSAP**. De la misma forma me gusta seguir en el principio **KISS** así como centrarme en el performance de mis creaciones",
+    "personalProjectsText": "En mis proyectos personales me gusta innovar y poner a prueba mis aprendizajes teniendo en cuenta principio como **SOLID**, **DRY** y **KISS**, así como también la **accesibilidad** y el **performance**. Como tecnologías comunes podría mencionar algunas como **Typescript**, **React**, **NextJs** y de testing como podrían ser **Vitest**, **React Testing Library** o **Cypress/Playwright**.",
     "seeMore": "Descubrir",
     "404Text": "Ahora y para terminar, deseas ver una bella imagen del quinteto de Stephan (grupo de 5 galaxias) tomada por el JWST y una frase celebre?",
     "404Cta": "Sí, por favor",
     "metadata": {
       "title": "Proyectos",
-      "description": "En mi carrera he trabajado principalmente como desarrollador front-end usando Jamstack (Gatsby + Contentful) o simplemente React, esto lo he combinado con Sass para los estilos y con Cypress para el testing (lo cual puede llevar tiempo, pero a la larga se acaba agradeciendo). También he trabajado como full-stack usando Node.js/Express para el back-end y vanilla JS/Handlebars para el front-end, compilandolo todo con Gulp. Finalmente también he trabajado con Webflow, algunas apps de React Native asi cómo PWAs"
+      "description": "En mi carrera he trabajado principalmente como desarrollador front-end usando Jamstack o simplemente React, esto lo he combinado con Sass para los estilos y con Cypress para el testing. También he trabajado como full-stack usando Node.js/Express para el back-end y vanilla JS/Handlebars para el front-end, compilandolo todo con Gulp. Finalmente también he trabajado con Webflow, algunas apps de React Native asi cómo PWAs"
     }
   },
   "projectDetail": {

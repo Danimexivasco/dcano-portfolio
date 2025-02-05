@@ -23,15 +23,15 @@
   "projects": {
     "headline": "Projects",
     "workProjectsHeadline": "Professional Projects",
-    "workProjectsText": "In my career I've worked mainly as front-end developer using **Jamstack** (Gatsby + Contentful) or pure **React**, I also love to use **Sass** for the styling and **Cypress** for testing (you know, it can be time-consuming but it's extremely worthwhile specially in the long term). I've also worked as full-stack using **Node.js/Express** for the back-end and vanilla **JS/Handlebars** for the front-end compiling everything with **Gulp**. Finally I've also work with **Webflow**, some **React Native** apps and **PWAs**",
+    "workProjectsText": "In my career I've worked mainly as front-end developer using **Jamstack** or pure **React**, I also love to use **Sass** for the styling and **Cypress** for testing. I've also worked as full-stack using **Node.js/Express** for the back-end and vanilla **JS/Handlebars** for the front-end compiling everything with **Gulp**. Finally I've also work with **Webflow**, some **React Native** apps and **PWAs**",
     "personalProjectsHeadline": "Personal Projects",
-    "personalProjectsText": "I like to use another technologies apart from the most used ones in my day to day such as **Next.js** or **GSAP**. I also like to follow the **KISS** principle and focus on the performance of my creations",
+    "personalProjectsText": "In my personal projects, I like to innovate and test my learnings, taking into account principles such as **SOLID**, **DRY**, and **KISS**, as well as **accessibility** and **performance**. Some common technologies I could mention include **Typescript**, **React**, **NextJs**, and testing tools such as **Vitest**, **React Testing Library**, or **Cypress/Playwright**.",
     "seeMore": "See more",
     "404Text": "Last but not least, would you like to see an incredible space image of Stephan's Quintet (group of 5 galaxies) taken by JWST and a famous phrase?",
     "404Cta": "Yes, please",
     "metadata": {
       "title": "Projects",
-      "description": "In my career I've worked mainly as front-end developer using Jamstack (Gatsby + Contentful) or just React. I also love to use Sass for the styling and **Cypress** for testing (you know, it can be time-consuming but it's extremely worthwhile specially in the long term). I've also worked as full-stack using Node.js/Express for the back-end and vanilla JS/Handlebars for the front-end compiling everything with Gulp. Finally I've also work with Webflow some React Native apps and PWAs"
+      "description": "In my career I've worked mainly as front-end developer using Jamstack or just React. I also love to use Sass for the styling and **Cypress** for testing. I've also worked as full-stack using Node.js/Express for the back-end and vanilla JS/Handlebars for the front-end compiling everything with Gulp. Finally I've also work with Webflow some React Native apps and PWAs"
     }
   },
   "projectDetail": {
