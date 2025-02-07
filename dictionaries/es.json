@@ -3,10 +3,10 @@
     "headline": "Daniel Cano",
     "subHeadline": "## Elaboro experiencias digitales: Alquimista *Front-end* a tu servicio",
     "technologiesHeadline": "Tecnologías",
-    "technologiesText": "Me siento cómodo trabajando con **Typescript** y **React** en proyectos complejos full-stack usando **Next.js** o para páginas más sencillas usando **Astro**. A continuación puedes echar un vistazo a algunas de las tecnologías que he utilizado durante los últimos años",
+    "technologiesText": "En mi día a día trabajo con **Typescript**, **React**, **NextJs** y realizo mis tests unitarios y de integración con **Vitest**, **React Testing Library** o end-to-end con **Cypress/Playwright**.  \n\n A continuación puedes echar un vistazo a algunas de las tecnologías que he utilizado durante los últimos años:",
     "bannerText": "¿Quieres echar un vistazo a mi curriculum? Adelante!",
     "timelineHeadline": "Mi camino profesional",
-    "timelineText": "Graduado en **marketing** y pulido como desarrollador **front-end**, este ha sido mi camino",
+    "timelineText": "Transformado en desarrollador **front-end** y anteriormente graduado en **marketing**, este ha sido mi camino",
     "metadata": {
       "title": "Inicio",
       "description": "Bienvenido a mi portfolio! Me llamo Daniel y soy un entusiasta del desarrollo web con grandes metas y objetivos, y la misma motivación y disciplina para llevarlos a cabo. Aprendizaje y superación constantes impulsados por una gran curiosidad."
@@ -22,10 +22,7 @@
   },
   "projects": {
     "headline": "Proyectos",
-    "workProjectsHeadline": "Proyectos Profesionales",
-    "workProjectsText": "En mi carrera he trabajado principalmente como desarrollador **front-end** usando Jamstack o simplemente **React**, esto lo he combinado con **Sass** para los estilos y con **Cypress** para el testing. También he trabajado como full-stack usando **Node.js/Express** para el back-end y vanilla **JS/Handlebars** para el front-end, compilandolo todo con **Gulp**. Finalmente también he trabajado con **Webflow**, algunas apps de **React Native** asi cómo **PWAs**",
-    "personalProjectsHeadline": "Proyectos Personales",
-    "personalProjectsText": "En mis proyectos personales me gusta innovar y poner a prueba mis aprendizajes teniendo en cuenta principio como **SOLID**, **DRY** y **KISS**, así como también la **accesibilidad** y el **performance**. Como tecnologías comunes podría mencionar algunas como **Typescript**, **React**, **NextJs** y de testing como podrían ser **Vitest**, **React Testing Library** o **Cypress/Playwright**.",
+    "text": "Principalmente he trabajado como **front-end**, o colaborando en proyectos como **full-stack** con NodeJs/Express. No obstante, también he trabajado en proyectos de **React Native**, **PWAs** o **Webflow**, siempre utilizando **Git** y **CI/CD** para los flujos de trabajo.  \n\n Me gusta innovar y poner a prueba mis aprendizajes teniendo en cuenta principios como **SOLID**, **DRY** y **KISS**, así como también la **accesibilidad** y el **performance**.",
     "seeMore": "Descubrir",
     "404Text": "Ahora y para terminar, deseas ver una bella imagen del quinteto de Stephan (grupo de 5 galaxias) tomada por el JWST y una frase celebre?",
     "404Cta": "Sí, por favor",

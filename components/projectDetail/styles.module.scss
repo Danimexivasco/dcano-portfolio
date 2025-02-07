@@ -59,4 +59,7 @@
     width: 100%;
     margin-bottom: $spacing-8;
   }
+  a {
+    color: rgb(var(--random-rgb-color, $blackRGB));
+  }
 }

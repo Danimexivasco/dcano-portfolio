@@ -166,6 +166,10 @@ export const TECHNOLOGIES = [
     icon: icons.FirebaseIcon
   },
   {
+    name: "React Native",
+    icon: icons.ReactIcon
+  },
+  {
     name: "Contentful",
     icon: icons.ContentfulIcon
   },
@@ -234,8 +238,8 @@ export const TIMELINE_ITEMS: Record<string, Array<TimelineItemStructure>> = {
       headline: "Digital Cuisine",
       url: "https://www.cuisine.digital/",
       subHeadline: "Front-end / Full-stack developer",
-      fromTo: "oct 2020 - now",
-      duration: "(3 years and 1 month)"
+      fromTo: "oct 2020 - dec 2023",
+      duration: "(3 years and 3 months)"
     },
     {
       year: 2019,
@@ -281,8 +285,8 @@ export const TIMELINE_ITEMS: Record<string, Array<TimelineItemStructure>> = {
       headline: "Digital Cuisine",
       url: "https://www.cuisine.digital/",
       subHeadline: "Desarrollador Front-end / Full-stack",
-      fromTo: "oct 2020 - actualidad",
-      duration: "(3 años y 1 mes)"
+      fromTo: "oct 2020 - dic 2023",
+      duration: "(3 años y 3 meses)"
     },
     {
       year: 2019,
@@ -802,19 +806,6 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
       isPersonalProject: true
     },
     {
-      headline: "City game",
-      url: "https://juego-ciudades-paises.vercel.app/",
-      aboutTheProjectText: `**Minimalist design** game that consists on **placing a marker** for different European capitals on a map. At this moment it has 11 capitals but it would be **easily scalable**. You start with 1500km, and each wrong result (> 50km), will rest you the kilometers that you have moved away from the requested location. If you reach the end with some kilometer in your account... you will have won!  
-      The game was done using **Next.js** (pages router), and doing **API** calls to check the distances between the real location of the city and the one the user placed on the map`,
-      image: {
-        src: CityGameImg,
-        alt: "city-game-screenshot",
-      },
-      detailPagePath: "/city-game",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "Api" ],
-      isPersonalProject: true
-    },
-    {
       headline: "My first portfolio",
       url: "https://awesome-bohr-f950bd.netlify.app/",
       aboutTheProjectText: `This was my first portfolio, done near 4 years ago now... and looking back to it there are a lot of things that I will in a different way today, but this is also the great part, because it means that I **evolved as a developer** ❤️  
@@ -842,19 +833,6 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
       },
       detailPagePath: "/portfolioV2",
       technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "GSAP", "Cypress", "Typescript" ],
-      isPersonalProject: true
-    },
-    {
-      headline: "Juego de capitales",
-      url: "https://juego-ciudades-paises.vercel.app/",
-      aboutTheProjectText: `Juego de **diseño minimalista** que consiste en **colocar un marcador** para diferentes capitales europeas en un mapa. En este momento tiene 11 capitales, pero sería **fácilmente escalable**. Comienzas con 1500 km y cada resultado incorrecto (> 50 km) te resta los kilómetros que te has alejado de la ubicación solicitada. Si llegas al final con algunos kilómetros en tu cuenta... ¡habrás ganado!
-      El juego se hizo utilizando **Next.js* (con una versión anterior, utilizando pages router) y haciendo llamadas a **APIs** para verificar las distancias entre la ubicación real de la ciudad y la que el usuario colocó en el mapa.`,
-      image: {
-        src: CityGameImg,
-        alt: "city-game-screenshot",
-      },
-      detailPagePath: "/city-game",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "Api" ],
       isPersonalProject: true
     },
     {

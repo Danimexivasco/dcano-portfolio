@@ -21,15 +21,12 @@ const ProjectsPage = async ({ params: { lang } }: NextParamsProp) => {
         locale={lang as Locales}
         headline={dict.projects.headline}
         cuttedShapeStartPoint="topLeft"
+        text={dict.projects.text}
       />
       <Projects
         dict={dict.projects}
         workProjects={PROJECT_ITEMS[ lang ]}
         personalProjects={PERSONAL_PROJECT_ITEMS[ lang ]}
-        workProjectsHeadline={dict.projects.workProjectsHeadline}
-        workProjectsText={dict.projects.workProjectsText}
-        personalProjectsHeadline={dict.projects.personalProjectsHeadline}
-        personalProjectsText={dict.projects.personalProjectsText}
         locale={lang as Locales}
       />
     </>
