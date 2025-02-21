@@ -901,7 +901,7 @@ Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, u
         srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
         alt: "el-horno-de-la-abuelita-maruja-logo",
       },
-      projectVideoURL: "",
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
       detailPagePath: "/el-horno-de-la-abuelita-maruja",
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
     },
