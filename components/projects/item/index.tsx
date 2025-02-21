@@ -20,6 +20,8 @@ export interface ProjectItemStructure {
   text?: string
   companyColor?: string
   image: ImageStructure,
+  desktopScreenshoots?: ImageStructure[]
+  mobileScreenshoots?: ImageStructure[]
   projectImages?: Array<ImageStructure>
   projectVideoURL?: string
   detailPagePath: string

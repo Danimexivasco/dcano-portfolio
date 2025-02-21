@@ -31,6 +31,7 @@ export interface HeroProps {
 
 const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint, isProjectDetail, locale = "en", squareImg, projectCtaHref, projectCtaText, isPersonalProject }: HeroProps) => {
   const isThisPortfolio = projectCtaHref === "/"
+
   return (
     <>
       <section className={combine(styles.hero, (!img || isProjectDetail) && styles.withoutImg)}>
@@ -83,12 +84,13 @@ const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint,
                   className={combine(styles.img, squareImg && styles.square)}
                 />
               )}
-              {projectCtaHref && projectCtaText &&
-              isThisPortfolio ? (
+              {projectCtaHref && projectCtaText ?
+                isThisPortfolio ? (
                   <Link href={projectCtaHref} asButton className={styles.projectCta}>{projectCtaText}</Link>
                 ) : (
                   <Link href={projectCtaHref} asButton className={styles.projectCta} external>{projectCtaText} &#10697;</Link>
                 )
+                : null
               }
             </div>
           )}

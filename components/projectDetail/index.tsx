@@ -55,7 +55,7 @@ const ProjectDetail = ({ lang, project, dict }: ProjectDetailProps) => {
         squareImg={targetProject?.image?.isSquare}
         isProjectDetail
         isPersonalProject={targetProject?.isPersonalProject}
-        projectCtaHref={targetProject?.url}
+        projectCtaHref={targetProject?.url ?? ""}
         projectCtaText={dict.projectCtaText}
       />
       <Container className={styles.projectDetailContainer}>
@@ -74,10 +74,48 @@ const ProjectDetail = ({ lang, project, dict }: ProjectDetailProps) => {
           <ReactMarkdown className={combine(styles.text, styles.list)}>{targetProject?.aboutTheProjectText}</ReactMarkdown>
         </>
         }
-        {(targetProject?.projectImages && targetProject.projectImages?.length > 0) &&
-        <div className={styles.images}>
-          {targetProject?.projectImages.map(img => <Image key={img.alt} src={img.src} alt={img.alt} className={styles.image}/>)}
-        </div>
+        {targetProject?.projectImages && targetProject.projectImages?.length > 0 ?
+          <div className={styles.images}>
+            {targetProject?.projectImages.map(img => <Image key={img.alt} src={img.src} alt={img.alt} className={styles.image}/>)}
+          </div>
+          : null
+        }
+        {
+          targetProject?.desktopScreenshoots || targetProject?.mobileScreenshoots ? (
+            <div className={styles.screenshotsContainer}>
+              {targetProject?.desktopScreenshoots && targetProject?.desktopScreenshoots.length > 0 ?
+                <div>
+                  <h2 className={styles.title}>{dict.desktopScreenshootsHeadline}:</h2>
+                  <div className={styles.imgContainer}>
+                    {targetProject?.desktopScreenshoots?.map((item) => {
+                      const { src, alt } = item;
+                      return (
+                        <Image key={alt} src={src} alt={alt} className={styles.image}/>
+                      )
+                    })
+                    }
+                  </div>
+                </div>
+                : null
+              }
+              {targetProject?.mobileScreenshoots && targetProject?.mobileScreenshoots.length > 0 ?
+                <div>
+                  <h2 className={styles.title}>{dict.mobileScreenshootsHeadline}:</h2>
+                  <div className={combine(styles.imgContainer, styles.mobile)}>
+                    {targetProject?.mobileScreenshoots?.map((item) => {
+                      const { src, alt } = item;
+                      return (
+                        <Image key={alt} src={src} alt={alt} className={styles.image}/>
+                      )
+                    })
+                    }
+                  </div>
+                    
+                </div>
+                : null
+              }
+            </div>
+          ): null
         }
         {targetProject?.projectVideoURL &&
         <video controls className={styles.video}>
