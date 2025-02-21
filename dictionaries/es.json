@@ -35,6 +35,8 @@
     "projectCtaText": "Visitar Web",
     "aboutTheCompanyHeadline": "Sobre la empresa",
     "aboutTheProjectHeadline": "El proyecto",
+    "desktopScreenshootsHeadline": "Capturas de pantalla para escritorio",
+    "mobileScreenshootsHeadline": "Capturas de pantalla para móvil",
     "technologiesHeadline": "Tecnologías usadas en el proyecto",
     "videoError": "Tu navegador no soporta el vídeo HTML.",
     "backToProjectsCtaText": "Volver a todos los proyectos"

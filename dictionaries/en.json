@@ -35,6 +35,8 @@
     "projectCtaText": "Visit Website",
     "aboutTheCompanyHeadline": "About the company",
     "aboutTheProjectHeadline": "The project",
+    "desktopScreenshootsHeadline": "Desktop screenshots",
+    "mobileScreenshootsHeadline": "Mobile screenshots",
     "technologiesHeadline": "Technologies used in this project",
     "videoError": "Your browser does not support HTML video.",
     "backToProjectsCtaText": "Back to projects"
