@@ -11,12 +11,19 @@ import LeturImg from "/public/images/letur.webp"
 import JerezImg from "/public/images/jerez.webp"
 import PortfolioV1Img from "/public/images/projects/portfoliov1.webp"
 import PortfolioV2Img from "/public/images/projects/portfoliov2.webp"
-import CityGameImg from "/public/images/projects/city_game.webp"
 import SecovisaImg from "/public/images/projects/secovisa.webp"
 import SecovisaMobileImg from "/public/images/projects/secovisa_mobile.webp"
+import LosTarritosHome from "/public/images/projects/los_tarritos_home.webp"
+import LosTarritosRecipes from "/public/images/projects/los_tarritos_recipes.webp"
+import LosTarritosActivities from "/public/images/projects/los_tarritos_activities.webp"
+import LosTarritosBalances from "/public/images/projects/los_tarritos_balances.webp"
+import LosTarritosMenu from "/public/images/projects/los_tarritos_menu.webp"
+import LosTarritosBalance from "/public/images/projects/los_tarritos_nav_balance.gif"
+import LosTarritosTopics from "/public/images/projects/los_tarritos_topics.webp"
 import TeledataImg from "/public/images/projects/teledata.webp"
 import TeledataBankImg from "/public/images/projects/teledata_bank.webp"
 import { BannerCta } from "@/components/banner"
+import { Tech } from "@/enums"
 
 export const LOCALES = [ "en-US", "es-ES" ]
 export const DEFAULT_LOCALE = "en-US"
@@ -791,6 +798,67 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
 export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
   en: [
     {
+      headline: "El horno de la abuelita maruja",
+      aboutTheProjectText: `A **full-stack** app created from scratch to help my girlfriend to sell her products, which includes cookies, tiramisus, cakes and other baked goods. \r I'm developing the app using **Next.js**, **TypeScript** and **Tailwind CSS**, using **Vitest** for **TDD** and using **Firebase** as DB  \r\r\r ⚠️ *This is a work in progress, so there are still things to refine.*`,
+      companyColor: "#edd8ab",
+      image: {
+        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
+        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
+        alt: "el-horno-de-la-abuelita-maruja-logo",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
+      detailPagePath: "/el-horno-de-la-abuelita-maruja",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
+    },
+    {
+      headline: "Nuestros Tarritos",
+      aboutTheProjectText: `An app created to strengthen and take care of my relationship with my partner. The app includes the following sections:\r
+  * **Random activities** to break the routine 🚀  
+  * **Monthly balances** to see what’s going well and what we can improve ⚖️  
+  * **Interesting topics** to talk about and make sure they don’t get forgotten 🦜  
+  * **Recipes** to enjoy cooking together 🧑🏽‍🍳  
+  `,
+      companyColor: "#06b6d4",
+      image: {
+        src: icons.LosTarritosLogoIcon,
+        alt: "los-tarritos-logo",
+      },
+      desktopScreenshoots: [
+        {
+          src: LosTarritosRecipes,
+          alt: "los-tarritos-recipes",
+        },
+        {
+          src: LosTarritosBalances,
+          alt: "los-tarritos-balances",
+        },
+        {
+          src: LosTarritosHome,
+          alt: "los-tarritos-home",
+        },
+        {
+          src: LosTarritosActivities,
+          alt: "los-tarritos-actividades",
+        },
+      ],
+      mobileScreenshoots: [
+        {
+          src: LosTarritosMenu,
+          alt: "los-tarritos-menu",
+        },
+        {
+          src: LosTarritosTopics,
+          alt: "los-tarritos-temas",
+        },
+        {
+          src: LosTarritosBalance,
+          alt: "los-tarritos-balance",
+        },
+      ],
+      detailPagePath: "/los-tarritos",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
+    },
+    {
       headline: "Actual portfolio",
       url: "/",
       aboutTheProjectText: `In the last months of 2023 I was sure that I wanted a **change on my career**, so that's why I started developing my actual portfolio. I developed it using **Next.js** and **Typescript** as base, **Sass** for the styling and **GSAP** and **Intersection Observer API** for handle some scrolling animations.  
@@ -820,6 +888,71 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
     },
   ],
   es: [
+    {
+      headline: "El horno de la abuelita maruja",
+      aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi novia a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
+Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
+
+⚠️ *Este es un proyecto en desarrollo, por lo que aún faltan cosas por pulir.*  
+`,
+      companyColor: "#edd8ab",
+      image: {
+        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
+        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
+        alt: "el-horno-de-la-abuelita-maruja-logo",
+      },
+      projectVideoURL: "",
+      detailPagePath: "/el-horno-de-la-abuelita-maruja",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
+    },
+    {
+      headline: "Nuestros Tarritos",
+      aboutTheProjectText: `An app created to strengthen and take care of my relationship with my partner. The app includes the following sections:\r
+  * **Random activities** to break the routine 🚀  
+  * **Monthly balances** to see what’s going well and what we can improve ⚖️  
+  * **Interesting topics** to talk about and make sure they don’t get forgotten 🦜  
+  * **Recipes** to enjoy cooking together 🧑🏽‍🍳  
+  `,
+      companyColor: "#06b6d4",
+      image: {
+        src: icons.LosTarritosLogoIcon,
+        alt: "los-tarritos-logo",
+      },
+      desktopScreenshoots: [
+        {
+          src: LosTarritosRecipes,
+          alt: "los-tarritos-recipes",
+        },
+        {
+          src: LosTarritosBalances,
+          alt: "los-tarritos-balances",
+        },
+        {
+          src: LosTarritosHome,
+          alt: "los-tarritos-home",
+        },
+        {
+          src: LosTarritosActivities,
+          alt: "los-tarritos-actividades",
+        },
+      ],
+      mobileScreenshoots: [
+        {
+          src: LosTarritosMenu,
+          alt: "los-tarritos-menu",
+        },
+        {
+          src: LosTarritosTopics,
+          alt: "los-tarritos-temas",
+        },
+        {
+          src: LosTarritosBalance,
+          alt: "los-tarritos-balance",
+        },
+      ],
+      detailPagePath: "/los-tarritos",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
+    },
     {
       headline: "Portfolio actual",
       url: "/",
