@@ -890,7 +890,7 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
   es: [
     {
       headline: "El horno de la abuelita maruja",
-      aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi novia a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
+      aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi pareja a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
 Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
 
 ⚠️ *Este es un proyecto en desarrollo, por lo que aún faltan cosas por pulir.*  
@@ -907,11 +907,11 @@ Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, u
     },
     {
       headline: "Nuestros Tarritos",
-      aboutTheProjectText: `An app created to strengthen and take care of my relationship with my partner. The app includes the following sections:\r
-  * **Random activities** to break the routine 🚀  
-  * **Monthly balances** to see what’s going well and what we can improve ⚖️  
-  * **Interesting topics** to talk about and make sure they don’t get forgotten 🦜  
-  * **Recipes** to enjoy cooking together 🧑🏽‍🍳  
+      aboutTheProjectText: `App creada para fortalecer y cuidar la relación con mi pareja. La app incluye las siguientes secciones:\r
+  * **Actividades aleatorias** para romper con la rutina 🚀  
+  * **Balances mensuales** para valorar que ha ido bien y mejorar el resto ⚖️  
+  * **Temas interesantes** sobre los que hablar, para estar seguros de que no se nos olvidan 🦜  
+  * **Recetas** para disfrutar cocinando juntos 🧑🏽‍🍳  
   `,
       companyColor: "#06b6d4",
       image: {
