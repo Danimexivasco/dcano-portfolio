@@ -52,6 +52,9 @@ import VierLogoIcon from "/public/icons/vier_logo.svg"
 import BahlsenLogoIcon from "/public/icons/bahlsen_logo.svg"
 import BahlsenLogoLightIcon from "/public/icons/bahlsen_logo_light.svg"
 import VetzLogoIcon from "/public/icons/vetz_logo.png"
+import LosTarritosLogoIcon from "/public/icons/los_tarritos_logo.svg"
+import ElHornoDeLaAbuelitaMarujaLightIcon from "/public/icons/el_horno_de_la_abuelita_maruja_logo_light.svg"
+import ElHornoDeLaAbuelitaMarujaDarkIcon from "/public/icons/el_horno_de_la_abuelita_maruja_logo_dark.svg"
 
 export const icons = {
   LinkedinIcon,
@@ -107,5 +110,8 @@ export const icons = {
   VierLogoIcon,
   BahlsenLogoIcon,
   BahlsenLogoLightIcon,
-  VetzLogoIcon
+  VetzLogoIcon,
+  LosTarritosLogoIcon,
+  ElHornoDeLaAbuelitaMarujaLightIcon,
+  ElHornoDeLaAbuelitaMarujaDarkIcon
 }
