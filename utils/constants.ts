@@ -821,41 +821,41 @@ export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>>
       companyColor: "#06b6d4",
       image: {
         src: icons.LosTarritosLogoIcon,
-        alt: "los-tarritos-logo",
+        alt: "nuestros-tarritos-logo",
       },
       desktopScreenshoots: [
         {
           src: LosTarritosRecipes,
-          alt: "los-tarritos-recipes",
+          alt: "nuestros-tarritos-recipes",
         },
         {
           src: LosTarritosBalances,
-          alt: "los-tarritos-balances",
+          alt: "nuestros-tarritos-balances",
         },
         {
           src: LosTarritosHome,
-          alt: "los-tarritos-home",
+          alt: "nuestros-tarritos-home",
         },
         {
           src: LosTarritosActivities,
-          alt: "los-tarritos-actividades",
+          alt: "nuestros-tarritos-actividades",
         },
       ],
       mobileScreenshoots: [
         {
           src: LosTarritosMenu,
-          alt: "los-tarritos-menu",
+          alt: "nuestros-tarritos-menu",
         },
         {
           src: LosTarritosTopics,
-          alt: "los-tarritos-temas",
+          alt: "nuestros-tarritos-temas",
         },
         {
           src: LosTarritosBalance,
-          alt: "los-tarritos-balance",
+          alt: "nuestros-tarritos-balance",
         },
       ],
-      detailPagePath: "/los-tarritos",
+      detailPagePath: "/nuestros-tarritos",
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
     },
     {
@@ -916,41 +916,41 @@ Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, u
       companyColor: "#06b6d4",
       image: {
         src: icons.LosTarritosLogoIcon,
-        alt: "los-tarritos-logo",
+        alt: "nuestros-tarritos-logo",
       },
       desktopScreenshoots: [
         {
           src: LosTarritosRecipes,
-          alt: "los-tarritos-recipes",
+          alt: "nuestros-tarritos-recipes",
         },
         {
           src: LosTarritosBalances,
-          alt: "los-tarritos-balances",
+          alt: "nuestros-tarritos-balances",
         },
         {
           src: LosTarritosHome,
-          alt: "los-tarritos-home",
+          alt: "nuestros-tarritos-home",
         },
         {
           src: LosTarritosActivities,
-          alt: "los-tarritos-actividades",
+          alt: "nuestros-tarritos-actividades",
         },
       ],
       mobileScreenshoots: [
         {
           src: LosTarritosMenu,
-          alt: "los-tarritos-menu",
+          alt: "nuestros-tarritos-menu",
         },
         {
           src: LosTarritosTopics,
-          alt: "los-tarritos-temas",
+          alt: "nuestros-tarritos-temas",
         },
         {
           src: LosTarritosBalance,
-          alt: "los-tarritos-balance",
+          alt: "nuestros-tarritos-balance",
         },
       ],
-      detailPagePath: "/los-tarritos",
+      detailPagePath: "/nuestros-tarritos",
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
     },
     {
