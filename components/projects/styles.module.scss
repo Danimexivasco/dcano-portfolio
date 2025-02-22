@@ -10,8 +10,8 @@
   margin-bottom: $spacing-6;
 }
 .projectsContainer {
-  padding-top: $spacing-6;
-  padding-bottom: $spacing-6;
+  padding-top: $spacing-6 !important;
+  padding-bottom: $spacing-6 !important;
   &.dark {
     background-color: $black;
     color: $white;
