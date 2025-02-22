@@ -5,7 +5,7 @@ import ProjectDetail from "@/components/projectDetail";
 
 export async function generateMetadata({ params: { project } }: NextParamsProp) {
   return {
-    title: project,
+    title: project?.replace(/-/g, " "),
     description: `Here you can see the ${project} project where I worked on`,
     // keywords: project.keywords
   };
