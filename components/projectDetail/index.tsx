@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
-import { PERSONAL_PROJECT_ITEMS, PROJECT_ITEMS, TECHNOLOGIES } from "@/utils/constants";
+import { PROJECTS, TECHNOLOGIES } from "@/utils/constants";
 import { combine } from "@/helpers/combine";
 import { filterMatchingTechnologies } from "@/helpers/filterMatchingTechnologies";
 import Technologies from "@/components/technologies";
@@ -32,7 +32,7 @@ const ProjectDetail = ({ lang, project, dict }: ProjectDetailProps) => {
 
   useEffect(() => {
     if (project && lang) {
-      const targetProject = PROJECT_ITEMS[ lang ].concat(PERSONAL_PROJECT_ITEMS[ lang ]).find(el => el.detailPagePath === `/${project}`)
+      const targetProject = PROJECTS[ lang ].find(el => el.detailPagePath === `/${project}`)
       if (!targetProject) {
         return router.push("/universe");
       }

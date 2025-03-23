@@ -444,19 +444,36 @@ export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
   ]
 }
 
-export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
+export const PROJECTS : Record<string, ProjectItemStructure[]> = {
   en: [
     {
-      headline: "Corona Warn App",
-      url: "https://www.coronawarn.app/",
-      aboutTheProjectText: "The Corona-Warn-App by the **German government** is a COVID-19 contact-tracing app designed to notify users if they have been in close proximity to someone who later tests positive for the virus. It aims to enhance public health efforts by quickly identifying and alerting individuals at risk of infection.\n #### Key points:\n * Based on technologies with a **decentralized approach**\n * **E2E testing** purposes the project relies on **Cypress**\n * **Transparency** is key to both protect the app's end-users and to encourage adoption.",
-      companyColor: "#54b3e1",
+      headline: "El horno de la abuelita maruja",
+      url: "https://elhornodelaabuelitamaruja.vercel.app/",
+      aboutTheProjectText: `A **full-stack** app created from scratch to help my girlfriend to sell her products, which includes cookies, tiramisus, cakes and other baked goods. \r I'm developing the app using **Next.js**, **TypeScript** and **Tailwind CSS**, using **Vitest** for **TDD** and using **Firebase** as DB  \r\r\r ⚠️ *This is a work in progress, so there are still things to refine.*`,
+      companyColor: "#edd8ab",
       image: {
-        src: icons.CwaLogoIcon,
-        alt: "cwa-logo",
+        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
+        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
+        alt: "el-horno-de-la-abuelita-maruja-logo",
       },
-      detailPagePath: "/cwa",
-      technologies: [ "Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery" ],
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
+      detailPagePath: "/el-horno-de-la-abuelita-maruja",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
+    },
+    {
+      headline: "Bahlsen",
+      url: "https://www.bahlsen.com/",
+      aboutTheCompanyText: "Bahlsen is a German food company renowned for its **high-quality** sweet **biscuits and cookies**. With a rich heritage dating back to **1889**, Bahlsen is known for iconic products like Choco Leibniz and Hit cookies. The brand represents a commitment to craftsmanship and premium ingredients, delivering delightful treats that have become a staple in European households.",
+      aboutTheProjectText: `This was together with Vimcar, one of the first projects I worked on in Digital Cuisine. We created the website **from scratch** and we worked close together with UK Mullenlowe design agency from the start.  
+      The project relies on HTML/Handlebars + Sass + JS combo\n #### Key points:\n * Created as **fullscreen scrolling website**\n * Great variety of **animations**, all done with pure CSS`,
+      companyColor: "#ffffff",
+      image: {
+        src: icons.BahlsenLogoIcon,
+        srcLight: icons.BahlsenLogoLightIcon,
+        alt: "bahlsen-logo",
+      },
+      detailPagePath: "/bahlsen",
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "iF Design",
@@ -471,6 +488,18 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
       },
       detailPagePath: "/if-design",
       technologies: [ "React", "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+    },
+    {
+      headline: "Corona Warn App",
+      url: "https://www.coronawarn.app/",
+      aboutTheProjectText: "The Corona-Warn-App by the **German government** is a COVID-19 contact-tracing app designed to notify users if they have been in close proximity to someone who later tests positive for the virus. It aims to enhance public health efforts by quickly identifying and alerting individuals at risk of infection.\n #### Key points:\n * Based on technologies with a **decentralized approach**\n * **E2E testing** purposes the project relies on **Cypress**\n * **Transparency** is key to both protect the app's end-users and to encourage adoption.",
+      companyColor: "#54b3e1",
+      image: {
+        src: icons.CwaLogoIcon,
+        alt: "cwa-logo",
+      },
+      detailPagePath: "/cwa",
+      technologies: [ "Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery" ],
     },
     {
       headline: "Vimcar",
@@ -511,21 +540,6 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
       },
       detailPagePath: "/frient",
       technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
-    },
-    {
-      headline: "Bahlsen",
-      url: "https://www.bahlsen.com/",
-      aboutTheCompanyText: "Bahlsen is a German food company renowned for its **high-quality** sweet **biscuits and cookies**. With a rich heritage dating back to **1889**, Bahlsen is known for iconic products like Choco Leibniz and Hit cookies. The brand represents a commitment to craftsmanship and premium ingredients, delivering delightful treats that have become a staple in European households.",
-      aboutTheProjectText: `This was together with Vimcar, one of the first projects I worked on in Digital Cuisine. We created the website **from scratch** and we worked close together with UK Mullenlowe design agency from the start.  
-      The project relies on HTML/Handlebars + Sass + JS combo\n #### Key points:\n * Created as **fullscreen scrolling website**\n * Great variety of **animations**, all done with pure CSS`,
-      companyColor: "#ffffff",
-      image: {
-        src: icons.BahlsenLogoIcon,
-        srcLight: icons.BahlsenLogoLightIcon,
-        alt: "bahlsen-logo",
-      },
-      detailPagePath: "/bahlsen",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "Peacebuilding Forum (PBF)",
@@ -618,19 +632,116 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
       detailPagePath: "/vetz",
       technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Contentful", "Git", "Sass", "Azure DevOps", "Tailwind CSS", "GSAP" ],
     },
+    {
+      headline: "Nuestros Tarritos",
+      aboutTheProjectText: `An app created to strengthen and take care of my relationship with my partner. The app includes the following sections:\r
+  * **Random activities** to break the routine 🚀  
+  * **Monthly balances** to see what’s going well and what we can improve ⚖️  
+  * **Interesting topics** to talk about and make sure they don’t get forgotten 🦜  
+  * **Recipes** to enjoy cooking together 🧑🏽‍🍳  
+  `,
+      companyColor: "#06b6d4",
+      image: {
+        src: icons.LosTarritosLogoIcon,
+        alt: "nuestros-tarritos-logo",
+      },
+      desktopScreenshoots: [
+        {
+          src: LosTarritosRecipes,
+          alt: "nuestros-tarritos-recipes",
+        },
+        {
+          src: LosTarritosBalances,
+          alt: "nuestros-tarritos-balances",
+        },
+        {
+          src: LosTarritosHome,
+          alt: "nuestros-tarritos-home",
+        },
+        {
+          src: LosTarritosActivities,
+          alt: "nuestros-tarritos-actividades",
+        },
+      ],
+      mobileScreenshoots: [
+        {
+          src: LosTarritosMenu,
+          alt: "nuestros-tarritos-menu",
+        },
+        {
+          src: LosTarritosTopics,
+          alt: "nuestros-tarritos-temas",
+        },
+        {
+          src: LosTarritosBalance,
+          alt: "nuestros-tarritos-balance",
+        },
+      ],
+      detailPagePath: "/nuestros-tarritos",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
+    },
+    {
+      headline: "Actual portfolio",
+      url: "/",
+      aboutTheProjectText: `In the last months of 2023 I was sure that I wanted a **change on my career**, so that's why I started developing my actual portfolio. I developed it using **Next.js** and **Typescript** as base, **Sass** for the styling and **GSAP** and **Intersection Observer API** for handle some scrolling animations.  
+      For this project, I wanted to create a functional portfolio for sure, but I also wanted to learn/improve some of my skills so that 's why I used the latest version of Next.js (>13.4) which allows you to use the new **App Router** and also thing like **Server Components**. Along with this I also took the **opportunity** to use Typescript, which was something I had wanted to do for a long time and hadn't had the chance to do.  
+      Regarding the portfolio **design**, I have tried to keep it simple, but with some curiosities like the random color that accompanies you throughout your visit and changes every time you visit it.  
+      Finally and despite being my professional portfolio, I did not want to lose the humor that I like to have, so there are certain texts in it that have a somewhat **humorous tone**, especially in the about me section.`,
+      image: {
+        src: PortfolioV2Img,
+        alt: "portfoliov2-screenshot",
+      },
+      detailPagePath: "/portfolioV2",
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "GSAP", "Cypress", "Typescript" ],
+      isPersonalProject: true
+    },
+    {
+      headline: "My first portfolio",
+      url: "https://awesome-bohr-f950bd.netlify.app/",
+      aboutTheProjectText: `This was my first portfolio, done near 4 years ago now... and looking back to it there are a lot of things that I will in a different way today, but this is also the great part, because it means that I **evolved as a developer** ❤️  
+      The project was done with **Gatsby**, **Strapi** as CMS and using **Sass** for the styling. There you will be able to see some of my first projects (and as I have seen some external APIs are not longer working, see "React Node Send" and "Song Lyrics Finder")`,
+      image: {
+        src: PortfolioV1Img,
+        alt: "portfoliov1-screenshot",
+      },
+      detailPagePath: "/portfolioV1",
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Gatsby", "Strapi" ],
+      isPersonalProject: true
+    },
   ],
   es: [
     {
-      headline: "Corona Warn App",
-      url: "https://www.coronawarn.app/",
-      aboutTheProjectText: "La aplicación Corona-Warn-App del **gobierno alemán** es una aplicación de rastreo de contactos de COVID-19 diseñada para notificar a los usuarios si han estado cerca de alguien que más tarde dé positivo en las pruebas del virus. Su objetivo es mejorar los esfuerzos de la salud pública identificando y alertando rápidamente a las personas en riesgo de infección.\n #### Puntos clave:\n * Basada en tecnologías con un enfoque **descentralizado**\n * **E2E testing** a través de **Cypress**\n * **La transparencia** es clave tanto para proteger a los usuarios finales de la aplicación como para fomentar su adopción.",
-      companyColor: "#54b3e1",
+      headline: "El horno de la abuelita maruja",
+      url: "https://elhornodelaabuelitamaruja.vercel.app/",
+      aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi pareja a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
+Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
+
+⚠️ *Este es un proyecto en desarrollo, por lo que aún faltan cosas por pulir.*  
+`,
+      companyColor: "#edd8ab",
       image: {
-        src: icons.CwaLogoIcon,
-        alt: "cwa-logo",
+        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
+        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
+        alt: "el-horno-de-la-abuelita-maruja-logo",
       },
-      detailPagePath: "/cwa",
-      technologies: [ "Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery" ],
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
+      detailPagePath: "/el-horno-de-la-abuelita-maruja",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
+    },
+    {
+      headline: "Bahlsen",
+      url: "https://www.bahlsen.com/",
+      aboutTheCompanyText: "Bahlsen es una empresa alemana de alimentos reconocida por sus galletas de **alta calidad**. Con una rica herencia que se remonta a **1889**, Bahlsen es conocida por productos icónicos como Choco Leibniz y las galletas Hit. La marca representa un compromiso con la artesanía e ingredientes premium, ofreciendo deliciosas galletas que se han convertido en un básico en los hogares europeos.",
+      aboutTheProjectText: `Este fue uno de los primeros proyectos en los que trabajé en Digital Cuisine junto con Vimcar. Creamos el sitio web **desde cero** y colaboramos estrechamente con la agencia de diseño de Reino Unido Mullenlowe desde el principio.  
+      El proyecto se basa en la combinación de HTML/Handlebars + Sass + JS.\n #### Aspectos clave:\n * Se creó como un sitio web **"fullscreen scrolling website"**, siendo que el scroll está en su mayoría regulado por secciones\n * Gran variedad de **animaciones** realizadas exclusivamente con CSS.`,
+      companyColor: "#ffffff",
+      image: {
+        src: icons.BahlsenLogoIcon,
+        srcLight: icons.BahlsenLogoLightIcon,
+        alt: "bahlsen-logo",
+      },
+      detailPagePath: "/bahlsen",
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "iF Design",
@@ -645,6 +756,18 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
       },
       detailPagePath: "/if-design",
       technologies: [ "React", "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+    },
+    {
+      headline: "Corona Warn App",
+      url: "https://www.coronawarn.app/",
+      aboutTheProjectText: "La aplicación Corona-Warn-App del **gobierno alemán** es una aplicación de rastreo de contactos de COVID-19 diseñada para notificar a los usuarios si han estado cerca de alguien que más tarde dé positivo en las pruebas del virus. Su objetivo es mejorar los esfuerzos de la salud pública identificando y alertando rápidamente a las personas en riesgo de infección.\n #### Puntos clave:\n * Basada en tecnologías con un enfoque **descentralizado**\n * **E2E testing** a través de **Cypress**\n * **La transparencia** es clave tanto para proteger a los usuarios finales de la aplicación como para fomentar su adopción.",
+      companyColor: "#54b3e1",
+      image: {
+        src: icons.CwaLogoIcon,
+        alt: "cwa-logo",
+      },
+      detailPagePath: "/cwa",
+      technologies: [ "Javascript", "HTML 5", "CSS 3", "Cypress", "Git", "Bootstrap", "Handlebars", "jQuery" ],
     },
     {
       headline: "Vimcar",
@@ -685,21 +808,6 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
       },
       detailPagePath: "/frient",
       technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
-    },
-    {
-      headline: "Bahlsen",
-      url: "https://www.bahlsen.com/",
-      aboutTheCompanyText: "Bahlsen es una empresa alemana de alimentos reconocida por sus galletas de **alta calidad**. Con una rica herencia que se remonta a **1889**, Bahlsen es conocida por productos icónicos como Choco Leibniz y las galletas Hit. La marca representa un compromiso con la artesanía e ingredientes premium, ofreciendo deliciosas galletas que se han convertido en un básico en los hogares europeos.",
-      aboutTheProjectText: `Este fue uno de los primeros proyectos en los que trabajé en Digital Cuisine junto con Vimcar. Creamos el sitio web **desde cero** y colaboramos estrechamente con la agencia de diseño de Reino Unido Mullenlowe desde el principio.  
-      El proyecto se basa en la combinación de HTML/Handlebars + Sass + JS.\n #### Aspectos clave:\n * Se creó como un sitio web **"fullscreen scrolling website"**, siendo que el scroll está en su mayoría regulado por secciones\n * Gran variedad de **animaciones** realizadas exclusivamente con CSS.`,
-      companyColor: "#ffffff",
-      image: {
-        src: icons.BahlsenLogoIcon,
-        srcLight: icons.BahlsenLogoLightIcon,
-        alt: "bahlsen-logo",
-      },
-      detailPagePath: "/bahlsen",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "Peacebuilding Forum (PBF)",
@@ -792,119 +900,6 @@ export const PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
       detailPagePath: "/vetz",
       technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Contentful", "Git", "Sass", "Azure DevOps", "Tailwind CSS", "GSAP" ],
     },
-  ],
-}
-
-export const PERSONAL_PROJECT_ITEMS: Record<string, Array<ProjectItemStructure>> = {
-  en: [
-    {
-      headline: "El horno de la abuelita maruja",
-      aboutTheProjectText: `A **full-stack** app created from scratch to help my girlfriend to sell her products, which includes cookies, tiramisus, cakes and other baked goods. \r I'm developing the app using **Next.js**, **TypeScript** and **Tailwind CSS**, using **Vitest** for **TDD** and using **Firebase** as DB  \r\r\r ⚠️ *This is a work in progress, so there are still things to refine.*`,
-      companyColor: "#edd8ab",
-      image: {
-        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
-        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
-        alt: "el-horno-de-la-abuelita-maruja-logo",
-      },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
-      detailPagePath: "/el-horno-de-la-abuelita-maruja",
-      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
-    },
-    {
-      headline: "Nuestros Tarritos",
-      aboutTheProjectText: `An app created to strengthen and take care of my relationship with my partner. The app includes the following sections:\r
-  * **Random activities** to break the routine 🚀  
-  * **Monthly balances** to see what’s going well and what we can improve ⚖️  
-  * **Interesting topics** to talk about and make sure they don’t get forgotten 🦜  
-  * **Recipes** to enjoy cooking together 🧑🏽‍🍳  
-  `,
-      companyColor: "#06b6d4",
-      image: {
-        src: icons.LosTarritosLogoIcon,
-        alt: "nuestros-tarritos-logo",
-      },
-      desktopScreenshoots: [
-        {
-          src: LosTarritosRecipes,
-          alt: "nuestros-tarritos-recipes",
-        },
-        {
-          src: LosTarritosBalances,
-          alt: "nuestros-tarritos-balances",
-        },
-        {
-          src: LosTarritosHome,
-          alt: "nuestros-tarritos-home",
-        },
-        {
-          src: LosTarritosActivities,
-          alt: "nuestros-tarritos-actividades",
-        },
-      ],
-      mobileScreenshoots: [
-        {
-          src: LosTarritosMenu,
-          alt: "nuestros-tarritos-menu",
-        },
-        {
-          src: LosTarritosTopics,
-          alt: "nuestros-tarritos-temas",
-        },
-        {
-          src: LosTarritosBalance,
-          alt: "nuestros-tarritos-balance",
-        },
-      ],
-      detailPagePath: "/nuestros-tarritos",
-      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
-    },
-    {
-      headline: "Actual portfolio",
-      url: "/",
-      aboutTheProjectText: `In the last months of 2023 I was sure that I wanted a **change on my career**, so that's why I started developing my actual portfolio. I developed it using **Next.js** and **Typescript** as base, **Sass** for the styling and **GSAP** and **Intersection Observer API** for handle some scrolling animations.  
-      For this project, I wanted to create a functional portfolio for sure, but I also wanted to learn/improve some of my skills so that 's why I used the latest version of Next.js (>13.4) which allows you to use the new **App Router** and also thing like **Server Components**. Along with this I also took the **opportunity** to use Typescript, which was something I had wanted to do for a long time and hadn't had the chance to do.  
-      Regarding the portfolio **design**, I have tried to keep it simple, but with some curiosities like the random color that accompanies you throughout your visit and changes every time you visit it.  
-      Finally and despite being my professional portfolio, I did not want to lose the humor that I like to have, so there are certain texts in it that have a somewhat **humorous tone**, especially in the about me section.`,
-      image: {
-        src: PortfolioV2Img,
-        alt: "portfoliov2-screenshot",
-      },
-      detailPagePath: "/portfolioV2",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Next.js", "GSAP", "Cypress", "Typescript" ],
-      isPersonalProject: true
-    },
-    {
-      headline: "My first portfolio",
-      url: "https://awesome-bohr-f950bd.netlify.app/",
-      aboutTheProjectText: `This was my first portfolio, done near 4 years ago now... and looking back to it there are a lot of things that I will in a different way today, but this is also the great part, because it means that I **evolved as a developer** ❤️  
-      The project was done with **Gatsby**, **Strapi** as CMS and using **Sass** for the styling. There you will be able to see some of my first projects (and as I have seen some external APIs are not longer working, see "React Node Send" and "Song Lyrics Finder")`,
-      image: {
-        src: PortfolioV1Img,
-        alt: "portfoliov1-screenshot",
-      },
-      detailPagePath: "/portfolioV1",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Gatsby", "Strapi" ],
-      isPersonalProject: true
-    },
-  ],
-  es: [
-    {
-      headline: "El horno de la abuelita maruja",
-      aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi pareja a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
-Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
-
-⚠️ *Este es un proyecto en desarrollo, por lo que aún faltan cosas por pulir.*  
-`,
-      companyColor: "#edd8ab",
-      image: {
-        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
-        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
-        alt: "el-horno-de-la-abuelita-maruja-logo",
-      },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
-      detailPagePath: "/el-horno-de-la-abuelita-maruja",
-      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
-    },
     {
       headline: "Nuestros Tarritos",
       aboutTheProjectText: `App creada para fortalecer y cuidar la relación con mi pareja. La app incluye las siguientes secciones:\r
@@ -981,7 +976,7 @@ Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, u
       technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Gatsby", "Strapi" ],
       isPersonalProject: true
     },
-  ],
+  ]
 }
 
 export const QUOTES_404: Record<string, Array<QuoteItem>> = {

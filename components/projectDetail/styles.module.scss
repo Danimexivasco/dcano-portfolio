@@ -2,8 +2,8 @@
 @import "../../styles/screenhooks";
 
 .projectDetailContainer {
-  margin-top: $spacing-6;
-  margin-bottom: $spacing-6;
+  margin-top: $spacing-6 !important;
+  margin-bottom: $spacing-6 !important;
   .text {
     margin-bottom: $spacing-8;
     @include sm-and-above {

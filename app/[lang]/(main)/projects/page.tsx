@@ -1,5 +1,5 @@
 import React from "react"
-import { PERSONAL_PROJECT_ITEMS, PROJECT_ITEMS } from "@/utils/constants";
+import { PROJECTS } from "@/utils/constants";
 import { Dictionary, Locales, NextParamsProp } from "@/types";
 import { getDictionary } from "../../dictionaries";
 import Hero from "@/components/hero";
@@ -25,8 +25,7 @@ const ProjectsPage = async ({ params: { lang } }: NextParamsProp) => {
       />
       <Projects
         dict={dict.projects}
-        workProjects={PROJECT_ITEMS[ lang ]}
-        personalProjects={PERSONAL_PROJECT_ITEMS[ lang ]}
+        projects={PROJECTS[ lang ]}
         locale={lang as Locales}
       />
     </>
