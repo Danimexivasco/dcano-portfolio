@@ -12,6 +12,7 @@
   @include sm-and-above {
     gap: $spacing-10;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
   &.reverse {
     transform: translateX(-$spacing-2);
@@ -52,6 +53,7 @@
     object-position: center;
     max-height: 40vh;
     transition: transform 0.25s ease;
+    aspect-ratio: 4/3;
     filter: drop-shadow(7px 0px 6px rgba(var(--random-rgb-color), 0.3));
   }
 }

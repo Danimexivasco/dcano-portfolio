@@ -9,6 +9,7 @@ import PtoStaMariaImg from "/public/images/puerto_santa_maria.webp"
 import SelvaIratiImg from "/public/images/basque.webp"
 import LeturImg from "/public/images/letur.webp"
 import JerezImg from "/public/images/jerez.webp"
+import snowVanImg from "/public/images/furgo_nieve.webp";
 import PortfolioV1Img from "/public/images/projects/portfoliov1.webp"
 import PortfolioV2Img from "/public/images/projects/portfoliov2.webp"
 import SecovisaImg from "/public/images/projects/secovisa.webp"
@@ -338,24 +339,36 @@ export const TIMELINE_ITEMS: Record<string, Array<TimelineItemStructure>> = {
 export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
   en: [
     {
-      headline: "Basque Country",
-      date: "1993 - 2014 / 2018 - 2020",
-      text: `In the **north of Spain**, just in the border with France we can find **my hometown** Irun. Sea, mountains, not too much sun... The weather is UK like but this makes the Basque Country so green 💚.  
-      The food is also the best food you can eat, from variety, to quantity or quality, so definitely you should go to see the sunsets, the endless cliffs and the forests of this beautiful.  
-      I usually go there to visit my beautiful **family** also ❤️`,
+      headline: "Letur",
+      date: "2022 - Now",
+      text: `Letur, somebody called it the "daughter of water" and I think that is a well-deserved name. The town is on the top of a ridge and walking by their old town **arabic streets** you will be constantly accompanied by the sound of water flowing through the irrigation ditches, which have been in use for over a thousand years.  
+      Some of my favourite things to do there is to walk into the **nature** with my dog and to do **stargazing**, you will agree with me that it's a real privilege to get out to the terrace and see the milky way in all its beauty. But even better, if you pull out the telescope, you will be able to see galaxies, nebulas, globular clusters... From your own home! This is just amazing 🤩`,
       image: {
-        src: SelvaIratiImg,
-        alt: "selva-irati"
+        src: LeturImg,
+        alt: "letur-landscape"
       },
     },
     {
-      headline: "Mexico",
-      date: "2014 - 2018 ",
-      text: `**Viva Mexico cabrones!!** I lived in Mexico from my 21st to my 25th birthday and these were some of the best years of my life. All the days were different and with **plenty of things to do**, including: visit mayan ruins, cenotes, beaches (I was just to 3hrs ride of the Caribbean sea 😍), jungle, a lot of beautiful people, burning sun, tacos, "paquetaxo quexo", meet friendly "toloks"/iguanas... For a young boy as I was (a younger one I mean), **the paradise**.  
-      Here I bought **my first car**, a green "Vocho" or "Vochito" (Volskwagen Beetle) as the locals say . In these days I also meet one of my best friends to this day, Fernando Alonso (he is not the F1 driver)`,
+      headline: "Vandalf",
+      date: "2024",
+      text: `In 2024, I took the trip I had been wanting to do for a long time, my **archaeological journey through the Mediterranean**. On the trip, we visited **Spain, France, Italy, Slovenia, Croatia, Bosnia, Montenegro, Albania, and Greece**.  
+      The trip was amazing, seeing incredible landscapes, paradisiacal beaches, experiencing cultures, and exploring Etruscan, Roman, Minoan, Greek ruins... 😍  
+      When we were about to cross from Athens to the Peloponnese peninsula, the van had a little mechanic problem, and since everyone was on the islands (including mechanics), we had to return to Spain 🤷🏽‍♂️  
+      Once back, and plenty of energy, I continued **improving my knowledge** and **learning new technologies**, while mentoring a friend on their first steps in web development.
+`,
       image: {
-        src: DCMayanRuinsImg,
-        alt: "chacchoben-mayan-ruins"
+        src: snowVanImg,
+        alt: "my-van-with-snow"
+      }
+    },
+    {
+      headline: "Jerez",
+      date: "2021 - 2022",
+      text: `Jerez, the city of the horse, was my second destination in Andalusia. It is 20 minutos from El Puerto de Santa Maria, and there you can enjoy of endless **fields**, **old wineries** and a lot of tipical bars with live shows of **flamenco!** 💃🏻  
+      If you are interested in **history**, this city is full of it, there I visited one of my favorite museums to this day, the archeological museum of Jerez.`,
+      image: {
+        src: JerezImg,
+        alt: "jerez-cathedral"
       },
     },
     {
@@ -369,27 +382,80 @@ export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
       },
     },
     {
-      headline: "Jerez",
-      date: "2021 - 2022",
-      text: `Jerez, the city of the horse, was my second destination in Andalusia. It is 20 minutos from El Puerto de Santa Maria, and there you can enjoy of endless **fields**, **old wineries** and a lot of tipical bars with live shows of **flamenco!** 💃🏻  
-      If you are interested in **history**, this city is full of it, there I visited one of my favorite museums to this day, the archeological museum of Jerez.`,
+      headline: "Mexico",
+      date: "2014 - 2018 ",
+      text: `**Viva Mexico cabrones!!** I lived in Mexico from my 21st to my 25th birthday and these were some of the best years of my life. All the days were different and with **plenty of things to do**, including: visit mayan ruins, cenotes, beaches (I was just to 3hrs ride of the Caribbean sea 😍), jungle, a lot of beautiful people, burning sun, tacos, "paquetaxo quexo", meet friendly "toloks"/iguanas... For a young boy as I was (a younger one I mean), **the paradise**.  
+      Here I bought **my first car**, a green "Vocho" or "Vochito" (Volskwagen Beetle) as the locals say . In these days I also meet one of my best friends to this day, Fernando Alonso (he is not the F1 driver)`,
       image: {
-        src: JerezImg,
-        alt: "jerez-cathedral"
+        src: DCMayanRuinsImg,
+        alt: "chacchoben-mayan-ruins"
       },
     },
     {
-      headline: "Letur",
-      date: "2022 - Now",
-      text: `Letur, somebody called it the "daughter of water" and I think that is a well-deserved name. The town is on the top of a ridge and walking by their old town **arabic streets** you will be constantly accompanied by the sound of water flowing through the irrigation ditches, which have been in use for over a thousand years.  
-      Some of my favourite things to do there is to walk into the **nature** with my dog and to do **stargazing**, you will agree with me that it's a real privilege to get out to the terrace and see the milky way in all its beauty. But even better, if you pull out the telescope, you will be able to see galaxies, nebulas, globular clusters... From your own home! This is just amazing 🤩`,
+      headline: "Basque Country",
+      date: "1993 - 2014 / 2018 - 2020",
+      text: `In the **north of Spain**, just in the border with France we can find **my hometown** Irun. Sea, mountains, not too much sun... The weather is UK like but this makes the Basque Country so green 💚.  
+      The food is also the best food you can eat, from variety, to quantity or quality, so definitely you should go to see the sunsets, the endless cliffs and the forests of this beautiful.  
+      I usually go there to visit my beautiful **family** also ❤️`,
       image: {
-        src: LeturImg,
-        alt: "letur-landscape"
+        src: SelvaIratiImg,
+        alt: "selva-irati"
       },
     },
   ],
   es: [
+    {
+      headline: "Letur",
+      date: "2022 - Actualidad",
+      text: `Letur, alguien lo llamó la 'hija del agua' y creo que es un nombre bien merecido. El pueblo está en la cima de un peñón y al caminar por sus antiguas **calles árabes**, estarás constantemente acompañado por el sonido del agua que fluye a través de las acequias, las mismas que llevan usándose durante más de mil años.
+      Algunas de mis cosas favoritas para hacer allí son caminar por la **naturaleza** con mi perro y disfrutar del **cielo nocturno**, estarás de acuerdo conmigo en que es un verdadero privilegio salir a la terraza y ver la Vía Láctea en todo su esplendor. Pero aún mejor, si sacas el telescopio, podrás ver galaxias, nebulosas, cúmulos globulares... ¡Desde tu propia casa! Esto es simplemente asombroso 🤩.`,
+      image: {
+        src: LeturImg,
+        alt: "panoramica-de-letur"
+      },
+    },
+    {
+      headline: "Vandalf",
+      date: "2024",
+      text: `En 2024 realicé el viaje que llevaba mucho tiempo queriendo hacer, mi viaje **arqueológico por el mediterráneo**. En el viaje conocimos **España, Francia, Italia, Eslovenia, Croacia, Bosnia, Montenegro, Albania y Grecia**.
+      El viaje fue una pasada, viendo paisajes increíbles, playas paradísiacas, conociendo culturas y ruinas etruscas, romanas, minoicas, griegas... 😍
+      Al ir a pasar de Atenas a la península del peloponeso, la furgoneta tuvo un pequeño percance y como toda la gente estaba en las islas (mecánicos incluidos) nos tocó volver para España 🤷🏽‍♂️
+      Una vez de vuelta me puse las pilas y seguí **mejorando mis conocimientos** y **aprendí nuevas tecnologías**, mientras que mentorizaba a un amigo en sus primeros pasos en el desarrollo web.`,
+      image: {
+        src: snowVanImg,
+        alt: "mi-furgo-con-nieve"
+      }
+    },
+    {
+      headline: "Jerez",
+      date: "2021 - 2022",
+      text: `Jerez, la ciudad del caballo, fue mi segundo destino en Andalucía. A 20 minutos de El Puerto de Santa María, allí puedes disfrutar de **campos interminables**, **antiguas bodegas** y muchos bares típicos con espectáculos de **flamenco!** 💃🏻.
+      Si eres aficionado a la historia, la ciudad rebosa de ella; allí visité uno de mis museos favoritos hasta el día de hoy, el museo arqueológico de Jerez.`,
+      image: {
+        src: JerezImg,
+        alt: "catedral-de-jerez"
+      },
+    },
+    {
+      headline: "Puerto de Santa María",
+      date: "2020 - 2021",
+      text: `Esta parte de mi vida podría describirse como **atardeceres, playa y olor a mar**. Viví en una casa señorial justo en el centro del casco antiguo, cerca del Castillo. Allí coincidí con vecinos hermosos y muchos amigos, como las gaviotas que me visitaban en la azotea.
+      Por otra parte, aquí compré mi primera, y única, moto que choqué el primer día (nada grave, solo lo suficiente para rayar el coche de la hija del dueño del garaje en el que la aparqué).`,
+      image: {
+        src: PtoStaMariaImg,
+        alt: "atardecer-puerto-de-santa-maría"
+      },
+    },
+    {
+      headline: "México",
+      date: "2014 - 2018 ",
+      text: `**¡Viva México cabrones!** Viví en México desde los 21 hasta los 25 y fueron algunos de los mejores años de mi vida. Todos los días eran diferentes y con **muchas cosas que hacer**, como por ejemplo: visitar ruinas mayas, cenotes, playas (estaba a solo 3 horas del Caribe 😍), selva, mucha gente hermosa, sol ardiente, tacos, 'paquetaxo quexo', conocer 'toloks' amigables/iguanas... Para un joven como yo (un poco más joven quiero decir), **el paraíso**.
+      Aquí compré **mi primer coche**, un "Vocho" o "Vochito" (Volkswagen Escarabajo) verde, como dicen los lugareños. En estos días también conocí a uno de mis mejores amigos hasta el día de hoy, Fernando Alonso (no, este no es el piloto de F1).`,
+      image: {
+        src: DCMayanRuinsImg,
+        alt: "ruinas-mayas-chacchoben"
+      },
+    },
     {
       headline: "País Vasco",
       date: "1993 - 2014 / 2018 - 2020",
@@ -401,48 +467,9 @@ export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
         alt: "selva-irati"
       },
     },
-    {
-      headline: "México",
-      date: "2014 - 2018 ",
-      text: `**¡Viva México cabrones!** Viví en México desde los 21 hasta los 25 y fueron algunos de los mejores años de mi vida. Todos los días eran diferentes y con **muchas cosas que hacer**, como por ejemplo: visitar ruinas mayas, cenotes, playas (estaba a solo 3 horas del Caribe 😍), selva, mucha gente hermosa, sol ardiente, tacos, 'paquetaxo quexo', conocer 'toloks' amigables/iguanas... Para un joven como yo (un poco más joven quiero decir), **el paraíso**.
-      Aquí compré **mi primer coche**, un "Vocho" o "Vochito" (Volkswagen Escarabajo) verde, como dicen los lugareños. En estos días también conocí a uno de mis mejores amigos hasta el día de hoy, Fernando Alonso (no, este no es el piloto de F1).`,
-      image: {
-        src: DCMayanRuinsImg,
-        alt: "chacchoben-mayan-ruins"
-      },
-    },
-    {
-      headline: "Puerto de Santa María",
-      date: "2020 - 2021",
-      text: `Esta parte de mi vida podría describirse como **atardeceres, playa y olor a mar**. Viví en una casa señorial justo en el centro del casco antiguo, cerca del Castillo. Allí coincidí con vecinos hermosos y muchos amigos, como las gaviotas que me visitaban en la azotea.
-      Por otra parte, aquí compré mi primera, y única, moto que choqué el primer día (nada grave, solo lo suficiente para rayar el coche de la hija del dueño del garaje en el que la aparqué).`,
-      image: {
-        src: PtoStaMariaImg,
-        alt: "puerto-de-santa-maría-sunset"
-      },
-    },
-    {
-      headline: "Jerez",
-      date: "2021 - 2022",
-      text: `Jerez, la ciudad del caballo, fue mi segundo destino en Andalucía. A 20 minutos de El Puerto de Santa María, allí puedes disfrutar de **campos interminables**, **antiguas bodegas** y muchos bares típicos con espectáculos de **flamenco!** 💃🏻.
-      Si eres aficionado a la historia, la ciudad rebosa de ella; allí visité uno de mis museos favoritos hasta el día de hoy, el museo arqueológico de Jerez.`,
-      image: {
-        src: JerezImg,
-        alt: "jerez-cathedral"
-      },
-    },
-    {
-      headline: "Letur",
-      date: "2022 - Now",
-      text: `Letur, alguien lo llamó la 'hija del agua' y creo que es un nombre bien merecido. El pueblo está en la cima de un peñón y al caminar por sus antiguas **calles árabes**, estarás constantemente acompañado por el sonido del agua que fluye a través de las acequias, las mismas que llevan usándose durante más de mil años.
-      Algunas de mis cosas favoritas para hacer allí son caminar por la **naturaleza** con mi perro y disfrutar del **cielo nocturno**, estarás de acuerdo conmigo en que es un verdadero privilegio salir a la terraza y ver la Vía Láctea en todo su esplendor. Pero aún mejor, si sacas el telescopio, podrás ver galaxias, nebulosas, cúmulos globulares... ¡Desde tu propia casa! Esto es simplemente asombroso 🤩.`,
-      image: {
-        src: LeturImg,
-        alt: "letur-landscape"
-      },
-    },
   ]
 }
+
 
 export const PROJECTS : Record<string, ProjectItemStructure[]> = {
   en: [
