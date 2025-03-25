@@ -10,6 +10,7 @@ import SelvaIratiImg from "/public/images/basque.webp"
 import LeturImg from "/public/images/letur.webp"
 import JerezImg from "/public/images/jerez.webp"
 import snowVanImg from "/public/images/furgo_nieve.webp";
+import vanPhotosGif from "/public/images/mix_fotos_furgo.gif";
 import PortfolioV1Img from "/public/images/projects/portfoliov1.webp"
 import PortfolioV2Img from "/public/images/projects/portfoliov2.webp"
 import SecovisaImg from "/public/images/projects/secovisa.webp"
@@ -357,7 +358,7 @@ export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
       Once back, and plenty of energy, I continued **improving my knowledge** and **learning new technologies**, while mentoring a friend on their first steps in web development.
 `,
       image: {
-        src: snowVanImg,
+        src: vanPhotosGif,
         alt: "my-van-with-snow"
       }
     },
@@ -422,7 +423,7 @@ export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
       Al ir a pasar de Atenas a la península del peloponeso, la furgoneta tuvo un pequeño percance y como toda la gente estaba en las islas (mecánicos incluidos) nos tocó volver para España 🤷🏽‍♂️
       Una vez de vuelta me puse las pilas y seguí **mejorando mis conocimientos** y **aprendí nuevas tecnologías**, mientras que mentorizaba a un amigo en sus primeros pasos en el desarrollo web.`,
       image: {
-        src: snowVanImg,
+        src: vanPhotosGif,
         alt: "mi-furgo-con-nieve"
       }
     },
