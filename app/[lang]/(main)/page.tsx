@@ -5,7 +5,7 @@ import Hero from "@/components/hero";
 import Banner from "@/components/banner";
 import Technologies from "@/components/technologies";
 import Timeline from "@/components/timeline";
-import Dani from "/public/images/dani.webp"
+import Dani from "/public/images/dani_tulum.webp"
 
 export const generateMetadata = async ({ params }: NextParamsProp) => {
   const dict: Dictionary = await getDictionary(params.lang)
