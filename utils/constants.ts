@@ -9,7 +9,6 @@ import PtoStaMariaImg from "/public/images/puerto_santa_maria.webp"
 import SelvaIratiImg from "/public/images/basque.webp"
 import LeturImg from "/public/images/letur.webp"
 import JerezImg from "/public/images/jerez.webp"
-import snowVanImg from "/public/images/furgo_nieve.webp";
 import vanPhotosGif from "/public/images/mix_fotos_furgo.gif";
 import PortfolioV1Img from "/public/images/projects/portfoliov1.webp"
 import PortfolioV2Img from "/public/images/projects/portfoliov2.webp"
@@ -1073,21 +1072,21 @@ export const CVLinks: Record<string, Array<BannerCta>> = {
   en: [
     {
       text: "English Resumee",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_EN_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1743256255/Daniel_Cano_Bernal_EN_CV.pdf"
     },
     {
       text: "Spanish Resumee",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_ES_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1743256214/Daniel_Cano_Bernal_ES_CV.pdf"
     }
   ],
   es: [
     {
       text: "Curriculum en Español",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_ES_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1743256214/Daniel_Cano_Bernal_ES_CV.pdf"
     },
     {
       text: "Curriculum en Inglés",
-      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1736767067/Daniel_Cano_Bernal_EN_CV.pdf"
+      href: "https://res.cloudinary.com/danimexivasco/image/upload/v1743256255/Daniel_Cano_Bernal_EN_CV.pdf"
     }
   ]
 }
