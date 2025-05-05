@@ -476,14 +476,20 @@ export const PROJECTS : Record<string, ProjectItemStructure[]> = {
     {
       headline: "El horno de la abuelita maruja",
       url: "https://elhornodelaabuelitamaruja.vercel.app/",
-      aboutTheProjectText: `A **full-stack** app created from scratch to help my girlfriend to sell her products, which includes cookies, tiramisus, cakes and other baked goods. \r I'm developing the app using **Next.js**, **TypeScript** and **Tailwind CSS**, using **Vitest** for **TDD** and using **Firebase** as DB  \r\r\r ⚠️ *This is a work in progress, so there are still things to refine.*`,
+      aboutTheProjectText: `App **full-stack** created from scratch to help my girlfriend sell her products, which include cookies, tiramisus, cakes, and other baked goods.  
+It has been developed with **Next.js**, **TypeScript**, and **Tailwind CSS**, using **Vitest** for **TDD** and **Firebase** as the database.  
+
+In the video below, you can see how the admin panel of the app works; you can check the rest in **[this link](https://elhornodelaabuelitamaruja.vercel.app/)**.
+
+⚠️ *The site is functional, but the payment methods still need to be adjusted and the final products introduced, so currently, purchases cannot be made on the site.*
+`,
       companyColor: "#edd8ab",
       image: {
         src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
         srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
         alt: "el-horno-de-la-abuelita-maruja-logo",
       },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746433500/El_horno_de_la_abuelita_Maruja_2025-05-05_rscsri.mp4",
       detailPagePath: "/el-horno-de-la-abuelita-maruja",
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
     },
@@ -741,17 +747,18 @@ export const PROJECTS : Record<string, ProjectItemStructure[]> = {
       headline: "El horno de la abuelita maruja",
       url: "https://elhornodelaabuelitamaruja.vercel.app/",
       aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi pareja a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
-Estoy desarrollando la app con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
+Se ha desarrollado con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
 
-⚠️ *Este es un proyecto en desarrollo, por lo que aún faltan cosas por pulir.*  
-`,
+En el vídeo de abajo puedes observar el funcionamiento del panel de administrador de la app, puedes ver el resto en **[este enlace](https://elhornodelaabuelitamaruja.vercel.app/)**.
+
+⚠️ *La página es funcional, pero falta ajustar los métodos de pago e introducir los productos finales, por lo que actualmente no se pueden realizar compras en la página.*`,
       companyColor: "#edd8ab",
       image: {
         src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
         srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
         alt: "el-horno-de-la-abuelita-maruja-logo",
       },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/El_horno_de_la_abuelita_Maruja-720.mp4",
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746433500/El_horno_de_la_abuelita_Maruja_2025-05-05_rscsri.mp4",
       detailPagePath: "/el-horno-de-la-abuelita-maruja",
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
     },
