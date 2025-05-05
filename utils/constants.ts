@@ -25,6 +25,7 @@ import TeledataImg from "/public/images/projects/teledata.webp"
 import TeledataBankImg from "/public/images/projects/teledata_bank.webp"
 import { BannerCta } from "@/components/banner"
 import { Tech } from "@/enums"
+import WitchKing from "/public/images/witch_king_fire.webp"
 
 export const LOCALES = [ "en-US", "es-ES" ]
 export const DEFAULT_LOCALE = "en-US"
@@ -474,6 +475,28 @@ export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
 export const PROJECTS : Record<string, ProjectItemStructure[]> = {
   en: [
     {
+      headline: "The Witch King of Angmar",
+      url: "https://the-witch-king-of-angmar.vercel.app/",
+      aboutTheProjectText: `This small weekend project is a fully responsive **SPA tribute** to the Witch King of Angmar, **crafted entirely with HTML and CSS**, without relying on JavaScript frameworks or libraries. It showcases a dark, cinematic aesthetic inspired by The Lord of the Rings, highlighting the character’s weapons, lore, and legacy.
+
+A key feature of the project is the integration of CSS Scroll-Linked Animations using the **experimental animation-timeline** property, enabling smooth, timeline-driven animations tied to scroll position — such as rotating cursed wheels, masked wire overlays, and depth-perspective transitions. The layout uses modern CSS Grid and flexbox, along with visual polish using filters, masking, and layering.
+
+This project demonstrates a **deep dive into cutting-edge CSS capabilities**, focusing on performance, semantic structure, and immersive interaction — all without a single line of JavaScript (the only JS used is to handle and store the preferred theme).
+
+
+⚠️ WARNING: *The project relies on experimental CSS [animation-timeline](https://caniuse.com/?search=animation-timeline) feature, which is not supported in all browsers. I also noticed that the behaviour in mobile devices is not the same as in desktop because of the hide/show functionality of the address bar, so for the best experience, please use a desktop device*
+`,
+      companyColor: "#313030",
+      image: {
+        src: WitchKing,
+        alt: "Witch king helmet",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746441032/the_witch_king_2025-05-05_h89huz.mp4",
+      detailPagePath: "/the-witch-king-of-angmar",
+      isPersonalProject: true,
+      technologies: [ Tech.HTML5, Tech.CSS3, Tech.GIT ],
+    },
+    {
       headline: "El horno de la abuelita maruja",
       url: "https://elhornodelaabuelitamaruja.vercel.app/",
       aboutTheProjectText: `App **full-stack** created from scratch to help my girlfriend sell her products, which include cookies, tiramisus, cakes, and other baked goods.  
@@ -743,6 +766,28 @@ In the video below, you can see how the admin panel of the app works; you can ch
     },
   ],
   es: [
+    {
+      headline: "El rey brujo de Angmar",
+      url: "https://the-witch-king-of-angmar.vercel.app/",
+      aboutTheProjectText: `Pequeño proyecto de fin de semana homenajeando al Rey Brujo de Angmar. Es una **responsive SPA creada completamente con HTML y CSS**, sin depender de frameworks o librerías de JavaScript. Presenta una estética oscura y cinematográfica inspirada en *El Señor de los Anillos*, destacando las armas, el trasfondo y el legado del personaje.
+
+Una característica clave del proyecto es la integración de **animaciones vinculadas al scroll (CSS Scroll-Linked Animations)** utilizando la **propiedad experimental animation-timeline**, lo que permite animaciones suaves y controladas por la posición del scroll, como ruedas malditas giratorias, superposiciones con máscaras y transiciones con perspectiva de profundidad. El diseño emplea CSS moderno con Grid y Flexbox, junto con efectos visuales mediante filtros, máscaras y capas.
+
+Este proyecto representa una **exploración de capacidades avanzadas de CSS**, con un enfoque en el rendimiento, la estructura semántica y la interacción inmersiva — todo ello sin una sola línea de JavaScript (excepto el código mínimo utilizado para gestionar y almacenar el tema preferido del usuario).
+
+⚠️ **ADVERTENCIA**: *El proyecto depende de la característica experimental de CSS [animation-timeline](https://caniuse.com/?search=animation-timeline), la cual no está soportada en todos los navegadores. También he notado que el comportamiento en dispositivos móviles no es igual al de escritorio debido a la funcionalidad de ocultar/mostrar la barra de direcciones, por lo tanto, para una mejor experiencia se recomienda visualizarlo desde un dispositivo de escritorio.*
+
+`,
+      companyColor: "#313030",
+      image: {
+        src: WitchKing,
+        alt: "Witch king helmet",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746441032/the_witch_king_2025-05-05_h89huz.mp4",
+      detailPagePath: "/the-witch-king-of-angmar",
+      isPersonalProject: true,
+      technologies: [ Tech.HTML5, Tech.CSS3, Tech.GIT ],
+    },
     {
       headline: "El horno de la abuelita maruja",
       url: "https://elhornodelaabuelitamaruja.vercel.app/",
