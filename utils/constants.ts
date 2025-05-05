@@ -107,6 +107,10 @@ export const TECHNOLOGIES = [
     icon: icons.ReactIcon
   },
   {
+    name: "Next.js",
+    icon: icons.NextIcon
+  },
+  {
     name: "Javascript",
     icon: icons.JsIcon
   },
@@ -131,8 +135,8 @@ export const TECHNOLOGIES = [
     icon: icons.GitIcon
   },
   {
-    name: "Next.js",
-    icon: icons.NextIcon
+    name: "Zod",
+    icon: icons.ZodIcon
   },
   {
     name: "API",
@@ -167,16 +171,28 @@ export const TECHNOLOGIES = [
     icon: icons.AstroIcon
   },
   {
-    name: "ESLint",
-    icon: icons.EslintIcon
-  },
-  {
     name: "Firebase",
     icon: icons.FirebaseIcon
   },
   {
+    name: "MongoDB",
+    icon: icons.MongodbIcon
+  },
+  {
+    name: "Supabase",
+    icon: icons.SupabaseIcon
+  },
+  {
+    name: "React Query",
+    icon: icons.ReactQueryIcon
+  },
+  {
     name: "React Native",
     icon: icons.ReactIcon
+  },
+  {
+    name: "ESLint",
+    icon: icons.EslintIcon
   },
   {
     name: "Contentful",
@@ -211,10 +227,6 @@ export const TECHNOLOGIES = [
     icon: icons.BootstrapIcon
   },
   {
-    name: "MongoDB",
-    icon: icons.MongodbIcon
-  },
-  {
     name: "Redux",
     icon: icons.ReduxIcon
   },
@@ -233,10 +245,6 @@ export const TECHNOLOGIES = [
   {
     name: "Azure DevOps",
     icon: icons.AzureIcon
-  },
-  {
-    name: "Styled Components",
-    icon: icons.StyledComponentsIcon
   },
 ]
 
@@ -494,7 +502,7 @@ This project demonstrates a **deep dive into cutting-edge CSS capabilities**, fo
       projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746441032/the_witch_king_2025-05-05_h89huz.mp4",
       detailPagePath: "/the-witch-king-of-angmar",
       isPersonalProject: true,
-      technologies: [ Tech.HTML5, Tech.CSS3, Tech.GIT ],
+      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
     },
     {
       headline: "El horno de la abuelita maruja",
@@ -786,7 +794,7 @@ Este proyecto representa una **exploración de capacidades avanzadas de CSS**, c
       projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746441032/the_witch_king_2025-05-05_h89huz.mp4",
       detailPagePath: "/the-witch-king-of-angmar",
       isPersonalProject: true,
-      technologies: [ Tech.HTML5, Tech.CSS3, Tech.GIT ],
+      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
     },
     {
       headline: "El horno de la abuelita maruja",

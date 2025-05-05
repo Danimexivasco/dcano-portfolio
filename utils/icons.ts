@@ -30,6 +30,7 @@ import StrapiIcon from "/public/icons/strapi.svg"
 import StyledComponentsIcon from "/public/icons/styled_components.svg"
 import TestsIcon from "/public/icons/tests.svg"
 import TsIcon from "/public/icons/ts.svg"
+import ZodIcon from "/public/icons/zod.svg"
 import ZapierIcon from "/public/icons/zapier.svg"
 import WebflowIcon from "/public/icons/webflow.svg"
 import AstroIcon from "/public/icons/astro.svg"
@@ -37,6 +38,9 @@ import PlaywrightIcon from "/public/icons/playwright.svg"
 import ReactTestingLibraryIcon from "/public/icons/react_testing_library.svg"
 import VitestIcon from "/public/icons/vitest.svg"
 import EslintIcon from "/public/icons/eslint.svg"
+import SupabaseIcon from "/public/icons/supabase.svg"
+import ReactQueryIcon from "/public/icons/react_query.svg"
+
 import CwaLogoIcon from "/public/icons/cwa_logo.svg"
 import IfLogoIcon from "/public/icons/if_logo.svg"
 import VimcarLogoIcon from "/public/icons/vimcar_logo.svg"
@@ -69,6 +73,7 @@ export const icons = {
   CypressIcon,
   ExpressIcon,
   FirebaseIcon,
+  SupabaseIcon,
   GatsbyIcon,
   GitIcon,
   GraphQLIcon,
@@ -89,6 +94,8 @@ export const icons = {
   StyledComponentsIcon,
   TestsIcon,
   TsIcon,
+  ZodIcon,
+  ReactQueryIcon,
   ZapierIcon,
   WebflowIcon,
   AstroIcon,
