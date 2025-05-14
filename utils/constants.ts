@@ -111,6 +111,14 @@ export const TECHNOLOGIES = [
     icon: icons.NextIcon
   },
   {
+    name: "Astro",
+    icon: icons.AstroIcon
+  },
+  {
+    name: "Tailwind CSS",
+    icon: icons.TailwindCssIcon
+  },
+  {
     name: "Javascript",
     icon: icons.JsIcon
   },
@@ -127,16 +135,24 @@ export const TECHNOLOGIES = [
     icon: icons.SassIcon
   },
   {
-    name: "Tailwind CSS",
-    icon: icons.TailwindCssIcon
-  },
-  {
     name: "Git",
     icon: icons.GitIcon
   },
   {
+    name: "Vite",
+    icon: icons.ViteIcon
+  },
+  {
     name: "Zod",
     icon: icons.ZodIcon
+  },
+  {
+    name: "TanStack Query",
+    icon: icons.ReactQueryIcon
+  },
+  {
+    name: "Zustand",
+    icon: icons.ZustandIcon
   },
   {
     name: "API",
@@ -167,10 +183,6 @@ export const TECHNOLOGIES = [
     icon: icons.ExpressIcon
   },
   {
-    name: "Astro",
-    icon: icons.AstroIcon
-  },
-  {
     name: "Firebase",
     icon: icons.FirebaseIcon
   },
@@ -181,10 +193,6 @@ export const TECHNOLOGIES = [
   {
     name: "Supabase",
     icon: icons.SupabaseIcon
-  },
-  {
-    name: "React Query",
-    icon: icons.ReactQueryIcon
   },
   {
     name: "React Native",
