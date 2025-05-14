@@ -40,6 +40,8 @@ import VitestIcon from "/public/icons/vitest.svg"
 import EslintIcon from "/public/icons/eslint.svg"
 import SupabaseIcon from "/public/icons/supabase.svg"
 import ReactQueryIcon from "/public/icons/react_query.svg"
+import ZustandIcon from "/public/icons/zustand.svg"
+import ViteIcon from "/public/icons/vite.svg"
 
 import CwaLogoIcon from "/public/icons/cwa_logo.svg"
 import IfLogoIcon from "/public/icons/if_logo.svg"
@@ -103,6 +105,8 @@ export const icons = {
   EslintIcon,
   VitestIcon,
   ReactTestingLibraryIcon,
+  ZustandIcon,
+  ViteIcon,
   CwaLogoIcon,
   IfLogoIcon,
   VimcarLogoIcon,
