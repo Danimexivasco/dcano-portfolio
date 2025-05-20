@@ -1,32 +1,62 @@
 [![Code Validation Pipeline](https://github.com/Danimexivasco/dcano-portfolio/actions/workflows/pipeline.yml/badge.svg)](https://github.com/Danimexivasco/dcano-portfolio/actions/workflows/pipeline.yml)
 
-# Dcano Portfolio
+# Dcano portfolio
 
-First of all, thanks for getting here!  😍 And now, let me tell you the story of my portfolio...
-
-In the last months of 2023 I was sure that I wanted a **change on my career**, so that's why I started developing my actual portfolio. I developed it using **Next.js** and **Typescript** as base, **Sass** for the styling and **GSAP** and **Intersection Observer API** for handle some scrolling animations.  
-
-For this project, I wanted to create a functional portfolio for sure, but I also wanted to learn/improve some of my skills so that 's why I used the latest version of Next.js, ```>13.5```, which allows you to use the new **App Router** and also thing like **Server Components**. Along with this I also took the **opportunity** to use Typescript, which was something I had wanted to do for a long time and hadn't had the chance to do.  
-Regarding the portfolio **design**, I have tried to keep it simple, but with some curiosities like the random color that accompanies you throughout your visit and changes every time you visit it.  
+A personal portfolio website built with **Next.js** using the App Router architecture and **Typescript**, **Sass** for the styling and **GSAP** and **Intersection Observer API** for handle some scrolling animations. This site showcases my work, experience, and personal projects. It emphasizes performance, accessibility, and a clean, responsive design.
 
 Finally and despite being my professional portfolio, I did not want to lose the humor that I like to have, so there are certain texts in it that have a somewhat **humorous tone**, especially in the about me section.  
 
-The portfolio is under deployment, so this would be the first version of it, some improvements will be coming 😁
+## 👨🏽‍💻 Tech Stack
 
-### Get the project running
+- **Framework:** [Next.js 14+ (App Router)](https://nextjs.org/docs/app)
+- **Styling:** Sass + Sass modules
+- **Type Safety:** TypeScript
+- **Testing:** [Cypress](https://www.cypress.io/) for E2E
+- **CI/CD:** GitHub Actions
+- **Hosting:** Vercel
 
-First, run the development server:
+## 🚀 Features
+
+- 🌐 Fully responsive design
+- ⚡️ Fast loading using Next.js optimizations
+- 🔍 SEO-friendly with dynamic metadata and social sharing tags
+- 🧩 Modular, component-based structure
+- 🧪 Cypress-based E2E testing suite
+- 🔄 Continuous Deployment via GitHub Actions & Vercel
+- ♻️ Built with accessibility and semantic HTML in mind
+
+## 📦 Installation
+
+1. **Clone the repository**
 
 ```bash
-npm run dev
+git clone https://github.com/Danimexivasco/dcano-portfolio.git
+```
+
+2. **Install dependencies**
+
+```bash
+cd dcano-portfolio
+
+pnpm install
 # or
-yarn dev
-# or
+npm install
+```
+
+3. **Run the app**
+
+```bash
 pnpm dev
 # or
-bun dev
+npm run dev
 ```
 
 Then, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.  
 
-I used node version ```18.16.0``` for the project
+## 🧪 Tests
+
+```bash
+pnpm cypress:open # opens the Cypress Test Runner
+# or
+pnpm cypress:run # runs tests in headless mode
+```
