@@ -159,6 +159,14 @@ export const TECHNOLOGIES = [
     icon: icons.ApiIcon
   },
   {
+    name: "Shadcn UI",
+    icon: icons.ShadcnIcon
+  },
+  {
+    name: "Material UI",
+    icon: icons.MaterialUIIcon
+  },
+  {
     name: "React Testing Library",
     icon: icons.ReactTestingLibraryIcon
   },
@@ -195,6 +203,18 @@ export const TECHNOLOGIES = [
     icon: icons.SupabaseIcon
   },
   {
+    name: "GSAP",
+    icon: icons.GsapIcon
+  },
+  {
+    name: "Lenis",
+    icon: icons.LenisIcon
+  },
+  {
+    name: "GraphQL",
+    icon: icons.GraphQLIcon
+  },
+  {
     name: "React Native",
     icon: icons.ReactIcon
   },
@@ -207,16 +227,8 @@ export const TECHNOLOGIES = [
     icon: icons.ContentfulIcon
   },
   {
-    name: "GraphQL",
-    icon: icons.GraphQLIcon
-  },
-  {
     name: "Gatsby",
     icon: icons.GatsbyIcon
-  },
-  {
-    name: "GSAP",
-    icon: icons.GsapIcon
   },
   {
     name: "Gulp",

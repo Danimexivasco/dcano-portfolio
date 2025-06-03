@@ -42,6 +42,9 @@ import SupabaseIcon from "/public/icons/supabase.svg"
 import ReactQueryIcon from "/public/icons/react_query.svg"
 import ZustandIcon from "/public/icons/zustand.svg"
 import ViteIcon from "/public/icons/vite.svg"
+import ShadcnIcon from "/public/icons/shadcn.svg"
+import MaterialUIIcon from "/public/icons/materialui.svg"
+import LenisIcon from "/public/icons/lenis.svg"
 
 import CwaLogoIcon from "/public/icons/cwa_logo.svg"
 import IfLogoIcon from "/public/icons/if_logo.svg"
@@ -107,6 +110,9 @@ export const icons = {
   ReactTestingLibraryIcon,
   ZustandIcon,
   ViteIcon,
+  ShadcnIcon,
+  MaterialUIIcon,
+  LenisIcon,
   CwaLogoIcon,
   IfLogoIcon,
   VimcarLogoIcon,
