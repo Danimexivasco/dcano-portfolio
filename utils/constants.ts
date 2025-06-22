@@ -549,7 +549,7 @@ In the video below, you can see how the admin panel of the app works; you can ch
       url: "https://www.bahlsen.com/",
       aboutTheCompanyText: "Bahlsen is a German food company renowned for its **high-quality** sweet **biscuits and cookies**. With a rich heritage dating back to **1889**, Bahlsen is known for iconic products like Choco Leibniz and Hit cookies. The brand represents a commitment to craftsmanship and premium ingredients, delivering delightful treats that have become a staple in European households.",
       aboutTheProjectText: `This was together with Vimcar, one of the first projects I worked on in Digital Cuisine. We created the website **from scratch** and we worked close together with UK Mullenlowe design agency from the start.  
-      The project relies on HTML/Handlebars + Sass + JS combo\n #### Key points:\n * Created as **fullscreen scrolling website**\n * Great variety of **animations**, all done with pure CSS`,
+      The project relies on HTML/Handlebars + Sass + JS combo\n #### Key points:\n * Company's **global website relaunch** \n * Great variety of **animations**, all done with pure CSS`,
       companyColor: "#ffffff",
       image: {
         src: icons.BahlsenLogoIcon,
@@ -557,7 +557,7 @@ In the video below, you can see how the admin panel of the app works; you can ch
         alt: "bahlsen-logo",
       },
       detailPagePath: "/bahlsen",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
+      technologies: [ "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "iF Design",
@@ -840,7 +840,7 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
       url: "https://www.bahlsen.com/",
       aboutTheCompanyText: "Bahlsen es una empresa alemana de alimentos reconocida por sus galletas de **alta calidad**. Con una rica herencia que se remonta a **1889**, Bahlsen es conocida por productos icónicos como Choco Leibniz y las galletas Hit. La marca representa un compromiso con la artesanía e ingredientes premium, ofreciendo deliciosas galletas que se han convertido en un básico en los hogares europeos.",
       aboutTheProjectText: `Este fue uno de los primeros proyectos en los que trabajé en Digital Cuisine junto con Vimcar. Creamos el sitio web **desde cero** y colaboramos estrechamente con la agencia de diseño de Reino Unido Mullenlowe desde el principio.  
-      El proyecto se basa en la combinación de HTML/Handlebars + Sass + JS.\n #### Aspectos clave:\n * Se creó como un sitio web **"fullscreen scrolling website"**, siendo que el scroll está en su mayoría regulado por secciones\n * Gran variedad de **animaciones** realizadas exclusivamente con CSS.`,
+      El proyecto se basa en la combinación de HTML/Handlebars + Sass + JS.\n #### Aspectos clave:\n * Relanzamiento del **sitio web global**\n * Gran variedad de **animaciones** realizadas exclusivamente con CSS.`,
       companyColor: "#ffffff",
       image: {
         src: icons.BahlsenLogoIcon,
@@ -848,7 +848,7 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
         alt: "bahlsen-logo",
       },
       detailPagePath: "/bahlsen",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
+      technologies: [ "HTML 5", "CSS 3", "Javascript", "Git", "Sass", "Azure DevOps", "Handlebars", "Gulp", "jQuery" ],
     },
     {
       headline: "iF Design",
