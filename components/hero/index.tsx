@@ -25,11 +25,13 @@ export interface HeroProps {
   squareImg?: boolean
   projectCtaHref?: string
   projectCtaText?: string
+  projectCtaRepoText?: string
+  projectCtaRepoHref?: string
   isPersonalProject?: boolean
 }
 
 
-const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint, isProjectDetail, locale = "en", squareImg, projectCtaHref, projectCtaText, isPersonalProject }: HeroProps) => {
+const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint, isProjectDetail, locale = "en", squareImg, projectCtaHref, projectCtaText, projectCtaRepoText, projectCtaRepoHref, isPersonalProject }: HeroProps) => {
   const isThisPortfolio = projectCtaHref === "/"
 
   return (
@@ -84,14 +86,21 @@ const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint,
                   className={combine(styles.img, squareImg && styles.square)}
                 />
               )}
-              {projectCtaHref && projectCtaText ?
-                isThisPortfolio ? (
-                  <Link href={projectCtaHref} asButton className={styles.projectCta}>{projectCtaText}</Link>
-                ) : (
-                  <Link href={projectCtaHref} asButton className={styles.projectCta} external>{projectCtaText} &#10697;</Link>
-                )
-                : null
-              }
+              <div className={styles.ctas}>
+                {projectCtaHref && projectCtaText ?
+                  isThisPortfolio ? (
+                    <Link href={projectCtaHref} asButton>{projectCtaText}</Link>
+                  ) : (
+                    <Link href={projectCtaHref} asButton external>{projectCtaText} &#10697;</Link>
+                  )
+                  : null
+                }
+                {projectCtaRepoHref &&
+                  <Link href={projectCtaRepoHref} asButton external>
+                    {projectCtaRepoText} &#10697;
+                  </Link>
+                }
+              </div>
             </div>
           )}
         </Container>

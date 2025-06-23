@@ -21,6 +21,7 @@ import LosTarritosBalances from "/public/images/projects/los_tarritos_balances.w
 import LosTarritosMenu from "/public/images/projects/los_tarritos_menu.webp"
 import LosTarritosBalance from "/public/images/projects/los_tarritos_nav_balance.gif"
 import LosTarritosTopics from "/public/images/projects/los_tarritos_topics.webp"
+import JavascriptQuizz from "/public/images/projects/javascript_quizz.webp"
 import TeledataImg from "/public/images/projects/teledata.webp"
 import TeledataBankImg from "/public/images/projects/teledata_bank.webp"
 import { BannerCta } from "@/components/banner"
@@ -505,6 +506,7 @@ export const PROJECTS : Record<string, ProjectItemStructure[]> = {
     {
       headline: "The Witch King of Angmar",
       url: "https://the-witch-king-of-angmar.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/the-witch-king-of-angmar",
       aboutTheProjectText: `This small weekend project is a fully responsive **SPA tribute** to the Witch King of Angmar, **crafted entirely with HTML and CSS**, without relying on JavaScript frameworks or libraries. It showcases a dark, cinematic aesthetic inspired by The Lord of the Rings, highlighting the character’s weapons, lore, and legacy.
 
 A key feature of the project is the integration of CSS Scroll-Linked Animations using the **experimental animation-timeline** property, enabling smooth, timeline-driven animations tied to scroll position — such as rotating cursed wheels, masked wire overlays, and depth-perspective transitions. The layout uses modern CSS Grid and flexbox, along with visual polish using filters, masking, and layering.
@@ -527,6 +529,7 @@ This project demonstrates a **deep dive into cutting-edge CSS capabilities**, fo
     {
       headline: "El horno de la abuelita maruja",
       url: "https://elhornodelaabuelitamaruja.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/el-horno-de-la-abuelita-maruja",
       aboutTheProjectText: `App **full-stack** created from scratch to help my girlfriend sell her products, which include cookies, tiramisus, cakes, and other baked goods.  
 It has been developed with **Next.js**, **TypeScript**, and **Tailwind CSS**, using **Vitest** for **TDD** and **Firebase** as the database.  
 
@@ -542,7 +545,7 @@ In the video below, you can see how the admin panel of the app works; you can ch
       },
       projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746433500/El_horno_de_la_abuelita_Maruja_2025-05-05_rscsri.mp4",
       detailPagePath: "/el-horno-de-la-abuelita-maruja",
-      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS, Tech.SHADCN_UI ],
     },
     {
       headline: "Bahlsen",
@@ -765,8 +768,33 @@ In the video below, you can see how the admin panel of the app works; you can ch
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
     },
     {
+      headline: "Javascript Quiz",
+      url: "https://javascript-quizz-pi.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/javascript-quizz",
+      aboutTheProjectText: `A modern JavaScript quiz application built with **Vite**, **Zustand**, and **Material UI**, featuring a clean modular architecture. The app provides an engaging way to test your JavaScript knowledge through a dynamic multiple-choice quiz experience. \r It has CI/CD setted up with **GitHub Actions**, using **Playwright** for end-to-end testing.\r
+  Key features include: \r
+  * ✅ Multiple-choice JavaScript questions
+  * ⚛️ Built with Vite for fast development and hot module replacement
+  * 🧠 State management via Zustand
+  * 🎨 UI built with Material UI
+  * 🪝 Uses custom React hooks for logic abstraction
+  * 📦 Modular component-based structure for scalability
+  * 📊 Score tracking and reset functionality
+  * 💡 Clean, responsive UI
+  `,
+      companyColor: "#121212",
+      image: {
+        src: JavascriptQuizz,
+        alt: "javascript quizz screenshot",
+      },
+      detailPagePath: "/javascript-quizz",
+      technologies: [ Tech.TYPESCRIPT, Tech.VITE, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.MATERIAL_UI, Tech.ESLINT, Tech.PLAYWRIGHT, Tech.ZUSTAND ],
+      isPersonalProject: true
+    },
+    {
       headline: "Actual portfolio",
       url: "/",
+      repoUrl: "https://github.com/Danimexivasco/dcano-portfolio",
       aboutTheProjectText: `In the last months of 2023 I was sure that I wanted a **change on my career**, so that's why I started developing my actual portfolio. I developed it using **Next.js** and **Typescript** as base, **Sass** for the styling and **GSAP** and **Intersection Observer API** for handle some scrolling animations.  
       For this project, I wanted to create a functional portfolio for sure, but I also wanted to learn/improve some of my skills so that 's why I used the latest version of Next.js (>13.4) which allows you to use the new **App Router** and also thing like **Server Components**. Along with this I also took the **opportunity** to use Typescript, which was something I had wanted to do for a long time and hadn't had the chance to do.  
       Regarding the portfolio **design**, I have tried to keep it simple, but with some curiosities like the random color that accompanies you throughout your visit and changes every time you visit it.  
@@ -797,6 +825,7 @@ In the video below, you can see how the admin panel of the app works; you can ch
     {
       headline: "El rey brujo de Angmar",
       url: "https://the-witch-king-of-angmar.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/the-witch-king-of-angmar",
       aboutTheProjectText: `Pequeño proyecto de fin de semana homenajeando al Rey Brujo de Angmar. Es una **responsive SPA creada completamente con HTML y CSS**, sin depender de frameworks o librerías de JavaScript. Presenta una estética oscura y cinematográfica inspirada en *El Señor de los Anillos*, destacando las armas, el trasfondo y el legado del personaje.
 
 Una característica clave del proyecto es la integración de **animaciones vinculadas al scroll (CSS Scroll-Linked Animations)** utilizando la **propiedad experimental animation-timeline**, lo que permite animaciones suaves y controladas por la posición del scroll, como ruedas malditas giratorias, superposiciones con máscaras y transiciones con perspectiva de profundidad. El diseño emplea CSS moderno con Grid y Flexbox, junto con efectos visuales mediante filtros, máscaras y capas.
@@ -819,6 +848,7 @@ Este proyecto representa una **exploración de capacidades avanzadas de CSS**, c
     {
       headline: "El horno de la abuelita maruja",
       url: "https://elhornodelaabuelitamaruja.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/el-horno-de-la-abuelita-maruja",
       aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi pareja a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
 Se ha desarrollado con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
 
@@ -1056,8 +1086,33 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
     },
     {
+      headline: "Javascript Quiz",
+      url: "https://javascript-quizz-pi.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/javascript-quizz",
+      aboutTheProjectText: `Una aplicación moderna de preguntas sobre JavaScript construida con **Vite**, **Zustand** y **Material UI**, con una arquitectura modular limpia. La aplicación ofrece una forma entretenida de poner a prueba tus conocimientos de JavaScript a través de un dinámico cuestionario de opción múltiple. \r Tiene CI/CD configurado con **GitHub Actions**, y utiliza **Playwright** para tests end-to-end.\r
+Características principales incluyen: \r
+* ✅ Preguntas de JavaScript de opción múltiple
+* ⚛️ Construido con Vite para desarrollo rápido y reemplazo de módulos en caliente
+* 🧠 Gestión de estado con Zustand
+* 🎨 Interfaz construida con Material UI
+* 🪝 Uso de hooks personalizados de React para abstracción de lógica
+* 📦 Estructura modular basada en componentes para escalabilidad
+* 📊 Seguimiento de puntuación y funcionalidad de reinicio
+* 💡 Interfaz limpia y responsiva
+`,
+      companyColor: "#121212",
+      image: {
+        src: JavascriptQuizz,
+        alt: "javascript quizz screenshot",
+      },
+      detailPagePath: "/javascript-quizz",
+      technologies: [ Tech.TYPESCRIPT, Tech.VITE, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.MATERIAL_UI, Tech.ESLINT, Tech.PLAYWRIGHT, Tech.ZUSTAND ],
+      isPersonalProject: true
+    },
+    {
       headline: "Portfolio actual",
       url: "/",
+      repoUrl: "https://github.com/Danimexivasco/dcano-portfolio",
       aboutTheProjectText: `En los últimos meses de 2023, estaba seguro que quería un **cambio en mi carrera**, por lo que comencé a desarrollar el portfolio que estás visitando. Lo desarrollé utilizando **Next.js** y **Typescript** como base, **Sass** para los estilos y **GSAP** y **Intersection Observer API** para manejar algunas animaciones al hacer scroll.
       Para este proyecto, quería crear un portfolio funcional por supuesto, pero también quería aprender/mejorar algunas de mis habilidades, por eso utilicé la última versión de Next.js (>13.4) que permite usar el nuevo **App Router** y también novedades como los **Server Components**. Junto con esto, también aproveché la **oportunidad** para usar Typescript, algo que había querido utilizar en algún proyecto durante mucho tiempo y no había tenido la oportunidad de hacerlo.
       En cuanto al **diseño** del portfolio, he tratado de mantenerlo simple, pero con algunas curiosidades como el color aleatorio que te acompaña durante tu visita y cambia cada vez que lo visitas la página.

@@ -57,6 +57,8 @@ const ProjectDetail = ({ lang, project, dict }: ProjectDetailProps) => {
         isPersonalProject={targetProject?.isPersonalProject}
         projectCtaHref={targetProject?.url ?? ""}
         projectCtaText={dict.projectCtaText}
+        projectCtaRepoText={dict.projectCtaRepoText}
+        projectCtaRepoHref={targetProject?.repoUrl ?? ""}
       />
       <Container className={styles.projectDetailContainer}>
         {targetProject?.text &&

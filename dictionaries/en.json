@@ -33,6 +33,7 @@
   },
   "projectDetail": {
     "projectCtaText": "Visit Website",
+    "projectCtaRepoText": "View on GitHub",
     "aboutTheCompanyHeadline": "About the company",
     "aboutTheProjectHeadline": "The project",
     "desktopScreenshootsHeadline": "Desktop screenshots",

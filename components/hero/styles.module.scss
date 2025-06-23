@@ -104,6 +104,18 @@
       }
     }
   }
+  .ctas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-3;
+    margin-top: $spacing-5;
+    @include sm-and-above {
+      flex-direction: row;
+      justify-content: center;
+      gap: $spacing-5;
+    }
+  }
   .projectCta {
     margin-top: $spacing-5;
   }

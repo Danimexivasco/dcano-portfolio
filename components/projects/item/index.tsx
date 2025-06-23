@@ -15,6 +15,7 @@ type ImageStructure = {
 export interface ProjectItemStructure {
   headline: string
   url?: string
+  repoUrl?: string
   aboutTheCompanyText?: string
   aboutTheProjectText?: string
   text?: string
