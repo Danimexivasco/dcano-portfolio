@@ -74,7 +74,7 @@ const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint,
           ) : (
             <div className={styles.projectDetail}>
               {isPersonalProject ? (
-                <h1 className={styles.headline}>{headline}</h1>
+                <h1 className={combine(styles.headline, styles.centered)}>{headline}</h1>
               ) : (
                 img &&
                 <Image

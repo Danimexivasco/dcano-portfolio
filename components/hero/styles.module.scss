@@ -92,6 +92,9 @@
   .headline {
     margin-bottom: $spacing-1;
     text-transform: uppercase;
+    &.centered {
+      text-align: center;
+    }
   }
   .projectDetail {
     display: grid;
