@@ -27,6 +27,7 @@ import TeledataBankImg from "/public/images/projects/teledata_bank.webp"
 import { BannerCta } from "@/components/banner"
 import { Tech } from "@/enums"
 import WitchKing from "/public/images/witch_king_fire.webp"
+import ParallaxMilkyWayHero from "/public/images/parallax_milky_way_hero.webp"
 
 export const LOCALES = [ "en-US", "es-ES" ]
 export const DEFAULT_LOCALE = "en-US"
@@ -504,50 +505,6 @@ export const HISTORY_ITEMS: Record<string, Array<HistoryItemStructure>> = {
 export const PROJECTS : Record<string, ProjectItemStructure[]> = {
   en: [
     {
-      headline: "The Witch King of Angmar",
-      url: "https://the-witch-king-of-angmar.vercel.app/",
-      repoUrl: "https://github.com/Danimexivasco/the-witch-king-of-angmar",
-      aboutTheProjectText: `This small weekend project is a fully responsive **SPA tribute** to the Witch King of Angmar, **crafted entirely with HTML and CSS**, without relying on JavaScript frameworks or libraries. It showcases a dark, cinematic aesthetic inspired by The Lord of the Rings, highlighting the character’s weapons, lore, and legacy.
-
-A key feature of the project is the integration of CSS Scroll-Linked Animations using the **experimental animation-timeline** property, enabling smooth, timeline-driven animations tied to scroll position — such as rotating cursed wheels, masked wire overlays, and depth-perspective transitions. The layout uses modern CSS Grid and flexbox, along with visual polish using filters, masking, and layering.
-
-This project demonstrates a **deep dive into cutting-edge CSS capabilities**, focusing on performance, semantic structure, and immersive interaction — all without a single line of JavaScript (the only JS used is to handle and store the preferred theme).
-
-
-⚠️ WARNING: *The project relies on experimental CSS [animation-timeline](https://caniuse.com/?search=animation-timeline) feature, which is not supported in all browsers. I also noticed that the behaviour in mobile devices is not the same as in desktop because of the hide/show functionality of the address bar, so for the best experience, please use a desktop device*
-`,
-      companyColor: "#313030",
-      image: {
-        src: WitchKing,
-        alt: "Witch king helmet",
-      },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746702438/the_witch_king_08-05-2025_kahjhw.mp4",
-      detailPagePath: "/the-witch-king-of-angmar",
-      isPersonalProject: true,
-      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
-    },
-    {
-      headline: "El horno de la abuelita maruja",
-      url: "https://elhornodelaabuelitamaruja.vercel.app/",
-      repoUrl: "https://github.com/Danimexivasco/el-horno-de-la-abuelita-maruja",
-      aboutTheProjectText: `App **full-stack** created from scratch to help my girlfriend sell her products, which include cookies, tiramisus, cakes, and other baked goods.  
-It has been developed with **Next.js**, **TypeScript**, and **Tailwind CSS**, using **Vitest** for **TDD** and **Firebase** as the database.  
-
-In the video below, you can see how the admin panel of the app works; you can check the rest in **[this link](https://elhornodelaabuelitamaruja.vercel.app/)**.
-
-⚠️ *The site is functional, but the payment methods still need to be adjusted and the final products introduced, so currently, purchases cannot be made on the site.*
-`,
-      companyColor: "#edd8ab",
-      image: {
-        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
-        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
-        alt: "el-horno-de-la-abuelita-maruja-logo",
-      },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746433500/El_horno_de_la_abuelita_Maruja_2025-05-05_rscsri.mp4",
-      detailPagePath: "/el-horno-de-la-abuelita-maruja",
-      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS, Tech.SHADCN_UI ],
-    },
-    {
       headline: "Bahlsen",
       url: "https://www.bahlsen.com/",
       aboutTheCompanyText: "Bahlsen is a German food company renowned for its **high-quality** sweet **biscuits and cookies**. With a rich heritage dating back to **1889**, Bahlsen is known for iconic products like Choco Leibniz and Hit cookies. The brand represents a commitment to craftsmanship and premium ingredients, delivering delightful treats that have become a staple in European households.",
@@ -602,6 +559,50 @@ In the video below, you can see how the admin panel of the app works; you can ch
       technologies: [ "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Express", "Contentful", "Nodejs", "Handlebars", "Azure DevOps", "Zapier", "Jenkins", "Gulp", "jQuery", "Webflow" ],
     },
     {
+      headline: "The Witch King of Angmar",
+      url: "https://the-witch-king-of-angmar.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/the-witch-king-of-angmar",
+      aboutTheProjectText: `This small weekend project is a fully responsive **SPA tribute** to the Witch King of Angmar, **crafted entirely with HTML and CSS**, without relying on JavaScript frameworks or libraries. It showcases a dark, cinematic aesthetic inspired by The Lord of the Rings, highlighting the character’s weapons, lore, and legacy.
+
+A key feature of the project is the integration of CSS Scroll-Linked Animations using the **experimental animation-timeline** property, enabling smooth, timeline-driven animations tied to scroll position — such as rotating cursed wheels, masked wire overlays, and depth-perspective transitions. The layout uses modern CSS Grid and flexbox, along with visual polish using filters, masking, and layering.
+
+This project demonstrates a **deep dive into cutting-edge CSS capabilities**, focusing on performance, semantic structure, and immersive interaction — all without a single line of JavaScript (the only JS used is to handle and store the preferred theme).
+
+
+⚠️ WARNING: *The project relies on experimental CSS [animation-timeline](https://caniuse.com/?search=animation-timeline) feature, which is not supported in all browsers. I also noticed that the behaviour in mobile devices is not the same as in desktop because of the hide/show functionality of the address bar, so for the best experience, please use a desktop device*
+`,
+      companyColor: "#313030",
+      image: {
+        src: WitchKing,
+        alt: "Witch king helmet",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746702438/the_witch_king_08-05-2025_kahjhw.mp4",
+      detailPagePath: "/the-witch-king-of-angmar",
+      isPersonalProject: true,
+      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
+    },
+    {
+      headline: "El horno de la abuelita maruja",
+      url: "https://elhornodelaabuelitamaruja.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/el-horno-de-la-abuelita-maruja",
+      aboutTheProjectText: `App **full-stack** created from scratch to help my girlfriend sell her products, which include cookies, tiramisus, cakes, and other baked goods.  
+It has been developed with **Next.js**, **TypeScript**, and **Tailwind CSS**, using **Vitest** for **TDD** and **Firebase** as the database.  
+
+In the video below, you can see how the admin panel of the app works; you can check the rest in **[this link](https://elhornodelaabuelitamaruja.vercel.app/)**.
+
+⚠️ *The site is functional, but the payment methods still need to be adjusted and the final products introduced, so currently, purchases cannot be made on the site.*
+`,
+      companyColor: "#edd8ab",
+      image: {
+        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
+        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
+        alt: "el-horno-de-la-abuelita-maruja-logo",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746433500/El_horno_de_la_abuelita_Maruja_2025-05-05_rscsri.mp4",
+      detailPagePath: "/el-horno-de-la-abuelita-maruja",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS, Tech.SHADCN_UI ],
+    },
+    {
       headline: "Avrios",
       url: "https://www.avrios.com/",
       aboutTheCompanyText: "Avrios is a Swiss-based company offering a comprehensive fleet management platform. Specializing in automating and streamlining fleet-related tasks, it provides businesses with tools for managing assets, tracking expenses, and ensuring compliance. The platform aims to simplify fleet operations, promoting efficiency and cost-effectiveness for organizations with diverse vehicle fleets.",
@@ -613,6 +614,91 @@ In the video below, you can see how the admin panel of the app works; you can ch
       },
       detailPagePath: "/avrios",
       technologies: [ "CSS 3", "Webflow", "Javascript", "Git", "Api", "Zapier" ],
+    },
+    {
+      headline: "Vier",
+      url: "https://www.vier.ai/",
+      aboutTheCompanyText: "VIER GmbH was formed in 2021 from the **merger** of the companies 4Com, voiXen, parlamind, Lindenbaum and PRECIRE. The communication technology specialists have **combined their years of expertise** and in-depth knowledge. VIER sees itself as a pioneer for the future of intelligent, communication-driven work.",
+      aboutTheProjectText: `The project was developed using **Jamstack** (Gatsby + Contentful), we did our data queries using **GraphQL** and for the styling we used **Bootstrap** combined with **Sass**.  
+      I joined the project in a latest status and I help to implement some feature requests from the customer`,
+      companyColor: "#f8f9fa",
+      image: {
+        src: icons.VierLogoIcon,
+        alt: "vier-logo",
+      },
+      detailPagePath: "/vier",
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+    },
+    {
+      headline: "Parallax Milky Way",
+      url: "https://parallax-milky-way.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/parallax-milky-way",
+      aboutTheProjectText: `An interactive web experience featuring smooth **view transitions** and **parallax** effects, talking about the Milky Way.  
+        
+
+Main features:
+
+- **Smooth View Transitions**: Seamless transitions between different sections of the page. It's also uses view transitions inside the insights replacing image.
+- **Parallax Effects**: Dynamic background movement that creates depth and immersion
+- **Responsive Design**: Works perfectly on all device sizes
+- **Performance Optimized**: Efficient animations and transitions for smooth user experience`,
+      companyColor: "#313030",
+      image: {
+        src: ParallaxMilkyWayHero,
+        alt: "Parallax Milky Way Hero",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1751364264/parallax_milky_way.mp4",
+      detailPagePath: "/parallax-milky-way",
+      isPersonalProject: true,
+      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
+    },
+    {
+      headline: "Secovisa",
+      url: "https://secovisa.com/",
+      aboutTheCompanyText: "Secovisa, a **Jerez based** company provides specialized services to their customers, which range from the supply of all types of **spare parts**, **machinery and accessories** up to the execution of **repairs** or “turn-key” **installations**.",
+      aboutTheProjectText: `We created a tailor-made **PWA** app for the custome for their backoffice and for their workers. The value of the app was to provide a way for the administration of the different work orders of the company and for the control of clocking by its employees.  
+      For the execution we use **React** with **Sass** for the front-end, **Firebase** as database and Firebase **Cloud Functions** to get some calcs done`,
+      companyColor: "#f3f7fa",
+      image: {
+        src: icons.SecovisaLogoIcon,
+        alt: "secovisa-logo",
+      },
+      projectImages: [
+        {
+          src: SecovisaImg,
+          alt: "secovisa-dashboard",
+        },
+        {
+          src: SecovisaMobileImg,
+          alt: "secovisa-mobile",
+        },
+      ],
+      detailPagePath: "/secovisa",
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
+    },
+    {
+      headline: "Javascript Quiz",
+      url: "https://javascript-quizz-pi.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/javascript-quizz",
+      aboutTheProjectText: `A modern JavaScript quiz application built with **Vite**, **Zustand**, and **Material UI**, featuring a clean modular architecture. The app provides an engaging way to test your JavaScript knowledge through a dynamic multiple-choice quiz experience. \r It has CI/CD setted up with **GitHub Actions**, using **Playwright** for end-to-end testing.\r
+  Key features include: \r
+  * ✅ Multiple-choice JavaScript questions
+  * ⚛️ Built with Vite for fast development and hot module replacement
+  * 🧠 State management via Zustand
+  * 🎨 UI built with Material UI
+  * 🪝 Uses custom React hooks for logic abstraction
+  * 📦 Modular component-based structure for scalability
+  * 📊 Score tracking and reset functionality
+  * 💡 Clean, responsive UI
+  `,
+      companyColor: "#121212",
+      image: {
+        src: JavascriptQuizz,
+        alt: "javascript quizz screenshot",
+      },
+      detailPagePath: "/javascript-quizz",
+      technologies: [ Tech.TYPESCRIPT, Tech.VITE, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.MATERIAL_UI, Tech.ESLINT, Tech.PLAYWRIGHT, Tech.ZUSTAND ],
+      isPersonalProject: true
     },
     {
       headline: "FriEnt",
@@ -644,30 +730,6 @@ In the video below, you can see how the admin panel of the app works; you can ch
       technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
-      headline: "Secovisa",
-      url: "https://secovisa.com/",
-      aboutTheCompanyText: "Secovisa, a **Jerez based** company provides specialized services to their customers, which range from the supply of all types of **spare parts**, **machinery and accessories** up to the execution of **repairs** or “turn-key” **installations**.",
-      aboutTheProjectText: `We created a tailor-made **PWA** app for the custome for their backoffice and for their workers. The value of the app was to provide a way for the administration of the different work orders of the company and for the control of clocking by its employees.  
-      For the execution we use **React** with **Sass** for the front-end, **Firebase** as database and Firebase **Cloud Functions** to get some calcs done`,
-      companyColor: "#f3f7fa",
-      image: {
-        src: icons.SecovisaLogoIcon,
-        alt: "secovisa-logo",
-      },
-      projectImages: [
-        {
-          src: SecovisaImg,
-          alt: "secovisa-dashboard",
-        },
-        {
-          src: SecovisaMobileImg,
-          alt: "secovisa-mobile",
-        },
-      ],
-      detailPagePath: "/secovisa",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
-    },
-    {
       headline: "TeleData",
       url: "https://www.teledata.de/",
       aboutTheCompanyText: "Teledata GmbH is a **German** company which operates as a regional **internet and services provider**. The Company offers internet and telephony, location networking, data center solutions, smart services, cloud products, and fiber optic connections.",
@@ -690,20 +752,6 @@ In the video below, you can see how the admin panel of the app works; you can ch
       ],
       detailPagePath: "/teledata",
       technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Bootstrap", "Azure DevOps" ],
-    },
-    {
-      headline: "Vier",
-      url: "https://www.vier.ai/",
-      aboutTheCompanyText: "VIER GmbH was formed in 2021 from the **merger** of the companies 4Com, voiXen, parlamind, Lindenbaum and PRECIRE. The communication technology specialists have **combined their years of expertise** and in-depth knowledge. VIER sees itself as a pioneer for the future of intelligent, communication-driven work.",
-      aboutTheProjectText: `The project was developed using **Jamstack** (Gatsby + Contentful), we did our data queries using **GraphQL** and for the styling we used **Bootstrap** combined with **Sass**.  
-      I joined the project in a latest status and I help to implement some feature requests from the customer`,
-      companyColor: "#f8f9fa",
-      image: {
-        src: icons.VierLogoIcon,
-        alt: "vier-logo",
-      },
-      detailPagePath: "/vier",
-      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "VetZ",
@@ -768,30 +816,6 @@ In the video below, you can see how the admin panel of the app works; you can ch
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
     },
     {
-      headline: "Javascript Quiz",
-      url: "https://javascript-quizz-pi.vercel.app/",
-      repoUrl: "https://github.com/Danimexivasco/javascript-quizz",
-      aboutTheProjectText: `A modern JavaScript quiz application built with **Vite**, **Zustand**, and **Material UI**, featuring a clean modular architecture. The app provides an engaging way to test your JavaScript knowledge through a dynamic multiple-choice quiz experience. \r It has CI/CD setted up with **GitHub Actions**, using **Playwright** for end-to-end testing.\r
-  Key features include: \r
-  * ✅ Multiple-choice JavaScript questions
-  * ⚛️ Built with Vite for fast development and hot module replacement
-  * 🧠 State management via Zustand
-  * 🎨 UI built with Material UI
-  * 🪝 Uses custom React hooks for logic abstraction
-  * 📦 Modular component-based structure for scalability
-  * 📊 Score tracking and reset functionality
-  * 💡 Clean, responsive UI
-  `,
-      companyColor: "#121212",
-      image: {
-        src: JavascriptQuizz,
-        alt: "javascript quizz screenshot",
-      },
-      detailPagePath: "/javascript-quizz",
-      technologies: [ Tech.TYPESCRIPT, Tech.VITE, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.MATERIAL_UI, Tech.ESLINT, Tech.PLAYWRIGHT, Tech.ZUSTAND ],
-      isPersonalProject: true
-    },
-    {
       headline: "Actual portfolio",
       url: "/",
       repoUrl: "https://github.com/Danimexivasco/dcano-portfolio",
@@ -822,49 +846,6 @@ In the video below, you can see how the admin panel of the app works; you can ch
     },
   ],
   es: [
-    {
-      headline: "El rey brujo de Angmar",
-      url: "https://the-witch-king-of-angmar.vercel.app/",
-      repoUrl: "https://github.com/Danimexivasco/the-witch-king-of-angmar",
-      aboutTheProjectText: `Pequeño proyecto de fin de semana homenajeando al Rey Brujo de Angmar. Es una **responsive SPA creada completamente con HTML y CSS**, sin depender de frameworks o librerías de JavaScript. Presenta una estética oscura y cinematográfica inspirada en *El Señor de los Anillos*, destacando las armas, el trasfondo y el legado del personaje.
-
-Una característica clave del proyecto es la integración de **animaciones vinculadas al scroll (CSS Scroll-Linked Animations)** utilizando la **propiedad experimental animation-timeline**, lo que permite animaciones suaves y controladas por la posición del scroll, como ruedas malditas giratorias, superposiciones con máscaras y transiciones con perspectiva de profundidad. El diseño emplea CSS moderno con Grid y Flexbox, junto con efectos visuales mediante filtros, máscaras y capas.
-
-Este proyecto representa una **exploración de capacidades avanzadas de CSS**, con un enfoque en el rendimiento, la estructura semántica y la interacción inmersiva — todo ello sin una sola línea de JavaScript (excepto el código mínimo utilizado para gestionar y almacenar el tema preferido del usuario).
-
-⚠️ **ADVERTENCIA**: *El proyecto depende de la característica experimental de CSS [animation-timeline](https://caniuse.com/?search=animation-timeline), la cual no está soportada en todos los navegadores. También he notado que el comportamiento en dispositivos móviles no es igual al de escritorio debido a la funcionalidad de ocultar/mostrar la barra de direcciones, por lo tanto, para una mejor experiencia se recomienda visualizarlo desde un dispositivo de escritorio.*
-
-`,
-      companyColor: "#313030",
-      image: {
-        src: WitchKing,
-        alt: "Witch king helmet",
-      },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746702438/the_witch_king_08-05-2025_kahjhw.mp4",
-      detailPagePath: "/the-witch-king-of-angmar",
-      isPersonalProject: true,
-      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
-    },
-    {
-      headline: "El horno de la abuelita maruja",
-      url: "https://elhornodelaabuelitamaruja.vercel.app/",
-      repoUrl: "https://github.com/Danimexivasco/el-horno-de-la-abuelita-maruja",
-      aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi pareja a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
-Se ha desarrollado con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
-
-En el vídeo de abajo puedes observar el funcionamiento del panel de administrador de la app, puedes ver el resto en **[este enlace](https://elhornodelaabuelitamaruja.vercel.app/)**.
-
-⚠️ *La página es funcional, pero falta ajustar los métodos de pago e introducir los productos finales, por lo que actualmente no se pueden realizar compras en la página.*`,
-      companyColor: "#edd8ab",
-      image: {
-        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
-        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
-        alt: "el-horno-de-la-abuelita-maruja-logo",
-      },
-      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746433500/El_horno_de_la_abuelita_Maruja_2025-05-05_rscsri.mp4",
-      detailPagePath: "/el-horno-de-la-abuelita-maruja",
-      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
-    },
     {
       headline: "Bahlsen",
       url: "https://www.bahlsen.com/",
@@ -920,6 +901,49 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
       technologies: [ "HTML 5", "CSS 3", "Cypress", "Javascript", "Git", "Api", "Sass", "Express", "Contentful", "Nodejs", "Handlebars", "Azure DevOps", "Zapier", "Jenkins", "Gulp", "jQuery", "Webflow" ],
     },
     {
+      headline: "El rey brujo de Angmar",
+      url: "https://the-witch-king-of-angmar.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/the-witch-king-of-angmar",
+      aboutTheProjectText: `Pequeño proyecto de fin de semana homenajeando al Rey Brujo de Angmar. Es una **responsive SPA creada completamente con HTML y CSS**, sin depender de frameworks o librerías de JavaScript. Presenta una estética oscura y cinematográfica inspirada en *El Señor de los Anillos*, destacando las armas, el trasfondo y el legado del personaje.
+
+Una característica clave del proyecto es la integración de **animaciones vinculadas al scroll (CSS Scroll-Linked Animations)** utilizando la **propiedad experimental animation-timeline**, lo que permite animaciones suaves y controladas por la posición del scroll, como ruedas malditas giratorias, superposiciones con máscaras y transiciones con perspectiva de profundidad. El diseño emplea CSS moderno con Grid y Flexbox, junto con efectos visuales mediante filtros, máscaras y capas.
+
+Este proyecto representa una **exploración de capacidades avanzadas de CSS**, con un enfoque en el rendimiento, la estructura semántica y la interacción inmersiva — todo ello sin una sola línea de JavaScript (excepto el código mínimo utilizado para gestionar y almacenar el tema preferido del usuario).
+
+⚠️ **ADVERTENCIA**: *El proyecto depende de la característica experimental de CSS [animation-timeline](https://caniuse.com/?search=animation-timeline), la cual no está soportada en todos los navegadores. También he notado que el comportamiento en dispositivos móviles no es igual al de escritorio debido a la funcionalidad de ocultar/mostrar la barra de direcciones, por lo tanto, para una mejor experiencia se recomienda visualizarlo desde un dispositivo de escritorio.*
+
+`,
+      companyColor: "#313030",
+      image: {
+        src: WitchKing,
+        alt: "Witch king helmet",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746702438/the_witch_king_08-05-2025_kahjhw.mp4",
+      detailPagePath: "/the-witch-king-of-angmar",
+      isPersonalProject: true,
+      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
+    },
+    {
+      headline: "El horno de la abuelita maruja",
+      url: "https://elhornodelaabuelitamaruja.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/el-horno-de-la-abuelita-maruja",
+      aboutTheProjectText: `App **full-stack** creada desde cero para ayudar a mi pareja a vender sus productos, que incluyen galletas, tiramisús, pasteles y otros productos horneados.  
+Se ha desarrollado con **Next.js**, **TypeScript** y **Tailwind CSS**, utilizando **Vitest** para **TDD** y **Firebase** como base de datos.  
+
+En el vídeo de abajo puedes observar el funcionamiento del panel de administrador de la app, puedes ver el resto en **[este enlace](https://elhornodelaabuelitamaruja.vercel.app/)**.
+
+⚠️ *La página es funcional, pero falta ajustar los métodos de pago e introducir los productos finales, por lo que actualmente no se pueden realizar compras en la página.*`,
+      companyColor: "#edd8ab",
+      image: {
+        src: icons.ElHornoDeLaAbuelitaMarujaLightIcon,
+        srcLight: icons.ElHornoDeLaAbuelitaMarujaDarkIcon,
+        alt: "el-horno-de-la-abuelita-maruja-logo",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1746433500/El_horno_de_la_abuelita_Maruja_2025-05-05_rscsri.mp4",
+      detailPagePath: "/el-horno-de-la-abuelita-maruja",
+      technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.GIT, Tech.ESLINT, Tech.VITEST, Tech.REACT_TESTING_LIBRARY, Tech.FIREBASE, Tech.TAILWIND_CSS ],
+    },
+    {
       headline: "Avrios",
       url: "https://www.avrios.com/",
       aboutTheCompanyText: "Avrios es una empresa con sede en **Suiza** que ofrece una plataforma integral de gestión de flotas. Especializada en automatizar y agilizar las tareas relacionadas con las flotas, proporciona a las empresas herramientas para gestionar activos, hacer un seguimiento de los gastos y garantizar el cumplimiento de la normativa. El objetivo de la plataforma es simplificar las operaciones de las flotas, fomentando la eficiencia y la rentabilidad de las organizaciones con diversas flotas de vehículos.",
@@ -931,6 +955,91 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
       },
       detailPagePath: "/avrios",
       technologies: [ "CSS 3", "Webflow", "Javascript", "Git", "Api", "Zapier" ],
+    },
+    {
+      headline: "Vier",
+      url: "https://www.vier.ai/",
+      aboutTheCompanyText: "VIER GmbH se formó en 2021 a partir de la **fusión** de las empresas 4Com, voiXen, parlamind, Lindenbaum y PRECIRE. Los especialistas en tecnología de la comunicación han **combinado sus años de experiencia y conocimientos** profundos en el sector. VIER se ve a sí misma como pionera para el futuro del trabajo inteligente y basado en la comunicación.",
+      aboutTheProjectText: `El proyecto se desarrolló utilizando **Jamstack** (Gatsby + Contentful), realizamos nuestras consultas de datos utilizando **GraphQL** y para el estilo utilizamos **Bootstrap** combinado con **Sass**.  
+      Me uní al proyecto en un estado avanzado y ayudé a implementar algunas feature requests del cliente.`,
+      companyColor: "#f8f9fa",
+      image: {
+        src: icons.VierLogoIcon,
+        alt: "vier-logo",
+      },
+      detailPagePath: "/vier",
+      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
+    },
+    {
+      headline: "Vía Lactea Parallax",
+      url: "https://parallax-milky-way.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/parallax-milky-way",
+      aboutTheProjectText: `Una experiencia interactiva que hace uso de **view transitions** y efectos de **parallax**, hablando sobre la Vía Láctea.  
+
+Características principales:
+
+- **View Transitions**: Transiciones fluidas entre diferentes secciones de la página. También se usan view transitions dentro de los insights al reemplazar imágenes.
+- **Efectos de Parallax**: Movimiento dinámico del fondo que crea profundidad e inmersión.
+- **Diseño Responsivo**: Funciona perfectamente en todos los tamaños de dispositivo.
+- **Optimización de Rendimiento**: Animaciones y transiciones eficientes para una experiencia de usuario fluida.
+`,
+      companyColor: "#313030",
+      image: {
+        src: ParallaxMilkyWayHero,
+        alt: "Parallax Milky Way Hero",
+      },
+      projectVideoURL: "https://res.cloudinary.com/danimexivasco/video/upload/v1751364264/parallax_milky_way.mp4",
+      detailPagePath: "/parallax-milky-way",
+      isPersonalProject: true,
+      technologies: [ Tech.ASTRO, Tech.HTML5, Tech.CSS3, Tech.GIT ],
+    },
+    {
+      headline: "Secovisa",
+      url: "https://secovisa.com/",
+      aboutTheCompanyText: "Secovisa, una empresa con **sede en Jerez**, ofrece servicios especializados que van desde el suministro de todo tipo de **repuestos**, **maquinaria y accesorios**, hasta la ejecución de **reparaciones o instalaciones** 'llave en mano'.",
+      aboutTheProjectText: `Creamos una aplicación **PWA** a medida para el cliente, tanto para su backoffice como para sus trabajadores. El valor de la aplicación residia en ser el medio para la administración de las diferentes órdenes de trabajo de la empresa y el control de fichaje por parte de sus empleados.  
+      Para la ejecución, utilizamos **React** con **Sass** para el front-end, **Firebase** como base de datos y Firebase **Cloud Functions** para realizar algunos cálculos.`,
+      companyColor: "#f3f7fa",
+      image: {
+        src: icons.SecovisaLogoIcon,
+        alt: "secovisa-logo",
+      },
+      projectImages: [
+        {
+          src: SecovisaImg,
+          alt: "secovisa-dashboard",
+        },
+        {
+          src: SecovisaMobileImg,
+          alt: "secovisa-mobile",
+        },
+      ],
+      detailPagePath: "/secovisa",
+      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
+    },
+    {
+      headline: "Javascript Quiz",
+      url: "https://javascript-quizz-pi.vercel.app/",
+      repoUrl: "https://github.com/Danimexivasco/javascript-quizz",
+      aboutTheProjectText: `Una aplicación moderna de preguntas sobre JavaScript construida con **Vite**, **Zustand** y **Material UI**, con una arquitectura modular limpia. La aplicación ofrece una forma entretenida de poner a prueba tus conocimientos de JavaScript a través de un dinámico cuestionario de opción múltiple. \r Tiene CI/CD configurado con **GitHub Actions**, y utiliza **Playwright** para tests end-to-end.\r
+Características principales incluyen: \r
+* ✅ Preguntas de JavaScript de opción múltiple
+* ⚛️ Construido con Vite para desarrollo rápido y reemplazo de módulos en caliente
+* 🧠 Gestión de estado con Zustand
+* 🎨 Interfaz construida con Material UI
+* 🪝 Uso de hooks personalizados de React para abstracción de lógica
+* 📦 Estructura modular basada en componentes para escalabilidad
+* 📊 Seguimiento de puntuación y funcionalidad de reinicio
+* 💡 Interfaz limpia y responsiva
+`,
+      companyColor: "#121212",
+      image: {
+        src: JavascriptQuizz,
+        alt: "javascript quizz screenshot",
+      },
+      detailPagePath: "/javascript-quizz",
+      technologies: [ Tech.TYPESCRIPT, Tech.VITE, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.MATERIAL_UI, Tech.ESLINT, Tech.PLAYWRIGHT, Tech.ZUSTAND ],
+      isPersonalProject: true
     },
     {
       headline: "FriEnt",
@@ -962,30 +1071,6 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
       technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
-      headline: "Secovisa",
-      url: "https://secovisa.com/",
-      aboutTheCompanyText: "Secovisa, una empresa con **sede en Jerez**, ofrece servicios especializados que van desde el suministro de todo tipo de **repuestos**, **maquinaria y accesorios**, hasta la ejecución de **reparaciones o instalaciones** 'llave en mano'.",
-      aboutTheProjectText: `Creamos una aplicación **PWA** a medida para el cliente, tanto para su backoffice como para sus trabajadores. El valor de la aplicación residia en ser el medio para la administración de las diferentes órdenes de trabajo de la empresa y el control de fichaje por parte de sus empleados.  
-      Para la ejecución, utilizamos **React** con **Sass** para el front-end, **Firebase** como base de datos y Firebase **Cloud Functions** para realizar algunos cálculos.`,
-      companyColor: "#f3f7fa",
-      image: {
-        src: icons.SecovisaLogoIcon,
-        alt: "secovisa-logo",
-      },
-      projectImages: [
-        {
-          src: SecovisaImg,
-          alt: "secovisa-dashboard",
-        },
-        {
-          src: SecovisaMobileImg,
-          alt: "secovisa-mobile",
-        },
-      ],
-      detailPagePath: "/secovisa",
-      technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Firebase", "Azure DevOps" ],
-    },
-    {
       headline: "TeleData",
       url: "https://www.teledata.de/",
       aboutTheCompanyText: "Teledata GmbH es una empresa **alemana** que opera como proveedor regional de **internet y servicios**. La empresa ofrece internet y telefonía, redes de ubicación, soluciones de centro de datos, servicios inteligentes, productos en la nube y conexiones de fibra óptica.",
@@ -1008,20 +1093,6 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
       ],
       detailPagePath: "/teledata",
       technologies: [ "React", "HTML 5", "CSS 3", "Javascript", "Git", "Api", "Sass", "Bootstrap", "Azure DevOps" ],
-    },
-    {
-      headline: "Vier",
-      url: "https://www.vier.ai/",
-      aboutTheCompanyText: "VIER GmbH se formó en 2021 a partir de la **fusión** de las empresas 4Com, voiXen, parlamind, Lindenbaum y PRECIRE. Los especialistas en tecnología de la comunicación han **combinado sus años de experiencia y conocimientos** profundos en el sector. VIER se ve a sí misma como pionera para el futuro del trabajo inteligente y basado en la comunicación.",
-      aboutTheProjectText: `El proyecto se desarrolló utilizando **Jamstack** (Gatsby + Contentful), realizamos nuestras consultas de datos utilizando **GraphQL** y para el estilo utilizamos **Bootstrap** combinado con **Sass**.  
-      Me uní al proyecto en un estado avanzado y ayudé a implementar algunas feature requests del cliente.`,
-      companyColor: "#f8f9fa",
-      image: {
-        src: icons.VierLogoIcon,
-        alt: "vier-logo",
-      },
-      detailPagePath: "/vier",
-      technologies: [ "React", "HTML 5", "CSS 3", "Bootstrap", "Javascript", "Git", "Api", "Sass", "Gatsby", "Contentful", "GraphQL", "Azure DevOps" ],
     },
     {
       headline: "VetZ",
@@ -1084,30 +1155,6 @@ En el vídeo de abajo puedes observar el funcionamiento del panel de administrad
       ],
       detailPagePath: "/nuestros-tarritos",
       technologies: [ Tech.TYPESCRIPT, Tech.NEXT_JS, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.ESLINT, Tech.SASS, Tech.GSAP, Tech.CYPRESS ],
-    },
-    {
-      headline: "Javascript Quiz",
-      url: "https://javascript-quizz-pi.vercel.app/",
-      repoUrl: "https://github.com/Danimexivasco/javascript-quizz",
-      aboutTheProjectText: `Una aplicación moderna de preguntas sobre JavaScript construida con **Vite**, **Zustand** y **Material UI**, con una arquitectura modular limpia. La aplicación ofrece una forma entretenida de poner a prueba tus conocimientos de JavaScript a través de un dinámico cuestionario de opción múltiple. \r Tiene CI/CD configurado con **GitHub Actions**, y utiliza **Playwright** para tests end-to-end.\r
-Características principales incluyen: \r
-* ✅ Preguntas de JavaScript de opción múltiple
-* ⚛️ Construido con Vite para desarrollo rápido y reemplazo de módulos en caliente
-* 🧠 Gestión de estado con Zustand
-* 🎨 Interfaz construida con Material UI
-* 🪝 Uso de hooks personalizados de React para abstracción de lógica
-* 📦 Estructura modular basada en componentes para escalabilidad
-* 📊 Seguimiento de puntuación y funcionalidad de reinicio
-* 💡 Interfaz limpia y responsiva
-`,
-      companyColor: "#121212",
-      image: {
-        src: JavascriptQuizz,
-        alt: "javascript quizz screenshot",
-      },
-      detailPagePath: "/javascript-quizz",
-      technologies: [ Tech.TYPESCRIPT, Tech.VITE, Tech.REACT, Tech.HTML5, Tech.CSS3, Tech.GIT, Tech.MATERIAL_UI, Tech.ESLINT, Tech.PLAYWRIGHT, Tech.ZUSTAND ],
-      isPersonalProject: true
     },
     {
       headline: "Portfolio actual",
