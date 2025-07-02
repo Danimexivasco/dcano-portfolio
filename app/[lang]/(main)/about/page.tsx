@@ -21,6 +21,7 @@ const AboutMePage = async ({ params: { lang } }: NextParamsProp) => {
         locale={lang as Locales}
         headline={dict.about.headline}
         text={dict.about.text}
+        contactCtaText={dict.contactCta.text}
       />
       <History
         items={HISTORY_ITEMS[ lang as keyof typeof HISTORY_ITEMS ]}

@@ -26,6 +26,7 @@ const Home = async ({ params: { lang } }: NextParamsProp) => {
           alt: "photo-of-Daniel"
         }}
         isHome
+        contactCtaText={dict.contactCta.text}
       />
       <Technologies
         headline={dict.home.technologiesHeadline}

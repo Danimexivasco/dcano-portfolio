@@ -1,4 +1,5 @@
 @import "../../styles/variables.module";
+@import "../../styles/screenhooks";
 
 .footer {
   min-height: $header-footer-min-height;
@@ -6,13 +7,26 @@
   color: var(--text-color, $white);
   display: flex;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
   .footerContainer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 1.5rem;
     flex: 1;
+
+    @include sm-and-above {
+      flex-direction: row;
+    }
   }
   .text {
+    p {
+      margin: 0;
+    }
+
     em {
       color: rgb(var(--random-rgb-color, $whiteRGB))
     }

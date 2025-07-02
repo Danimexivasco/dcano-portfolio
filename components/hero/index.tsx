@@ -8,6 +8,7 @@ import Container from "../container";
 import Separator from "../separator";
 import Link from "../link";
 import styles from "./styles.module.scss"
+import { CALENDLY_URL } from "@/utils/constants";
 
 export interface HeroProps {
   headline?: string
@@ -28,10 +29,11 @@ export interface HeroProps {
   projectCtaRepoText?: string
   projectCtaRepoHref?: string
   isPersonalProject?: boolean
+  contactCtaText?: string
 }
 
 
-const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint, isProjectDetail, locale = "en", squareImg, projectCtaHref, projectCtaText, projectCtaRepoText, projectCtaRepoHref, isPersonalProject }: HeroProps) => {
+const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint, isProjectDetail, locale = "en", squareImg, projectCtaHref, projectCtaText, projectCtaRepoText, projectCtaRepoHref, isPersonalProject, contactCtaText }: HeroProps) => {
   const isThisPortfolio = projectCtaHref === "/"
 
   return (
@@ -53,22 +55,23 @@ const Hero = ({ headline, subHeadline, text, img, isHome, cuttedShapeStartPoint,
                 {text &&
                   <Markdown className={styles.text}>{text}</Markdown>
                 }
+                <Link href={CALENDLY_URL} asButton external className={styles.contactCta}>{contactCtaText} &#10697;</Link>
               </div>
               {(img && !isProjectDetail) &&
-              <div className={styles.imgContainer}>
-                <div className={styles.shadowContainer}>
-                  <div className={styles.hexagon}>
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      width={300}
-                      height={300}
-                      priority
-                      className={styles.img}
-                    />
+                <div className={styles.imgContainer}>
+                  <div className={styles.shadowContainer}>
+                    <div className={styles.hexagon}>
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        width={300}
+                        height={300}
+                        priority
+                        className={styles.img}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
               }
             </>
           ) : (

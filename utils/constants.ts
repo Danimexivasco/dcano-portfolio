@@ -1272,3 +1272,5 @@ export const CVLinks: Record<string, Array<BannerCta>> = {
     }
   ]
 }
+
+export const CALENDLY_URL = "https://calendly.com/dcanodev"
