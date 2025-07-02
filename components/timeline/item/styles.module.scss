@@ -53,8 +53,6 @@
   background: rgba(var(--random-rgb-color, $blackRGB), 0.2);
   border-radius: 16px;
   box-shadow: 4px 4px 8px rgba(var(--random-rgb-color, $blackRGB), 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(var(--random-rgb-color, $blackRGB), 0.2);
   position: relative;
   border-radius: 6px;
